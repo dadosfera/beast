@@ -5,31 +5,28 @@
       </url>
       
      <url>
-       <loc>https://akveo.github.io/nebular/docs/getting-started/what-is-nebular</loc>
+       <loc>https://akveo.github.io/nebular/docs/incio/o-que--o-beast</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/getting-started/where-to-start</loc>
+       <loc>https://akveo.github.io/nebular/docs/incio/como-comear</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/getting-started/professional-services</loc>
+       <loc>https://akveo.github.io/nebular/docs/incio/sobre</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guides/install-nebular</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/install-nebular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/install-based-on-starter-kit</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guides/create-nebular-page</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/create-nebular-page</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guides/backend-integration</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/register-icon-pack</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guides/register-icon-pack</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/guides/server-deployment</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/server-deployment</loc>
      </url>
      <url>
        <loc>https://akveo.github.io/nebular/docs/design-system/eva-design-system-intro</loc>
@@ -71,720 +68,657 @@
        <loc>https://akveo.github.io/nebular/docs/design-system/corporate-theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/migration/general-instructions</loc>
+       <loc>https://akveo.github.io/nebular/docs/usabilidade/righttoleft-rtl</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/migration/350400-migration</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/components-overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/migration/200rc8200rc9-auth-migration</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/layout</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/usability/righttoleft-rtl</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/layout/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/components-overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/layout/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/layout</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/layout/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/layout/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/layout/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/layout/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/card</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/layout/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/card/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/layout/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/card/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/card</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/card/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/card/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/card/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/card/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/card/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/card/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/flip-card</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/flip-card/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/flip-card/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/flip-card/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/flip-card/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/reveal-card</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/reveal-card/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/reveal-card/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/stepper</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/reveal-card/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/reveal-card/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/stepper</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/stepper/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/stepper/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/accordion</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/stepper/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/stepper/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/accordion</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/accordion/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/accordion/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/list</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/accordion/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/list/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/accordion/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/list/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/list</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/list/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/list/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/list/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/list/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/list/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/list/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/infinite-list</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/infinite-list/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/infinite-list/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/infinite-list/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/infinite-list/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/sidebar</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/sidebar/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/sidebar/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/menu</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/sidebar/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/menu/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/sidebar/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/menu/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/menu</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/menu/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/menu/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/menu/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/menu/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tabs</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/menu/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/menu/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tabs</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tabs/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tabs/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/actions</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tabs/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/actions/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tabs/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/actions/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/actions</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/actions/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/actions/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/actions/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/actions/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/input</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/actions/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/input/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/actions/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/input/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/input</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/input/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/input/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/input/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/input/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/input/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/input/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button-group</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button-group</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button-group/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button-group/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button-group/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/button-group/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/checkbox</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/checkbox/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/checkbox/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toggle</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/checkbox/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/checkbox/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toggle</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toggle/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toggle/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/radio</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toggle/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/radio/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toggle/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/radio/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/radio</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/radio/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/radio/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/radio/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/radio/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/select</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/radio/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/select/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/radio/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/select/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/select</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/select/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/select/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/select/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/select/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/select/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/select/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/autocomplete</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/autocomplete/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/autocomplete/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/autocomplete/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/autocomplete/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/datepicker</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/datepicker/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/datepicker/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/datepicker/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/datepicker/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/timepicker</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/timepicker/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/timepicker/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tag</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/timepicker/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tag/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/timepicker/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tag/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tag</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tag/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tag/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tag/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tag/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/popover</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tag/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/popover/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tag/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/popover/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/popover</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/popover/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/popover/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/popover/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/popover/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/popover/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/popover/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/context-menu</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/context-menu/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/context-menu/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/dialog</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/context-menu/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/context-menu/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/dialog</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/dialog/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/dialog/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toastr</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/dialog/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/dialog/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toastr</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toastr/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toastr/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toastr/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/toastr/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tooltip</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tooltip/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tooltip/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/window</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tooltip/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/window/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tooltip/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/window/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/window</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/window/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/window/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/window/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/window/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/global-search</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/window/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/window/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/global-search</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/global-search/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/global-search/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/global-search/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/global-search/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/user-avatar</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/user-avatar/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/user-avatar/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/alert</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/user-avatar/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/alert/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/user-avatar/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/alert/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/alert</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/alert/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/alert/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/alert/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/alert/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/icon</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/alert/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/icon/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/alert/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/icon/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/icon</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/icon/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/icon/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/icon/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/icon/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/spinner</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/icon/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/icon/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/spinner</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/spinner/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/spinner/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/spinner/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/spinner/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/progress-bar</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/progress-bar/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/progress-bar/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/badge</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/progress-bar/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/badge/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/progress-bar/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/badge/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/badge</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/badge/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/badge/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/badge/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/badge/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/badge/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/badge/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/chat-ui</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/chat-ui/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/chat-ui/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/chat-ui/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/chat-ui/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-range</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-range/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-range/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-range/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-range/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-kit</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-kit/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-kit/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-kit/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/calendar-kit/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tree-grid</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tree-grid/overview</loc>
+       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tree-grid/api</loc>
+       <loc>https://akveo.github.io/nebular/docs/servios/themeservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tree-grid/theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/servios/mediabreakpoints</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/components/tree-grid/examples</loc>
+       <loc>https://akveo.github.io/nebular/docs/servios/jsthemesregistry</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/services/themeservice</loc>
+       <loc>https://akveo.github.io/nebular/docs/servios/layoutscrollservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/services/mediabreakpoints</loc>
+       <loc>https://akveo.github.io/nebular/docs/servios/layoutrulerservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/services/jsthemesregistry</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/introduction</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/services/layoutscrollservice</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/installation</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/services/layoutrulerservice</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/acl-configuration--usage</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/introduction</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/multiple-user-roles</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/installation</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/nbaclservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/configuring-a-strategy</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/configuring-ui</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/custom-auth-components</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/redirect-after-login</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/getting-user-token</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/protecting-application-routes</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/configuring-google-oauth2</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/configuring-azure-oauth2</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/backend-api-endpoints</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/firebase-authentication</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/nbauthservice</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/nbpasswordauthstrategy</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/nboauth2authstrategy</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/nbdummyauthstrategy</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/nbtokenservice</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/auth/nbtokenlocalstorage</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/security/introduction</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/security/installation</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/security/acl-configuration--usage</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/security/multiple-user-roles</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/security/nbaclservice</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/security/nbaccesschecker</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/nbaccesschecker</loc>
      </url>
      </urlset>
