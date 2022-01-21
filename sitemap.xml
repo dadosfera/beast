@@ -5,67 +5,40 @@
       </url>
       
      <url>
-       <loc>https://akveo.github.io/nebular/docs/incio/o-que--o-beast</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/incio/como-comear</loc>
-     </url>
-     <url>
        <loc>https://akveo.github.io/nebular/docs/incio/sobre</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/install-nebular</loc>
+       <loc>https://akveo.github.io/nebular/docs/incio/biblioteca-angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/install-based-on-starter-kit</loc>
+       <loc>https://akveo.github.io/nebular/docs/design-system/cores</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/create-nebular-page</loc>
+       <loc>https://akveo.github.io/nebular/docs/design-system/tipografia</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/register-icon-pack</loc>
+       <loc>https://akveo.github.io/nebular/docs/design-system/recursos</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/server-deployment</loc>
+       <loc>https://akveo.github.io/nebular/docs/design-system/tema-padro</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/eva-design-system-intro</loc>
+       <loc>https://akveo.github.io/nebular/docs/design-system/tema-dark</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/design-system-theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/instalar-lib--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/typography</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/criar-pgina--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/enable-customizable-theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/variveis-do-tema--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/use-theme-variables</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/temas-runtime--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/create-custom-theme</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/enable-css-properties-mode</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/enable-multiple-runtime-themes</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/changing-theme</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/default-theme</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/dark-theme</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/cosmic-theme</loc>
-     </url>
-     <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/corporate-theme</loc>
+       <loc>https://akveo.github.io/nebular/docs/guias/trocar-tema--angular</loc>
      </url>
      <url>
        <loc>https://akveo.github.io/nebular/docs/usabilidade/righttoleft-rtl</loc>
