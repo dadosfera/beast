@@ -677,16 +677,16 @@
        <loc>https://akveo.github.io/nebular/docs/servios/layoutrulerservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/introduction</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/introduo</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/installation</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/intalao</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/acl-configuration--usage</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/acl</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/multiple-user-roles</loc>
+       <loc>https://akveo.github.io/nebular/docs/segurana/mltiplas-roles</loc>
      </url>
      <url>
        <loc>https://akveo.github.io/nebular/docs/segurana/nbaclservice</loc>
