@@ -22,7 +22,7 @@
 ;(function(l) {
 
   var redirectPath;
-  ["/design-system"].forEach(function (path) {
+  ["/beast"].forEach(function (path) {
     if (l.pathname.indexOf(path) === 0) {
       redirectPath = path;
     }
