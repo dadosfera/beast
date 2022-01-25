@@ -1,14 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem } from '@beast/theme';
 
 @Component({
   selector: 'nb-menu-autocollapse',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './menu-autocollapse.component.html',
 })
-
 export class MenuAutoCollapseComponent {
-
   items: NbMenuItem[] = [
     {
       title: 'Profile',

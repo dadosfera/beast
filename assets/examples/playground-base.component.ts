@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@beast/theme';
 
 @Component({
   template: ` <router-outlet></router-outlet> `,

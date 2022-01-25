@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem } from '@beast/theme';
 
 @Component({
   selector: 'nb-menu-showcase',
@@ -7,7 +7,6 @@ import { NbMenuItem } from '@nebular/theme';
   templateUrl: './menu-showcase.component.html',
 })
 export class MenuShowcaseComponent {
-
   items: NbMenuItem[] = [
     {
       title: 'Profile',

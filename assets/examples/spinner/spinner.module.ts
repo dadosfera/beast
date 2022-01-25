@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbButtonModule, NbCardModule, NbSpinnerModule, NbTabsetModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbSpinnerModule, NbTabsetModule } from '@beast/theme';
 import { SpinnerRoutingModule } from './spinner-routing.module';
 import { SpinnerButtonComponent } from './spinner-button.component';
 import { SpinnerCardComponent } from './spinner-card.component';
@@ -15,12 +15,6 @@ import { SpinnerTabsComponent } from './spinner-tabs.component';
     SpinnerSizesComponent,
     SpinnerTabsComponent,
   ],
-  imports: [
-    NbSpinnerModule,
-    NbCardModule,
-    NbTabsetModule,
-    NbButtonModule,
-    SpinnerRoutingModule,
-  ],
+  imports: [NbSpinnerModule, NbCardModule, NbTabsetModule, NbButtonModule, SpinnerRoutingModule],
 })
 export class SpinnerModule {}

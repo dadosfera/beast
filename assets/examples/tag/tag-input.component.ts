@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NbTagComponent, NbTagInputAddEvent } from '@nebular/theme';
+import { NbTagComponent, NbTagInputAddEvent } from '@beast/theme';
 
 import { trees } from './trees-list';
 
@@ -8,7 +8,6 @@ import { trees } from './trees-list';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TagInputComponent {
-
   trees: Set<string> = new Set([trees[3]]);
 
   onTagRemove(tagToRemove: NbTagComponent): void {
@@ -17,7 +16,7 @@ export class TagInputComponent {
 
   onTagAdd({ value, input }: NbTagInputAddEvent): void {
     if (value) {
-      this.trees.add(value)
+      this.trees.add(value);
     }
     input.nativeElement.value = '';
   }

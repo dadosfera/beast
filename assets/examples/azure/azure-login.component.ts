@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { NbAuthResult, NbAuthService, NbAuthToken } from '@nebular/auth';
+import { NbAuthResult, NbAuthService, NbAuthToken } from '@beast/auth';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { AuthAzureToken } from './azure-adb2c-auth-strategy';

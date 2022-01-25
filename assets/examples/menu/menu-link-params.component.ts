@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem } from '@beast/theme';
 
 @Component({
   selector: 'nb-menu-link-params',
@@ -7,7 +7,6 @@ import { NbMenuItem } from '@nebular/theme';
   templateUrl: './menu-link-params.component.html',
 })
 export class MenuLinkParamsComponent {
-
   items: NbMenuItem[] = [
     {
       title: 'Menu link with parameters',
@@ -24,7 +23,7 @@ export class MenuLinkParamsComponent {
         {
           title: 'Menu item path match `prefix`',
           link: '/example/menu/menu-link-params.component',
-          queryParams: {someUrlParam: 'true'},
+          queryParams: { someUrlParam: 'true' },
           pathMatch: 'prefix',
         },
         {

@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import {
-  NbAlertModule, NbCardModule, NbInputModule, NbLayoutModule,
-} from '@nebular/theme';
+import { NbAlertModule, NbCardModule, NbInputModule, NbLayoutModule } from '@beast/theme';
 
 import {
   NbAuthModule,
@@ -13,11 +11,10 @@ import {
   NbOAuth2AuthStrategy,
   NbOAuth2ClientAuthMethod,
   NbOAuth2GrantType,
-} from '@nebular/auth';
+} from '@beast/auth';
 
 import { OAuth2PasswordLoginComponent } from './oauth2-password-login.component';
 import { Oauth2PasswordRoutingModule } from './oauth2-password-routing.module';
-
 
 @NgModule({
   imports: [
@@ -29,7 +26,7 @@ import { Oauth2PasswordRoutingModule } from './oauth2-password-routing.module';
       forms: {
         login: {
           redirectDelay: 3000,
-          showMessages : {
+          showMessages: {
             error: true,
             success: false,
           },
@@ -37,7 +34,7 @@ import { Oauth2PasswordRoutingModule } from './oauth2-password-routing.module';
         },
       },
       strategies: [
-         NbOAuth2AuthStrategy.setup({
+        NbOAuth2AuthStrategy.setup({
           name: 'password',
           clientId: 'Aladdin',
           clientSecret: 'open sesame',
@@ -62,9 +59,6 @@ import { Oauth2PasswordRoutingModule } from './oauth2-password-routing.module';
     NbInputModule,
     Oauth2PasswordRoutingModule,
   ],
-  declarations: [
-    OAuth2PasswordLoginComponent,
-  ],
+  declarations: [OAuth2PasswordLoginComponent],
 })
-export class OAuth2PasswordPlaygroundModule {
-}
+export class OAuth2PasswordPlaygroundModule {}

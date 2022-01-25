@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbCardModule } from '@nebular/theme';
+import { NbCardModule } from '@beast/theme';
 import { FlipCardRoutingModule } from './flip-card-routing.module';
 import { FlipCardAccentsComponent } from './flip-card-accents.component';
 import { FlipCardColorsComponent } from './flip-card-colors.component';
@@ -15,6 +15,6 @@ import { FlipCardSizesComponent } from './flip-card-sizes.component';
     FlipCardShowcaseComponent,
     FlipCardSizesComponent,
   ],
-  imports: [ NbCardModule, FlipCardRoutingModule ],
+  imports: [NbCardModule, FlipCardRoutingModule],
 })
 export class FlipCardModule {}

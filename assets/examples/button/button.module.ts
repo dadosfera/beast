@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NbButtonModule, NbCardModule, NbIconModule, NbRadioModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbIconModule, NbRadioModule } from '@beast/theme';
 import { ButtonRoutingModule } from './button-routing.module';
 import { ButtonColorsComponent } from './button-colors.component';
 import { ButtonFullWidthComponent } from './button-full-width.component';
@@ -26,13 +26,6 @@ import { ButtonInteractiveComponent } from './button-interactive.component';
     ButtonIconComponent,
     ButtonInteractiveComponent,
   ],
-  imports: [
-    CommonModule,
-    NbCardModule,
-    NbButtonModule,
-    NbIconModule,
-    ButtonRoutingModule,
-    NbRadioModule,
-  ],
+  imports: [CommonModule, NbCardModule, NbButtonModule, NbIconModule, ButtonRoutingModule, NbRadioModule],
 })
 export class ButtonModule {}

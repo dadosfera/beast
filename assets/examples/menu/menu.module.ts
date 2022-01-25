@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbButtonModule, NbCardModule, NbMenuModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbMenuModule } from '@beast/theme';
 import { MenuRoutingModule } from './menu-routing.module';
 import { MenuChildrenComponent } from './menu-children.component';
 import { MenuShowcaseComponent } from './menu-showcase.component';
@@ -35,11 +35,6 @@ import { MenuBadgeComponent } from './menu-badge.component';
     MenuServiceComponent,
     MenuBadgeComponent,
   ],
-  imports: [
-    NbMenuModule.forRoot(),
-    NbCardModule,
-    MenuRoutingModule,
-    NbButtonModule,
-  ],
+  imports: [NbMenuModule.forRoot(), NbCardModule, MenuRoutingModule, NbButtonModule],
 })
 export class MenuModule {}

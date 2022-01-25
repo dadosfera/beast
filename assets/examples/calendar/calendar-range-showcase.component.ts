@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NbCalendarRange, NbDateService } from '@nebular/theme';
-
+import { NbCalendarRange, NbDateService } from '@beast/theme';
 
 @Component({
   selector: 'nb-calendar-range-showcase',

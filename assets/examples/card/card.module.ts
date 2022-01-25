@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NbCardModule, NbListModule } from '@nebular/theme';
+import { NbCardModule, NbListModule } from '@beast/theme';
 import { CardRoutingModule } from './card-routing.module';
 import { CardAccentsComponent } from './card-accents.component';
 import { CardColorsComponent } from './card-colors.component';
@@ -22,11 +22,6 @@ import { CardSizesCombinationsComponent } from './card-sizes-combinations.compon
     CardWithoutBodyComponent,
     CardSizesCombinationsComponent,
   ],
-  imports: [
-    CommonModule,
-    NbListModule,
-    NbCardModule,
-    CardRoutingModule,
-  ],
+  imports: [CommonModule, NbListModule, NbCardModule, CardRoutingModule],
 })
 export class CardModule {}

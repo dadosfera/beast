@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NbCardModule, NbRadioModule } from '@nebular/theme';
+import { NbCardModule, NbRadioModule } from '@beast/theme';
 import { RadioRoutingModule } from './radio-routing.module';
 import { RadioDisabledComponent } from './radio-disabled.component';
 import { RadioShowcaseComponent } from './radio-showcase.component';
@@ -18,13 +18,6 @@ import { RadioFormComponent } from './radio-form.component';
     RadioDisabledGroupComponent,
     RadioFormComponent,
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NbRadioModule,
-    NbCardModule,
-    RadioRoutingModule,
-  ],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, NbRadioModule, NbCardModule, RadioRoutingModule],
 })
 export class RadioModule {}

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NbToggleModule, NbCardModule } from '@nebular/theme';
+import { NbToggleModule, NbCardModule } from '@beast/theme';
 import { ToggleFormComponent } from './toggle-form.component';
 import { ToggleLabelPositionComponent } from './toggle-label-position.component';
 import { ToggleRoutingModule } from './toggle-routing.module';
@@ -18,12 +18,6 @@ import { ToggleTestComponent } from './toggle-test.component';
     ToggleLabelPositionComponent,
     ToggleFormComponent,
   ],
-  imports: [
-    FormsModule,
-    ReactiveFormsModule,
-    NbCardModule,
-    NbToggleModule,
-    ToggleRoutingModule,
-  ],
+  imports: [FormsModule, ReactiveFormsModule, NbCardModule, NbToggleModule, ToggleRoutingModule],
 })
 export class ToggleModule {}

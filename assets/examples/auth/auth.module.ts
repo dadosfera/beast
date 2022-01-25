@@ -3,11 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule, HttpRequest } from '@angular/common/http';
 
-import {
-  NbCardModule,
-  NbLayoutModule,
-  NbListModule,
-} from '@nebular/theme';
+import { NbCardModule, NbLayoutModule, NbListModule } from '@beast/theme';
 import {
   NbAuthJWTToken,
   NbAuthModule,
@@ -18,8 +14,8 @@ import {
   NbOAuth2AuthStrategy,
   NbAuthOAuth2Token,
   NB_AUTH_TOKEN_INTERCEPTOR_FILTER,
-} from '@nebular/auth';
-import { NbSecurityModule, NbRoleProvider } from '@nebular/security';
+} from '@beast/auth';
+import { NbSecurityModule, NbRoleProvider } from '@beast/security';
 
 import { AuthPlaygroundComponent } from './auth.component';
 import { AuthPlaygroundRoutingModule } from './auth-routing.module';
@@ -29,10 +25,9 @@ import { AuthGuard } from './auth-guard.service';
 import { PlaygroundApiCallsComponent } from './api-calls/api-calls.component';
 
 export function filterInterceptorRequest(req: HttpRequest<any>) {
-  return ['http://localhost:4400/api/auth/',
-          'http://other.url/with/no/token/injected/',
-         ]
-    .some(url => req.url.includes(url));
+  return ['http://localhost:4400/api/auth/', 'http://other.url/with/no/token/injected/'].some((url) =>
+    req.url.includes(url),
+  );
 }
 
 @NgModule({
@@ -138,11 +133,7 @@ export function filterInterceptorRequest(req: HttpRequest<any>) {
       },
     }),
   ],
-  declarations: [
-    AuthPlaygroundComponent,
-    AclTestComponent,
-    PlaygroundApiCallsComponent,
-  ],
+  declarations: [AuthPlaygroundComponent, AclTestComponent, PlaygroundApiCallsComponent],
   providers: [
     AuthGuard,
     { provide: HTTP_INTERCEPTORS, useClass: NbAuthJWTInterceptor, multi: true },
@@ -150,5 +141,4 @@ export function filterInterceptorRequest(req: HttpRequest<any>) {
     { provide: NbRoleProvider, useClass: CustomRoleProvider },
   ],
 })
-export class AuthPlaygroundModule {
-}
+export class AuthPlaygroundModule {}

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NbCardModule, NbLayoutModule, NbMenuModule, NbSidebarModule } from '@nebular/theme';
+import { NbCardModule, NbLayoutModule, NbMenuModule, NbSidebarModule } from '@beast/theme';
 import { MenuTestRoutingModule } from './menu-test-routing.module';
 import { MenuTestComponent } from './menu-test.component';
 import {
@@ -27,12 +27,6 @@ import {
     MenuItem332Component,
     MenuItem4Component,
   ],
-  imports: [
-    NbMenuModule.forRoot(),
-    NbLayoutModule,
-    NbSidebarModule.forRoot(),
-    NbCardModule,
-    MenuTestRoutingModule,
-  ],
+  imports: [NbMenuModule.forRoot(), NbLayoutModule, NbSidebarModule.forRoot(), NbCardModule, MenuTestRoutingModule],
 })
 export class MenuTestModule {}

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem } from '@beast/theme';
 
 @Component({
   selector: 'nb-menu-badge',
@@ -8,7 +8,6 @@ import { NbMenuItem } from '@nebular/theme';
   styleUrls: ['./menu-badge.component.scss'],
 })
 export class MenuBadgeComponent {
-
   items: NbMenuItem[] = [
     {
       title: 'Profile',

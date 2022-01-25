@@ -1,700 +1,700 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://akveo.github.io/nebular/</loc>
+        <loc>https://dadosfera.github.io/beast/</loc>
       </url>
       
      <url>
-       <loc>https://akveo.github.io/nebular/docs/incio/sobre</loc>
+       <loc>https://dadosfera.github.io/beast/docs/incio/sobre</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/incio/biblioteca-angular</loc>
+       <loc>https://dadosfera.github.io/beast/docs/incio/biblioteca-angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/cores</loc>
+       <loc>https://dadosfera.github.io/beast/docs/design-system/cores</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/tipografia</loc>
+       <loc>https://dadosfera.github.io/beast/docs/design-system/tipografia</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/recursos</loc>
+       <loc>https://dadosfera.github.io/beast/docs/design-system/recursos</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/tema-padro</loc>
+       <loc>https://dadosfera.github.io/beast/docs/design-system/tema-padro</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/design-system/tema-dark</loc>
+       <loc>https://dadosfera.github.io/beast/docs/design-system/tema-dark</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/instalar-lib--angular</loc>
+       <loc>https://dadosfera.github.io/beast/docs/guias/instalar-lib--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/criar-pgina--angular</loc>
+       <loc>https://dadosfera.github.io/beast/docs/guias/criar-pgina--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/variveis-do-tema--angular</loc>
+       <loc>https://dadosfera.github.io/beast/docs/guias/variveis-do-tema--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/temas-runtime--angular</loc>
+       <loc>https://dadosfera.github.io/beast/docs/guias/temas-runtime--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/trocar-tema--angular</loc>
+       <loc>https://dadosfera.github.io/beast/docs/guias/trocar-tema--angular</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/guias/manuteno-do-projeto</loc>
+       <loc>https://dadosfera.github.io/beast/docs/guias/manuteno-do-projeto</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/usabilidade/righttoleft-rtl</loc>
+       <loc>https://dadosfera.github.io/beast/docs/usabilidade/righttoleft-rtl</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/layout</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/layout</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/layout/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/layout/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/layout/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/layout/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/layout/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/layout/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/layout/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/layout/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/card</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/card</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/card/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/card/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/card/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/card/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/card/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/card/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/card/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/card/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/flip-card</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/flip-card/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/flip-card/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/flip-card/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/flip-card/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/flip-card/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/reveal-card</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/reveal-card/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/reveal-card/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/reveal-card/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/reveal-card/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/reveal-card/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/stepper</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/stepper</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/stepper/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/stepper/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/stepper/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/stepper/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/stepper/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/accordion</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/accordion</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/accordion/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/accordion/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/accordion/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/accordion/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/accordion/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/list</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/list</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/list/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/list/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/list/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/list/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/list/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/list/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/list/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/list/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/infinite-list</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/infinite-list/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/infinite-list/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/infinite-list/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/infinite-list/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/infinite-list/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/sidebar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/sidebar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/sidebar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/sidebar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/sidebar/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/sidebar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/menu</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/menu</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/menu/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/menu/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/menu/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/menu/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/menu/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/menu/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/menu/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/menu/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tabs</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tabs</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tabs/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tabs/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tabs/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tabs/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tabs/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/actions</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/actions</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/actions/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/actions/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/actions/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/actions/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/actions/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/actions/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/actions/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/actions/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/input</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/input</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/input/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/input/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/input/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/input/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/input/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/input/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/input/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/input/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button-group</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button-group</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button-group/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button-group/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button-group/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/button-group/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/button-group/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/checkbox</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/checkbox/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/checkbox/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/checkbox/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/checkbox/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/checkbox/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toggle</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toggle</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toggle/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toggle/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toggle/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toggle/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toggle/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/radio</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/radio</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/radio/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/radio/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/radio/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/radio/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/radio/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/radio/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/radio/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/radio/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/select</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/select</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/select/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/select/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/select/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/select/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/select/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/select/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/select/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/select/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/autocomplete</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/autocomplete/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/autocomplete/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/autocomplete/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/autocomplete/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/autocomplete/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/datepicker</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/datepicker/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/datepicker/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/datepicker/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/datepicker/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/datepicker/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/timepicker</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/timepicker/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/timepicker/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/timepicker/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/timepicker/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/timepicker/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tag</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tag</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tag/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tag/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tag/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tag/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tag/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tag/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tag/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tag/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/popover</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/popover</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/popover/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/popover/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/popover/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/popover/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/popover/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/popover/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/popover/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/popover/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/context-menu</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/context-menu/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/context-menu/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/context-menu/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/context-menu/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/context-menu/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/dialog</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/dialog</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/dialog/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/dialog/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/dialog/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/dialog/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/dialog/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toastr</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toastr</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toastr/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toastr/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toastr/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/toastr/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/toastr/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tooltip</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tooltip/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tooltip/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tooltip/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tooltip/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tooltip/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/window</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/window</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/window/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/window/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/window/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/window/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/window/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/window/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/window/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/window/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/global-search</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/global-search</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/global-search/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/global-search/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/global-search/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/global-search/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/global-search/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/user-avatar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/user-avatar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/user-avatar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/user-avatar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/user-avatar/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/user-avatar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/alert</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/alert</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/alert/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/alert/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/alert/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/alert/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/alert/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/alert/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/alert/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/alert/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/icon</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/icon</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/icon/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/icon/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/icon/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/icon/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/icon/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/icon/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/icon/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/icon/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/spinner</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/spinner</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/spinner/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/spinner/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/spinner/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/spinner/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/spinner/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/progress-bar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/progress-bar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/progress-bar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/progress-bar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/progress-bar/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/progress-bar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/badge</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/badge</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/badge/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/badge/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/badge/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/badge/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/badge/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/badge/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/badge/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/badge/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/chat-ui</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/chat-ui/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/chat-ui/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/chat-ui/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/chat-ui/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/chat-ui/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-range</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-range/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-range/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-range/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-range/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-range/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-kit</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-kit/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-kit/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-kit/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/calendar-kit/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/calendar-kit/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tree-grid</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/overview</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tree-grid/overview</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/api</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tree-grid/api</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/theme</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tree-grid/theme</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/componentes/tree-grid/examples</loc>
+       <loc>https://dadosfera.github.io/beast/docs/componentes/tree-grid/examples</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/servios/themeservice</loc>
+       <loc>https://dadosfera.github.io/beast/docs/servios/themeservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/servios/mediabreakpoints</loc>
+       <loc>https://dadosfera.github.io/beast/docs/servios/mediabreakpoints</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/servios/jsthemesregistry</loc>
+       <loc>https://dadosfera.github.io/beast/docs/servios/jsthemesregistry</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/servios/layoutscrollservice</loc>
+       <loc>https://dadosfera.github.io/beast/docs/servios/layoutscrollservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/servios/layoutrulerservice</loc>
+       <loc>https://dadosfera.github.io/beast/docs/servios/layoutrulerservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/introduo</loc>
+       <loc>https://dadosfera.github.io/beast/docs/segurana/introduo</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/intalao</loc>
+       <loc>https://dadosfera.github.io/beast/docs/segurana/intalao</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/acl</loc>
+       <loc>https://dadosfera.github.io/beast/docs/segurana/acl</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/mltiplas-roles</loc>
+       <loc>https://dadosfera.github.io/beast/docs/segurana/mltiplas-roles</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/nbaclservice</loc>
+       <loc>https://dadosfera.github.io/beast/docs/segurana/nbaclservice</loc>
      </url>
      <url>
-       <loc>https://akveo.github.io/nebular/docs/segurana/nbaccesschecker</loc>
+       <loc>https://dadosfera.github.io/beast/docs/segurana/nbaccesschecker</loc>
      </url>
      </urlset>
