@@ -1,3 +1,80 @@
+<a name="10.0.0"></a>
+
+# [10.0.0](https://github.com/akveo/nebular/compare/v9.1.0-rc.8...v10.0.0) (2022-12-02)
+
+### BREAKING CHANGES
+
+- **bootstrap:** remove `bootstrap`, `ng-bootstrap` packages, remove `bootstrap` from `playground/without-styles/bootstrap`. `ng-bootstrap` doesn't support Angular v14.2.x ([#3146](https://github.com/akveo/nebular/issues/3146)) ([f3f05ce](https://github.com/akveo/nebular/commit/f3f05ce))
+
+### Features
+
+- update to Angular 14.2.x ([#3143](https://github.com/akveo/nebular/issues/3143)) ([275edf3](https://github.com/akveo/nebular/commit/275edf3))
+
+#### Other
+
+- Minimal required Angular version is `14.2.x`
+
+<a name="9.1.0-rc.8"></a>
+
+# [9.1.0-rc.8](https://github.com/akveo/nebular/compare/v9.1.0-rc.7...v9.1.0-rc.8) (2022-11-17)
+
+### Features
+
+- **menu component:** improve accessibility ([#3136](https://github.com/akveo/nebular/issues/3136)) ([7ce24c0](https://github.com/akveo/nebular/commit/7ce24c0))
+- **timepicker:** add disabled state ([#3127](https://github.com/akveo/nebular/issues/3127)) ([7af5a8d](https://github.com/akveo/nebular/commit/7af5a8d))
+
+<a name="9.1.0-rc.7"></a>
+
+# [9.1.0-rc.7](https://github.com/akveo/nebular/compare/v9.1.0-rc.6...v9.1.0-rc.7) (2022-10-10)
+
+### Bug Fixes
+
+- **themes:** fix typo in layout component style ([#3098](https://github.com/akveo/nebular/issues/3098)) ([5740682](https://github.com/akveo/nebular/commit/5740682))
+
+### Features
+
+- **datepicker:** improve date and time inputs combination ([#3117](https://github.com/akveo/nebular/issues/3117)) ([8387967](https://github.com/akveo/nebular/commit/8387967))
+
+<a name="9.1.0-rc.6"></a>
+
+# [9.1.0-rc.6](https://github.com/akveo/nebular/compare/v9.1.0-rc.5...v9.1.0-rc.6) (2022-09-22)
+
+### Bug Fixes
+
+- **select-with-autocomplete:** fix select autocomplete width ([#3113](https://github.com/akveo/nebular/issues/3113)) ([078c9f3](https://github.com/akveo/nebular/commit/078c9f3))
+
+<a name="9.1.0-rc.5"></a>
+
+# [9.1.0-rc.5](https://github.com/akveo/nebular/compare/v9.1.0-rc.4...v9.1.0-rc.5) (2022-09-15)
+
+### Bug Fixes
+
+- **select-with-autocomplete:** improve select open after input changed ([#3110](https://github.com/akveo/nebular/issues/3110)) ([eaa036b](https://github.com/akveo/nebular/commit/eaa036b))
+
+<a name="9.1.0-rc.4"></a>
+
+# [9.1.0-rc.4](https://github.com/akveo/nebular/compare/v9.1.0-rc.3...v9.1.0-rc.4) (2022-09-09)
+
+### Features
+
+- **input:** add more input color options ([#3108](https://github.com/akveo/nebular/issues/3108)) ([54da714](https://github.com/akveo/nebular/commit/54da714))
+
+<a name="9.1.0-rc.3"></a>
+
+# [9.1.0-rc.3](https://github.com/akveo/nebular/compare/v9.1.0-rc.2...v9.1.0-rc.3) (2022-09-08)
+
+### Bug Fixes
+
+- **select-with-autocomplete:** fix first render with disabled autocomplete ([#3104](https://github.com/akveo/nebular/issues/3104)) ([efcd690](https://github.com/akveo/nebular/commit/efcd690))
+
+<a name="9.1.0-rc.2"></a>
+
+# [9.1.0-rc.2](https://github.com/akveo/nebular/compare/v9.1.0-rc.1...v9.1.0-rc.2) (2022-08-31)
+
+### Features
+
+- add keyboad navigation to select with autocomplete ([#3097](https://github.com/akveo/nebular/issues/3097)) ([c52fe3a](https://github.com/akveo/nebular/commit/c52fe3a))
+
 <a name="9.1.0-rc.1"></a>
 
 # [9.1.0-rc.1](https://github.com/akveo/nebular/compare/v9.0.3...v9.1.0-rc.1) (2022-08-04)

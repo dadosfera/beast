@@ -8,7 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NbMenuItem } from '@beast/theme';
 
 @Component({
-  selector: 'nb-menu-autocollapse',
+  selector: 'npg-menu-autocollapse',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './menu-autocollapse.component.html',
 })
@@ -17,6 +17,7 @@ export class MenuAutoCollapseComponent {
     {
       title: 'Profile',
       expanded: true,
+      ariaRole: 'button',
       children: [
         {
           title: 'Change Password',
@@ -31,6 +32,7 @@ export class MenuAutoCollapseComponent {
     },
     {
       title: 'Shopping Bag',
+      ariaRole: 'button',
       children: [
         {
           title: 'First Product',
@@ -45,6 +47,7 @@ export class MenuAutoCollapseComponent {
     },
     {
       title: 'Orders',
+      ariaRole: 'button',
       children: [
         {
           title: 'First Order',

@@ -571,6 +571,29 @@ export const PLAYGROUND_COMPONENTS: ComponentLink[] = [
     ],
   },
   {
+    path: 'datepicker-with-format',
+    children: [
+      {
+        path: 'date-timepicker-dynamic-inputs-showcase.component',
+        link: '/datepicker-with-format/date-timepicker-dynamic-inputs-showcase.component',
+        component: 'DateTimepickerDynamicInputsShowcaseComponent',
+        name: 'Date Timepicker Dynamic Inputs Showcase',
+      },
+      {
+        path: 'datepicker-dynamic-inputs-showcase.component',
+        link: '/datepicker-with-format/datepicker-dynamic-inputs-showcase.component',
+        component: 'DatepickerDynamicInputsShowcaseComponent',
+        name: 'Datepicker Dynamic Inputs Showcase',
+      },
+      {
+        path: 'rangepicker-dynamic-inputs-showcase.component',
+        link: '/datepicker-with-format/rangepicker-dynamic-inputs-showcase.component',
+        component: 'RangepickerDynamicInputsShowcaseComponent',
+        name: 'Rangepicker Dynamic Inputs Showcase',
+      },
+    ],
+  },
+  {
     path: 'timepicker',
     children: [
       {
@@ -596,6 +619,12 @@ export const PLAYGROUND_COMPONENTS: ComponentLink[] = [
         link: '/timepicker/timepicker-with-seconds.component',
         component: 'TimepickerWithSecondsComponent',
         name: 'Timepicker With Seconds',
+      },
+      {
+        path: 'timepicker-dynamic-inputs-showcase.component',
+        link: '/timepicker/timepicker-dynamic-inputs-showcase.component',
+        component: 'TimepickerDynamicInputsShowcaseComponent',
+        name: 'Timepicker Dynamic Inputs Showcase',
       },
       {
         path: 'timepicker-form-control.component',
@@ -1162,10 +1191,10 @@ export const PLAYGROUND_COMPONENTS: ComponentLink[] = [
         name: 'Select Icon',
       },
       {
-        path: 'select-search-showcase.component',
-        link: '/select/select-search-showcase.component',
-        component: 'SelectSearchShowcaseComponent',
-        name: 'Select Search Showcase',
+        path: 'select-autocomplete-showcase.component',
+        link: '/select/select-autocomplete-showcase.component',
+        component: 'SelectAutocompleteShowcaseComponent',
+        name: 'Select Autocomplete Showcase',
       },
     ],
   },
@@ -2123,17 +2152,6 @@ export const PLAYGROUND_COMPONENTS: ComponentLink[] = [
             name: 'Login',
           },
         ],
-      },
-    ],
-  },
-  {
-    path: 'bootstrap',
-    children: [
-      {
-        path: 'bootstrap-test.component',
-        link: '/bootstrap/bootstrap-test.component',
-        component: 'BootstrapTestComponent',
-        name: 'Bootstrap Test',
       },
     ],
   },

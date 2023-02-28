@@ -80,6 +80,19 @@ export class NbDateTimePickerComponent<D>
   static ngAcceptInputType_twelveHoursFormat: NbBooleanInput;
 
   /**
+   * Defines should show am/pm label if twelveHoursFormat enabled.
+   * */
+  @Input()
+  get showAmPmLabel(): boolean {
+    return this._showAmPmLabel;
+  }
+  set showAmPmLabel(value: boolean) {
+    this._showAmPmLabel = convertToBoolProperty(value);
+  }
+  protected _showAmPmLabel: boolean = true;
+  static ngAcceptInputType_showAmPmLabel: NbBooleanInput;
+
+  /**
    * Show seconds in timepicker.
    * Ignored when singleColumn is true.
    * */
@@ -134,6 +147,7 @@ export class NbDateTimePickerComponent<D>
   protected patchWithInputs() {
     this.picker.singleColumn = this.singleColumn;
     this.picker.twelveHoursFormat = this.twelveHoursFormat;
+    this.picker.showAmPmLabel = this.showAmPmLabel;
     this.picker.withSeconds = this.withSeconds;
     this.picker.step = this.step;
     this.picker.title = this.title;
@@ -144,9 +158,10 @@ export class NbDateTimePickerComponent<D>
     if (this.twelveHoursFormat) {
       this.picker.timeFormat = this.dateService.getTwelveHoursFormat();
     } else {
-      this.picker.timeFormat = this.withSeconds
-        ? this.dateService.getTwentyFourHoursFormatWithSeconds()
-        : this.dateService.getTwentyFourHoursFormat();
+      this.picker.timeFormat =
+        this.withSeconds && !this.singleColumn
+          ? this.dateService.getTwentyFourHoursFormatWithSeconds()
+          : this.dateService.getTwentyFourHoursFormat();
     }
     super.patchWithInputs();
 

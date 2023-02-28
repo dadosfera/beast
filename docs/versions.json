@@ -1,8 +1,18 @@
 [
   {
-    "checkoutTarget": "master",
-    "name": "9.1.0",
+    "checkoutTarget": "v10.0.0",
+    "name": "10.0.0",
     "path": "/beast/",
     "isCurrent": true
+  },
+  {
+    "checkoutTarget": "master",
+    "name": "next",
+    "path": "/beast/next/"
+  },
+  {
+    "checkoutTarget": "9.1.x",
+    "name": "9.1.x",
+    "path": "/beast/9.1.x/"
   }
 ]

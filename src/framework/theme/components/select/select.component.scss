@@ -34,8 +34,7 @@
   }
 }
 
-.select-button,
-nb-form-field {
+.select-button {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -44,7 +43,7 @@ nb-form-field {
   white-space: nowrap;
 }
 
-nb-icon:not([nbSuffix]) {
+nb-icon {
   font-size: 1.5em;
   position: absolute;
   top: 50%;
@@ -54,6 +53,6 @@ nb-icon:not([nbSuffix]) {
   @include nb-component-animation(transform);
 }
 
-:host(.open) nb-icon:not([nbSuffix]) {
+:host(.open) nb-icon {
   transform: translateY(-50%) rotate(180deg);
 }
