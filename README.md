@@ -4,6 +4,8 @@
 
 Beast é o design system da Dadosfera. Ele é baseado nas especificações do Eva Design System usando o Nebular.
 
+**GitHub Pages (if enabled):** https://dadosfera.github.io/beast
+
 ## What's included
 
 - **4 Visual Themes, including new Dark** easily customizable to your brand
