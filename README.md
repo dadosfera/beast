@@ -2,9 +2,9 @@
 
 [Documentation](https://akveo.github.io/nebular/docs/getting-started/what-is-nebular?utm_campaign=nebular%20-%20home%20-%20nebular%20github%20readme&utm_source=nebular&utm_medium=referral&utm_content=documentation) | [Stackblitz Template](https://stackblitz.com/github/akveo/nebular-seed)
 
-Beast é o design system da Dadosfera. Ele é baseado nas especificações do Eva Design System usando o Nebular.
+Beast is Dadosfera's design system. It is based on the Eva Design System specifications using Nebular.
 
-**GitHub Pages (if enabled):** https://dadosfera.github.io/beast
+**GitHub Pages:** https://dadosfera.github.io/beast
 
 ## What's included
 
