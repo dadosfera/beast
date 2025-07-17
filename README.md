@@ -31,7 +31,7 @@ Nebular supports most recent browsers. Browser support list can be found <a href
 
 ## License
 
-[MIT](LICENSE.txt) license.
+This project is proprietary software owned by Dadosfera.
 
 ## How can I support the developers?
 
