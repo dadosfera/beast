@@ -220,3 +220,17 @@ The rest of the commit message is then used for this.
 [issues]: https://github.com/akveo/nebular/issues
 [new_issue]: https://github.com/akveo/nebular/issues/new
 [pulls]: https://github.com/akveo/nebular/pulls
+## Design system layers
+
+| Layer | Path | Contains | May depend on |
+|---|---|---|---|
+| Agnostic | `packages/design-system` | CSS tokens, assets, guidelines, readme, SKILL.md, `_ds_bundle.js` | nothing |
+| Angular | `src/framework` (→ `packages/angular`) | Nebular-based components, Sass themes | design-system |
+| React | `packages/react` | React recreations, UI kits | design-system |
+
+Rules:
+1. A visual value is added once, as a token in `packages/design-system/tokens`, and referenced by name in Sass and JSX. PRs that change `_default.scss` or `_mapping.scss` update the matching token.
+2. Framework packages never ship brand assets; they reference `packages/design-system/assets`.
+3. `_ds_bundle.js` and `_ds_manifest.json` are committed; regenerate them in the same PR as any change under `packages/react/components` or `tokens`.
+4. New component families are added to `docs/structure.ts` first; React and Angular implementations share the name.
+5. Copy is pt-BR sentence case; tabs uppercase, buttons never.

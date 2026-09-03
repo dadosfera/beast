@@ -1,0 +1,15 @@
+/* Supporting variables: radius, outline, shadow, divider, scrollbar, layout spacing */
+:root{
+--border-radius:.25rem;--border-radius-large:.5rem;--border-radius-giant:1rem;--border-radius-semi-round:.75rem;--border-radius-round:1.5rem;--border-radius-pill:100px;
+--outline-width:.375rem;--outline-color:var(--color-basic-transparent-200);
+--shadow:0 0 8px rgba(0,0,0,.25);--shadow-none:none;--shadow-dark:0 .5rem 1rem 0 #1a1f33;--shadow-docs-card-hover:0 8px 24px 0 rgba(0,31,97,.07);--shadow-docs-page:0 8px 20px 0 rgba(218,224,235,.6);
+--divider-color:var(--border-basic-color-3);--divider-width:1px;--divider-style:solid; /* @kind other */
+--scrollbar-color:var(--background-basic-color-4);--scrollbar-background-color:var(--background-basic-color-2);--scrollbar-width:.3125rem;
+/* spacing scale used across component mappings (rem) */
+--space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-7:1.75rem;--space-8:2rem;--space-9:2.25rem;--space-10:2.625rem;
+--layout-background-color:var(--background-basic-color-3);--layout-padding:2.25rem 2.25rem .75rem;--layout-medium-padding:1.5rem 1.5rem .5rem;--layout-small-padding:1rem 1rem 0;--layout-content-width:900px;
+--header-height:4.75rem;--header-padding:1.25rem;--footer-height:4.725rem;--footer-padding:1.25rem;
+--sidebar-width:16rem;--sidebar-width-compact:3.5rem;--sidebar-padding:1.25rem;--sidebar-header-height:3.5rem;
+/* breakpoints (reference only) */
+--bp-xs:0px;--bp-is:400px;--bp-sm:576px;--bp-md:768px;--bp-lg:992px;--bp-xl:1200px;--bp-xxl:1400px;--bp-xxxl:1600px;
+}
