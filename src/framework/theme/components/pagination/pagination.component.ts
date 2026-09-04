@@ -44,6 +44,7 @@ import { NbSelectComponent } from '../select/select.component';
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class NbPaginationComponent implements OnInit, AfterViewInit, OnChanges {
   /**
