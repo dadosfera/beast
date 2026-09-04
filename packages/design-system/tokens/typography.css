@@ -1,0 +1,22 @@
+/* Source: _default.scss text-* variables. 14 text styles. */
+:root{
+--text-heading-1-font-size:2.25rem;--text-heading-1-font-weight:700;--text-heading-1-line-height:3rem;
+--text-heading-2-font-size:2rem;--text-heading-2-font-weight:700;--text-heading-2-line-height:2.5rem;
+--text-heading-3-font-size:1.875rem;--text-heading-3-font-weight:700;--text-heading-3-line-height:2.5rem;
+--text-heading-4-font-size:1.625rem;--text-heading-4-font-weight:700;--text-heading-4-line-height:2rem;
+--text-heading-5-font-size:1.375rem;--text-heading-5-font-weight:700;--text-heading-5-line-height:2rem;
+--text-heading-6-font-size:1.125rem;--text-heading-6-font-weight:700;--text-heading-6-line-height:1.5rem;
+--text-subtitle-font-size:.9375rem;--text-subtitle-font-weight:600;--text-subtitle-line-height:1.375rem;
+--text-subtitle-2-font-size:.8125rem;--text-subtitle-2-font-weight:600;--text-subtitle-2-line-height:1.25rem;
+--text-paragraph-font-size:1rem;--text-paragraph-font-weight:400;--text-paragraph-line-height:1.5rem;
+--text-paragraph-2-font-size:.875rem;--text-paragraph-2-font-weight:400;--text-paragraph-2-line-height:1.313rem;
+--text-label-font-size:.75rem;--text-label-font-weight:700;--text-label-line-height:1rem;
+--text-caption-font-size:.75rem;--text-caption-font-weight:400;--text-caption-line-height:1rem;
+--text-caption-2-font-size:.75rem;--text-caption-2-font-weight:600;--text-caption-2-line-height:1rem;
+--text-button-font-weight:700;
+--text-button-tiny-font-size:.625rem;--text-button-tiny-line-height:.75rem;
+--text-button-small-font-size:.75rem;--text-button-small-line-height:1rem;
+--text-button-medium-font-size:.875rem;--text-button-medium-line-height:1rem;
+--text-button-large-font-size:1rem;--text-button-large-line-height:1.25rem;
+--text-button-giant-font-size:1.125rem;--text-button-giant-line-height:1.5rem;
+}

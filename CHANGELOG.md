@@ -1,3 +1,10 @@
+## Unreleased
+
+### Features
+* **design-system:** add framework-agnostic token/asset/guideline package (`packages/design-system`) with committed `_ds_bundle.js`
+* **react:** add React recreations of all Beast component families with typed contracts and showcase cards (`packages/react`)
+* **docs:** add agent skill (`SKILL.md`), brand/content foundations readme and package-split plan (`_dev/docs/plans`)
+
 <a name="9.1.0-rc.1"></a>
 
 # [9.1.0-rc.1](https://github.com/akveo/nebular/compare/v9.0.3...v9.1.0-rc.1) (2022-08-04)

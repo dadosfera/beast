@@ -1,0 +1,34 @@
+<!-- @dsCard group="Components" viewport="700x720" name="Layout: Card, Tabs, Menu, Accordion, List, Stepper, Actions" subtitle="Structural components and navigation" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>components/layout/layout.card.html</title><link rel="stylesheet" href="../../../design-system/styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/eva-icons@1.1.3/eva.min.js"></script>
+<script src="../../../design-system/assets/icons/custom-icons.js"></script>
+<script src="../../../design-system/_ds_bundle.js"></script>
+<style>body{padding:16px;background:var(--background-basic-color-1)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:12px}.lbl{font-size:11px;font-weight:700;color:var(--text-hint-color);text-transform:uppercase;letter-spacing:.04em;width:100%}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const DS = window.BeastDadosferaDesignSystem_d7d0ae;
+
+const { Card, CardHeader, CardBody, CardFooter, FlipCard, RevealCard, Tabset, Menu, Sidebar, Accordion, List, ListItem, Stepper, Actions, Button, User } = DS;
+function App(){ return <>
+<div className="lbl">Card · status header · accent · Flip · Reveal</div>
+<div className="row" style={{alignItems:'stretch'}}>
+<Card style={{width:200}}><CardHeader>Básico</CardHeader><CardBody>Corpo do card.</CardBody><CardFooter>Rodapé</CardFooter></Card>
+<Card status="primary" style={{width:200}}><CardHeader>Primary</CardHeader><CardBody>Header colorido.</CardBody></Card>
+<Card accent="success" style={{width:200}}><CardHeader>Accent</CardHeader><CardBody>Barra superior.</CardBody></Card>
+</div>
+<div className="row" style={{alignItems:'stretch'}}>
+<FlipCard style={{width:200}} front={<Card><CardHeader>Frente</CardHeader><CardBody style={{height:70}}>Clique na seta.</CardBody></Card>} back={<Card status="info"><CardHeader>Verso</CardHeader><CardBody style={{height:70}}>Virou.</CardBody></Card>} />
+<RevealCard style={{width:200}} front={<Card><CardHeader>Frente</CardHeader><CardBody style={{height:70}}>Reveal card.</CardBody></Card>} back={<Card status="success" style={{height:'100%'}}><CardHeader>Verso</CardHeader><CardBody>Sobe por cima.</CardBody></Card>} />
+<div style={{width:230}}><Actions items={[{icon:'search-outline'},{icon:'bell-outline',badge:{text:'2',status:'danger'}},{icon:'settings-2-outline'},{content:<User name="Ana" size="small" />}]} /></div>
+</div>
+<div className="lbl">Tabset</div><Tabset tabs={[{id:'a',title:'Visão geral',content:<p style={{padding:'12px 0'}}>Conteúdo da aba.</p>},{id:'b',title:'Esquema',badge:{text:'3',status:'primary'}},{id:'c',title:'Qualidade',icon:'qualidade'},{id:'d',title:'Desabilitada',disabled:true}]} />
+<div className="row" style={{alignItems:'flex-start',marginTop:12}}>
+<div><div className="lbl">Menu (in Sidebar)</div><Sidebar style={{width:220,minWidth:220,height:'auto'}}><Menu selected="Catálogo" items={[{title:'Início',icon:'home-outline'},{group:true,title:'Módulos'},{title:'Coleta',icon:'coletar'},{title:'Catálogo',icon:'catalogo',badge:{text:'12',status:'primary'}},{title:'Inteligência',icon:'inteligencia',children:[{title:'Notebooks'},{title:'Dashboards'}],expanded:true}]} /></Sidebar></div>
+<div style={{flex:1}}><div className="lbl">Accordion</div><Accordion items={[{title:'Fontes de dados',content:'Configure conexões com bancos e APIs.',expanded:true},{title:'Destinos',content:'Snowflake, BigQuery…'},{title:'Desabilitado',content:'',disabled:true}]} /><div className="lbl" style={{marginTop:12}}>List</div><List style={{border:'1px solid var(--border-basic-color-4)',borderRadius:4}}><ListItem>vendas_2024</ListItem><ListItem>clientes</ListItem><ListItem>produtos</ListItem></List></div>
+</div>
+<div className="lbl">Stepper</div><Stepper defaultActive={1} steps={[{label:'Fonte',content:<p>Escolha a fonte.</p>},{label:'Mapeamento',content:<p>Mapeie as colunas.</p>},{label:'Agendamento'},{label:'Revisão'}]} />
+</>; }
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script></body></html>

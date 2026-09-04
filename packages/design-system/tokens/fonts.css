@@ -1,0 +1,4 @@
+/* Beast uses Quicksand for both font-family-primary and font-family-secondary.
+   The repo ships no font binaries (they live on a Dadosfera Google Drive), so we load Google Fonts' Quicksand. */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+:root{--font-family-primary:"Quicksand","Open Sans",sans-serif;--font-family-secondary:"Quicksand","Open Sans",sans-serif;--font-family-mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace}
