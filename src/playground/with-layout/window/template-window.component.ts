@@ -10,6 +10,7 @@ import { NbWindowService } from '@beast/theme';
     </ng-template>
   `,
   styleUrls: ['./window.scss'],
+    standalone: false
 })
 export class TemplateWindowComponent {
   // TODO static must be false as of Angular 9.0.0

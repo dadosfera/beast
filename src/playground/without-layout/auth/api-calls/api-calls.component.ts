@@ -38,6 +38,7 @@ import { Wine } from './wine';
       </nb-layout-column>
     </nb-layout>
   `,
+    standalone: false
 })
 export class PlaygroundApiCallsComponent {
   token: NbAuthToken;

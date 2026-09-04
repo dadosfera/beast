@@ -23,8 +23,9 @@ import { convertToBoolProperty, NbBooleanInput } from '../helpers';
  * between pickers.
  * */
 @Component({
-  selector: 'nb-base-calendar',
-  templateUrl: './base-calendar.component.html',
+    selector: 'nb-base-calendar',
+    templateUrl: './base-calendar.component.html',
+    standalone: false
 })
 export class NbBaseCalendarComponent<D, T> implements OnInit {
 
@@ -110,6 +111,12 @@ export class NbBaseCalendarComponent<D, T> implements OnInit {
    * Sets symbol used as a header for week numbers column
    * */
   @Input() weekNumberSymbol: string;
+
+  /**
+   * Sets first day of the week, it can be 1 if week starts from monday and 0 if from sunday and so on.
+   * `undefined` means that default locale setting will be used.
+   * */
+  @Input() firstDayOfWeek: number | undefined;
 
   /**
    * Emits date when selected.

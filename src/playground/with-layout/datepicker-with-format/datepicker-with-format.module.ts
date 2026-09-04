@@ -6,7 +6,7 @@
 
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NbButtonModule, NbCardModule, NbDatepickerModule, NbInputModule, NbTimepickerModule } from '@beast/theme';
+import { NbButtonModule, NbCardModule, NbDatepickerModule, NbInputModule, NbSelectModule, NbTimepickerModule } from '@beast/theme';
 import { DatepickerWithFormatRoutingModule } from './datepicker-with-format-routing.module';
 import { DateTimepickerDynamicInputsShowcaseComponent } from './date-timepicker-dynamic-inputs-showcase.component';
 import { NbDateFnsDateModule } from '@beast/date-fns';
@@ -29,6 +29,7 @@ import { RangepickerDynamicInputsShowcaseComponent } from './rangepicker-dynamic
     NbCardModule,
     NbButtonModule,
     NbDateFnsDateModule.forRoot({}),
+    NbSelectModule,
   ],
 })
 export class DatepickerWithFormatModule {}

@@ -26,15 +26,15 @@ import { convertToBoolProperty, NbBooleanInput } from '../../../helpers';
  * Provides capability pick days.
  * */
 @Component({
-  selector: 'nb-calendar-day-picker',
-  template: `
+    selector: 'nb-calendar-day-picker',
+    template: `
     <nb-calendar-week-numbers *ngIf="showWeekNumber"
                               [weeks]="weeks"
                               [size]="size"
                               [weekNumberSymbol]="weekNumberSymbol">
     </nb-calendar-week-numbers>
     <div class="days-container">
-      <nb-calendar-days-names [size]="size"></nb-calendar-days-names>
+      <nb-calendar-days-names [size]="size" [firstDayOfWeek]="firstDayOfWeek"></nb-calendar-days-names>
       <nb-calendar-picker
           [data]="weeks"
           [visibleDate]="visibleDate"
@@ -48,8 +48,9 @@ import { convertToBoolProperty, NbBooleanInput } from '../../../helpers';
       </nb-calendar-picker>
     </div>
   `,
-  styleUrls: ['./calendar-day-picker.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    styleUrls: ['./calendar-day-picker.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class NbCalendarDayPickerComponent<D, T> implements OnChanges {
 
@@ -122,6 +123,12 @@ export class NbCalendarDayPickerComponent<D, T> implements OnChanges {
   @Input() weekNumberSymbol: string;
 
   /**
+   * Sets first day of the week, it can be 1 if week starts from monday and 0 if from sunday and so on.
+   * `undefined` means that default locale setting will be used.
+   * */
+  @Input() firstDayOfWeek: number | undefined;
+
+  /**
    * Fires newly selected date.
    * */
   @Output() dateChange = new EventEmitter<D>();
@@ -141,9 +148,9 @@ export class NbCalendarDayPickerComponent<D, T> implements OnChanges {
   constructor(private monthModel: NbCalendarMonthModelService<D>) {
   }
 
-  ngOnChanges({ visibleDate, boundingMonths }: SimpleChanges) {
-    if (visibleDate || boundingMonths) {
-      this.weeks = this.monthModel.createDaysGrid(this.visibleDate, this.boundingMonths);
+  ngOnChanges({ visibleDate, boundingMonths, firstDayOfWeek }: SimpleChanges) {
+    if (visibleDate || boundingMonths || firstDayOfWeek) {
+      this.weeks = this.monthModel.createDaysGrid(this.visibleDate, this.boundingMonths, this.firstDayOfWeek);
     }
   }
 

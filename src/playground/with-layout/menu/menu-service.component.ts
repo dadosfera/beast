@@ -26,6 +26,7 @@ import { MENU_ITEMS } from './menu-service-items';
     </nb-card>
   `,
   styleUrls: ['./menu-service.component.scss'],
+    standalone: false
 })
 export class MenuServiceComponent implements OnDestroy {
   menuItems = MENU_ITEMS;

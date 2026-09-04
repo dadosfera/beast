@@ -41,6 +41,7 @@ import { NbMenuService, NbMenuItem } from '@beast/theme';
       </nb-layout-column>
     </nb-layout>
   `,
+    standalone: false
 })
 export class MenuTestComponent implements OnInit, OnDestroy {
   sidebarMenuItems: NbMenuItem[] = [

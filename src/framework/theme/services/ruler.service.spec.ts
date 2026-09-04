@@ -24,6 +24,7 @@ let rulerService: NbLayoutRulerService;
       </nb-layout-column>
     </nb-layout>
   `,
+    standalone: false
 })
 class RulerTestComponent {
   @ViewChild('resize', { read: ElementRef }) private resizeElement: ElementRef;
@@ -52,11 +53,7 @@ class RulerTestComponent {
 describe('NbLayoutRulerService', () => {
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      imports: [
-        RouterModule.forRoot([], { relativeLinkResolution: 'legacy' }),
-        NbThemeModule.forRoot(),
-        NbLayoutModule,
-      ],
+      imports: [RouterModule.forRoot([]), NbThemeModule.forRoot(), NbLayoutModule],
       providers: [NbLayoutRulerService, NbThemeService, { provide: APP_BASE_HREF, useValue: '/' }],
       declarations: [RulerTestComponent],
     }).createComponent(RulerTestComponent);
@@ -66,14 +63,12 @@ describe('NbLayoutRulerService', () => {
     fixture.detectChanges();
   });
 
-  beforeEach(
-    waitForAsync(
+  beforeEach(waitForAsync(
       inject([NbLayoutRulerService, NB_DOCUMENT], (_rulerService, _document) => {
         rulerService = _rulerService;
         currentDocument = _document;
       }),
-    ),
-  );
+  ));
 
   afterEach(fakeAsync(() => {
     fixture.destroy();

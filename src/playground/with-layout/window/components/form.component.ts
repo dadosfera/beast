@@ -11,6 +11,7 @@ import { NbWindowRef } from '@beast/theme';
       <textarea nbInput id="text"></textarea>
     </form>
   `,
+    standalone: false
 })
 export class FormComponent {
   constructor(public windowRef: NbWindowRef) {}

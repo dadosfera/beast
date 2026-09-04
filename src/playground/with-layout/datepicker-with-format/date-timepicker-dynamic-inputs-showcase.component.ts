@@ -7,19 +7,20 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'npg-date-timepicker-dynamic-inputs-showcase',
-  templateUrl: './date-timepicker-dynamic-inputs-showcase.component.html',
-  styles: [
-    `
+    selector: 'npg-date-timepicker-dynamic-inputs-showcase',
+    templateUrl: './date-timepicker-dynamic-inputs-showcase.component.html',
+    styles: [
+        `
       section {
         margin-bottom: 2rem;
       }
 
-      button + button {
+      section > * + * {
         margin-left: 1rem;
       }
     `,
-  ],
+    ],
+    standalone: false
 })
 export class DateTimepickerDynamicInputsShowcaseComponent {
   now = new Date();
@@ -112,5 +113,27 @@ export class DateTimepickerDynamicInputsShowcaseComponent {
 
   toggleFormat() {
     this.format = this.format === 'dd/MM/yyyy HH:mm' ? 'HH:mm dd/MM/yyyy' : 'dd/MM/yyyy HH:mm';
+  }
+
+  firstDayOfWeek: number | undefined = undefined;
+  firstDayOfWeekToggleTimer = null;
+
+  toggleFirstDayOfWeekSwitching() {
+    if (this.firstDayOfWeekToggleTimer == null) {
+      this.firstDayOfWeekToggleTimer = setInterval(() => {
+        this.toggleFirstDayOfWeek();
+      }, 1000);
+    } else {
+      clearInterval(this.firstDayOfWeekToggleTimer);
+      this.firstDayOfWeekToggleTimer = null;
+    }
+  }
+
+  toggleFirstDayOfWeek() {
+    this.firstDayOfWeek ??= 0;
+    this.firstDayOfWeek++;
+    if (this.firstDayOfWeek > 6) {
+      this.firstDayOfWeek = 0;
+    }
   }
 }

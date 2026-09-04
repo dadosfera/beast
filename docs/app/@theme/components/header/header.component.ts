@@ -37,6 +37,7 @@ import { NgdVersionService, Version } from '../../services';
     <div class="section right"></div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class NgdHeaderComponent implements OnInit {
   @Input() showSearch = true;

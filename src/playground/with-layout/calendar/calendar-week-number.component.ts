@@ -19,13 +19,8 @@ import { NbDateService, NbCalendarRange } from '@beast/theme';
       </nb-card-body>
     </nb-card>
   `,
-  styles: [
-    `
-      button {
-        margin-bottom: 1rem;
-      }
-    `,
-  ],
+    styles: [` button { margin-bottom: 1rem; } `],
+    standalone: false
 })
 export class CalendarWeekNumberComponent {
   showWeekNumber = false;

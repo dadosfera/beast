@@ -18,6 +18,7 @@ import { NbDateService } from '@beast/theme';
     </nb-card>
   `,
   styleUrls: ['./datepicker-example.scss'],
+    standalone: false
 })
 export class DatepickerValidationComponent {
   min: Date;

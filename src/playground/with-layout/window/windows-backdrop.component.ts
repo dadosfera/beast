@@ -10,6 +10,7 @@ import { NbWindowService } from '@beast/theme';
     <ng-template #escClose> Click escape to close. </ng-template>
   `,
   styleUrls: ['./window.scss'],
+    standalone: false
 })
 export class WindowsBackdropComponent {
   @ViewChild('escClose', { read: TemplateRef }) escCloseTemplate: TemplateRef<HTMLElement>;

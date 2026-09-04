@@ -20,6 +20,7 @@ import { trees } from './trees-list';
     </nb-card>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class TagRemovableComponent {
   trees = trees;

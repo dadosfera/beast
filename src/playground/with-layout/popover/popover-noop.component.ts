@@ -16,8 +16,8 @@ import { NbPopoverDirective } from '@beast/theme';
         margin-right: 1rem;
         margin-top: 1rem;
       }
-    `,
-  ],
+  `],
+    standalone: false
 })
 export class PopoverNoopComponent {
   @ViewChild(NbPopoverDirective) popover: NbPopoverDirective;

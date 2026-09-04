@@ -9,6 +9,7 @@ import { NbChatModule, NbThemeModule, NbChatCustomMessageService } from '@beast/
       <p>Hello world</p>
     </div>
   `,
+    standalone: false
 })
 export class NbCustomMessageTestComponent {
   customMessageType: string = 'simpleMessageType';

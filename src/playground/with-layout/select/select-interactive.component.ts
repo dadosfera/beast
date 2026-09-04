@@ -12,6 +12,7 @@ import { NbSelectAppearance } from '@beast/theme';
   selector: 'nb-select-interactive',
   templateUrl: './select-interactive.component.html',
   styleUrls: ['./select-interactive.component.scss'],
+    standalone: false
 })
 export class SelectInteractiveComponent {
   singleSelectValue = '1';

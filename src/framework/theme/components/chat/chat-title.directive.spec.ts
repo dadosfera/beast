@@ -29,6 +29,7 @@ import { NbThemeModule, NbChatModule, NbChatComponent } from '@beast/theme';
       <nb-chat-form [dropFiles]="false"> </nb-chat-form>
     </nb-chat>
   `,
+    standalone: false
 })
 export class NbChatTitleTemplateTestComponent {
   messages = [

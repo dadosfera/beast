@@ -24,6 +24,7 @@ interface FSEntry {
   selector: 'nb-tree-grid-showcase',
   templateUrl: './tree-grid-showcase.component.html',
   styleUrls: ['./tree-grid-shared.scss', './tree-grid-showcase.component.scss'],
+    standalone: false
 })
 export class TreeGridShowcaseComponent {
   customColumn = 'name';
@@ -108,6 +109,7 @@ export class TreeGridShowcaseComponent {
       <nb-icon icon="file-text-outline"></nb-icon>
     </ng-template>
   `,
+    standalone: false
 })
 export class FsIconComponent {
   @Input() kind: string;

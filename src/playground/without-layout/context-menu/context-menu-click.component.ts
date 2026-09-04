@@ -10,8 +10,8 @@ import { filter, map } from 'rxjs/operators';
       :host nb-layout-header ::ng-deep nav {
         justify-content: flex-end;
       }
-    `,
-  ],
+  `],
+    standalone: false
 })
 export class ContextMenuClickComponent implements OnInit {
   items = [{ title: 'Profile' }, { title: 'Logout' }];
