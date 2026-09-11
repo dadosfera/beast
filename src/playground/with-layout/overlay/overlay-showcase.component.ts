@@ -14,6 +14,7 @@ import { NbOverlayRef, NbOverlayService, NbPositionBuilderService, NbTemplatePor
     </ng-template>
     <button nbButton status="primary" (click)="createOverlay()">Create overlay</button>
   `,
+    standalone: false
 })
 export class OverlayShowcaseComponent implements OnInit {
   @ViewChild('overlay') overlayTemplate: TemplateRef<any>;

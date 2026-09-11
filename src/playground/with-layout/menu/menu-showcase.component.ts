@@ -11,6 +11,7 @@ import { NbMenuItem } from '@beast/theme';
   selector: 'nb-menu-showcase',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './menu-showcase.component.html',
+    standalone: false
 })
 export class MenuShowcaseComponent {
   items: NbMenuItem[] = [

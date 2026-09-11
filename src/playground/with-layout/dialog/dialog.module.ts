@@ -42,15 +42,13 @@ import { ShowcaseDialogComponent } from './components/showcase-dialog.component'
     ScrollDialogComponent,
     ShowcaseDialogComponent,
   ],
-  imports: [CommonModule, NbDialogModule.forRoot(), NbButtonModule, NbInputModule, NbCardModule, DialogRoutingModule],
-  entryComponents: [
-    AutoFocusDialogComponent,
-    BackdropClickDialogComponent,
-    EscDialogComponent,
-    HasBackdropDialogComponent,
-    DialogNamePromptComponent,
-    ScrollDialogComponent,
-    ShowcaseDialogComponent,
+  imports: [
+    CommonModule,
+    NbDialogModule.forRoot(),
+    NbButtonModule,
+    NbInputModule,
+    NbCardModule,
+    DialogRoutingModule,
   ],
 })
 export class DialogModule {}

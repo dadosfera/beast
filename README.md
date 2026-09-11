@@ -15,6 +15,12 @@ Beast is Dadosfera's design system. It is based on the Eva Design System specifi
 - **Powerful theming engine** with custom CSS properties mode
 - **SVG Eva Icons support** - 480+ general purpose icons
 
+## Repository state and engagement with the community
+
+Repository is currently in a state of minimal maintenance. Our primary focus is on ensuring that the Angular version used in this project is kept up to date. Our capacity to engage in other aspects of repository management is currently limited.
+
+We are not actively reviewing or merging pull requests, responding to or resolving issues at this time. We appreciate the effort and contributions from the community and we understand that issues are crucial for the community. But now our current focus is solely on maintaining Angular.
+
 ## Quick Start
 
 You can install Nebular with Angular CLI:

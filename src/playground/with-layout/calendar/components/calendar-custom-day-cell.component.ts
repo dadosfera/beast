@@ -16,5 +16,6 @@ import { NbCalendarDayCellComponent } from '@beast/theme';
       <span class="caption" [class.text-control]="selected">{{ (day + 100) * day }}$</span>
     </div>
   `,
+    standalone: false
 })
 export class CalendarCustomDayCellComponent extends NbCalendarDayCellComponent<Date> {}

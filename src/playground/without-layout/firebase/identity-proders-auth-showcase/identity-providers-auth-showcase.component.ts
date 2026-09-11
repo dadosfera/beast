@@ -9,6 +9,7 @@ import { FirebaseAPIService } from '../firebase-api.service';
   selector: 'app-google-auth-showcase',
   templateUrl: './identity-providers-auth-showcase.component.html',
   styleUrls: ['./identity-providers-auth-showcase.component.scss'],
+    standalone: false
 })
 export class IdentityProvidersAuthShowcaseComponent {
   userToken$: Observable<NbAuthToken>;

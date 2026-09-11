@@ -9,6 +9,7 @@ enum LayoutMode {
 @Component({
   selector: 'nb-scroll-window',
   templateUrl: './scroll-window.component.html',
+    standalone: false
 })
 export class ScrollWindowComponent {
   mode = LayoutMode.WINDOW;

@@ -15,6 +15,7 @@ import { NbToastrService } from '@beast/theme';
       }
     `,
   ],
+    standalone: false
 })
 export class ToastrDurationComponent {
   private index: number = 0;

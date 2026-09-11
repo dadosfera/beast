@@ -4,6 +4,7 @@ import { NbSidebarService } from '@beast/theme';
 @Component({
   selector: 'nb-layout-sidebar-subheader',
   templateUrl: './layout-sidebar-subheader.component.html',
+    standalone: false
 })
 export class LayoutSidebarSubheaderComponent {
   constructor(private sidebarService: NbSidebarService) {}

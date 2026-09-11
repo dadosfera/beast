@@ -12,6 +12,7 @@ import { NbPopoverDirective } from '@beast/theme';
   selector: 'nb-popover-dynamic-code',
   templateUrl: './popover-dynamic-code.component.html',
   styleUrls: ['./popover-dynamic.scss'],
+    standalone: false
 })
 export class PopoverDynamicCodeComponent implements OnDestroy, AfterViewInit {
   @ViewChild(NbPopoverDirective) popover: NbPopoverDirective;

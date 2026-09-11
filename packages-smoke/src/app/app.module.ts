@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, REMOVE_STYLES_ON_COMPONENT_DESTROY } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +13,7 @@ import { NbEvaIconsModule } from '@beast/eva-icons';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'packages-smoke' }),
+    BrowserModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbAuthModule.forRoot(),
@@ -22,7 +22,12 @@ import { NbEvaIconsModule } from '@beast/eva-icons';
     NbDateFnsDateModule,
     NbEvaIconsModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: REMOVE_STYLES_ON_COMPONENT_DESTROY,
+      useValue: false,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

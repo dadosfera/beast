@@ -13,6 +13,7 @@ import { DialogNamePromptComponent } from './components/name-prompt-dialog.compo
     </ul>
   `,
   styleUrls: ['./dialog-common.scss'],
+    standalone: false
 })
 export class DialogResultComponent {
   names: string[] = [];

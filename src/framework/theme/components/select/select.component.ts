@@ -30,7 +30,7 @@ import {
 } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { merge, Subject, BehaviorSubject, from, combineLatest } from 'rxjs';
+import { merge, Subject, BehaviorSubject, from } from 'rxjs';
 import { startWith, switchMap, takeUntil, filter, map, finalize, take } from 'rxjs/operators';
 
 import { NbStatusService } from '../../services/status.service';
@@ -60,8 +60,9 @@ export type NbSelectCompareFunction<T = any> = (v1: any, v2: any) => boolean;
 export type NbSelectAppearance = 'outline' | 'filled' | 'hero';
 
 @Component({
-  selector: 'nb-select-label',
-  template: '<ng-content></ng-content>',
+    selector: 'nb-select-label',
+    template: '<ng-content></ng-content>',
+    standalone: false
 })
 export class NbSelectLabelComponent {}
 
@@ -503,20 +504,21 @@ export function nbSelectFormFieldControlConfigFactory() {
  * select-hero-control-disabled-text-color:
  * */
 @Component({
-  selector: 'nb-select',
-  templateUrl: './select.component.html',
-  styleUrls: ['./select.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => NbSelectComponent),
-      multi: true,
-    },
-    { provide: NB_SELECT_INJECTION_TOKEN, useExisting: NbSelectComponent },
-    { provide: NbFormFieldControl, useExisting: NbSelectComponent },
-    { provide: NbFormFieldControlConfig, useFactory: nbSelectFormFieldControlConfigFactory },
-  ],
+    selector: 'nb-select',
+    templateUrl: './select.component.html',
+    styleUrls: ['./select.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() => NbSelectComponent),
+            multi: true,
+        },
+        { provide: NB_SELECT_INJECTION_TOKEN, useExisting: NbSelectComponent },
+        { provide: NbFormFieldControl, useExisting: NbSelectComponent },
+        { provide: NbFormFieldControlConfig, useFactory: nbSelectFormFieldControlConfigFactory },
+    ],
+    standalone: false
 })
 export class NbSelectComponent
   implements OnChanges, AfterViewInit, AfterContentInit, OnDestroy, ControlValueAccessor, NbFormFieldControl
@@ -697,18 +699,6 @@ export class NbSelectComponent
    **/
   @Input() scrollStrategy: NbScrollStrategies = 'block';
 
-  /**
-   * Experimental input.
-   * Could be changed without any prior notice.
-   * Use at your own risk.
-   *
-   * It replaces the button with input when the select is opened.
-   * That replacement provides a very basic API to implement options filtering functionality.
-   * Filtering itself isn't implemented inside select.
-   * So it should be implemented by the user.
-   */
-  @Input() withOptionSearch: boolean = false;
-
   @HostBinding('class')
   get additionalClasses(): string[] {
     if (this.statusService.isCustomStatus(this.status)) {
@@ -721,9 +711,6 @@ export class NbSelectComponent
    * Will be emitted when selected value changes.
    * */
   @Output() selectedChange: EventEmitter<any> = new EventEmitter();
-  @Output() selectOpen: EventEmitter<void> = new EventEmitter();
-  @Output() selectClose: EventEmitter<void> = new EventEmitter();
-  @Output() optionSearchChange: EventEmitter<string> = new EventEmitter();
 
   /**
    * List of `NbOptionComponent`'s components passed as content.
@@ -741,8 +728,7 @@ export class NbSelectComponent
    * */
   @ViewChild(NbPortalDirective) portal: NbPortalDirective;
 
-  @ViewChild('selectButton', { read: ElementRef }) button: ElementRef<HTMLButtonElement> | undefined;
-  @ViewChild('optionSearchInput', { read: ElementRef }) optionSearchInput: ElementRef<HTMLInputElement> | undefined;
+  @ViewChild('selectButton', { read: ElementRef }) button: ElementRef<HTMLButtonElement>;
 
   /**
    * Determines is select opened.
@@ -750,10 +736,6 @@ export class NbSelectComponent
   @HostBinding('class.open')
   get isOpen(): boolean {
     return this.ref && this.ref.hasAttached();
-  }
-
-  get isOptionSearchInputAllowed(): boolean {
-    return this.withOptionSearch && this.isOpen && !this.multiple;
   }
 
   /**
@@ -842,9 +824,6 @@ export class NbSelectComponent
    * Returns width of the select button.
    * */
   get hostWidth(): number {
-    if (this.isOptionSearchInputAllowed) {
-      return this.optionSearchInput.nativeElement.getBoundingClientRect().width;
-    }
     return this.button.nativeElement.getBoundingClientRect().width;
   }
 
@@ -872,7 +851,7 @@ export class NbSelectComponent
       return this.selectionModel.map((option: NbOptionComponent) => option.content).join(', ');
     }
 
-    return this.selectionModel[0]?.content ?? '';
+    return this.selectionModel[0].content;
   }
 
   ngOnChanges({ disabled, status, size, fullWidth }: SimpleChanges) {
@@ -934,23 +913,13 @@ export class NbSelectComponent
     }
   }
 
-  onInput(event: Event) {
-    this.optionSearchChange.emit((event.target as HTMLInputElement).value);
-  }
-
   show() {
     if (this.shouldShow()) {
       this.attachToOverlay();
 
       this.positionStrategy.positionChange.pipe(take(1), takeUntil(this.destroy$)).subscribe(() => {
-        if (this.isOptionSearchInputAllowed) {
-          this.optionSearchInput.nativeElement.focus();
-        } else {
-          this.setActiveOption();
-        }
+        this.setActiveOption();
       });
-
-      this.selectOpen.emit();
 
       this.cd.markForCheck();
     }
@@ -960,10 +929,6 @@ export class NbSelectComponent
     if (this.isOpen) {
       this.ref.detach();
       this.cd.markForCheck();
-      this.selectClose.emit();
-
-      this.optionSearchInput.nativeElement.value = this.selectionView;
-      this.optionSearchChange.emit('');
     }
   }
 
@@ -1098,11 +1063,8 @@ export class NbSelectComponent
   }
 
   protected createPositionStrategy(): NbAdjustableConnectedPositionStrategy {
-    const element: ElementRef<HTMLInputElement | HTMLButtonElement> = this.withOptionSearch
-      ? this.optionSearchInput
-      : this.button;
     return this.positionBuilder
-      .connectedTo(element)
+      .connectedTo(this.button)
       .position(NbPosition.BOTTOM)
       .offset(this.optionsOverlayOffset)
       .adjustment(NbAdjustment.VERTICAL);
@@ -1163,9 +1125,9 @@ export class NbSelectComponent
       )
       .subscribe((event: KeyboardEvent) => {
         if (event.keyCode === ESCAPE) {
-          this.hide();
           this.button.nativeElement.focus();
-        } else if (!this.isOptionSearchInputAllowed) {
+          this.hide();
+        } else {
           this.keyManager.onKeydown(event);
         }
       });
@@ -1177,21 +1139,11 @@ export class NbSelectComponent
   }
 
   protected subscribeOnButtonFocus() {
-    const buttonFocus$ = this.focusMonitor.monitor(this.button).pipe(
-      map((origin) => !!origin),
-      startWith(false),
-      finalize(() => this.focusMonitor.stopMonitoring(this.button)),
-    );
-
-    const filterInputFocus$ = this.focusMonitor.monitor(this.optionSearchInput).pipe(
-      map((origin) => !!origin),
-      startWith(false),
-      finalize(() => this.focusMonitor.stopMonitoring(this.button)),
-    );
-
-    combineLatest([buttonFocus$, filterInputFocus$])
+    this.focusMonitor
+      .monitor(this.button)
       .pipe(
-        map(([buttonFocus, filterInputFocus]) => buttonFocus || filterInputFocus),
+        map((origin) => !!origin),
+        finalize(() => this.focusMonitor.stopMonitoring(this.button)),
         takeUntil(this.destroy$),
       )
       .subscribe(this.focused$);

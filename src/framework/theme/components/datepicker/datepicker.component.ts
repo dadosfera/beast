@@ -6,7 +6,6 @@
 
 import {
   Component,
-  ComponentFactoryResolver,
   ComponentRef,
   OnChanges,
   ElementRef,
@@ -134,6 +133,14 @@ export abstract class NbBasePicker<D, T, P> extends NbDatepicker<T, D> {
   abstract showWeekNumber: boolean;
 
   /**
+   * Sets first day of the week, it can be 1 if week starts from monday and 0 if from sunday and so on.
+   * `undefined` means that default locale setting will be used.
+   * */
+  abstract firstDayOfWeek: number | undefined;
+
+  readonly formatChanged$: Subject<void> = new Subject();
+
+  /**
    * Calendar component class that has to be instantiated inside overlay.
    * */
   protected abstract pickerClass: Type<P>;
@@ -194,7 +201,6 @@ export abstract class NbBasePicker<D, T, P> extends NbDatepicker<T, D> {
     protected overlay: NbOverlayService,
     protected positionBuilder: NbPositionBuilderService,
     protected triggerStrategyBuilder: NbTriggerStrategyBuilderService,
-    protected cfr: ComponentFactoryResolver,
     protected dateService: NbDateService<D>,
     protected dateServiceOptions,
   ) {
@@ -283,7 +289,7 @@ export abstract class NbBasePicker<D, T, P> extends NbDatepicker<T, D> {
   }
 
   protected openDatepicker() {
-    this.container = this.ref.attach(new NbComponentPortal(NbDatepickerContainerComponent, null, null, this.cfr));
+    this.container = this.ref.attach(new NbComponentPortal(NbDatepickerContainerComponent, null, null));
     this.instantiatePicker();
     this.subscribeOnValueChange();
     this.writeQueue();
@@ -323,7 +329,7 @@ export abstract class NbBasePicker<D, T, P> extends NbDatepicker<T, D> {
   }
 
   protected instantiatePicker() {
-    this.pickerRef = this.container.instance.attach(new NbComponentPortal(this.pickerClass, null, null, this.cfr));
+    this.pickerRef = this.container.instance.attach(new NbComponentPortal(this.pickerClass, null, null));
   }
 
   /**
@@ -349,6 +355,7 @@ export abstract class NbBasePicker<D, T, P> extends NbDatepicker<T, D> {
     this.picker.visibleDate = this.visibleDate;
     this.picker.showWeekNumber = this.showWeekNumber;
     this.picker.weekNumberSymbol = this.weekNumberSymbol;
+    this.picker.firstDayOfWeek = this.firstDayOfWeek;
   }
 
   protected checkFormat() {
@@ -370,6 +377,7 @@ export abstract class NbBasePicker<D, T, P> extends NbDatepicker<T, D> {
 
 @Component({
   template: '',
+    standalone: false
 })
 export class NbBasePickerComponent<D, T, P> extends NbBasePicker<D, T, P> implements OnInit, OnChanges, OnDestroy {
   /**
@@ -463,6 +471,8 @@ export class NbBasePickerComponent<D, T, P> extends NbBasePicker<D, T, P> implem
   protected _showWeekNumber: boolean = false;
   static ngAcceptInputType_showWeekNumber: NbBooleanInput;
 
+  @Input() firstDayOfWeek: number | undefined;
+
   /**
    * Determines picker overlay offset (in pixels).
    * */
@@ -476,11 +486,10 @@ export class NbBasePickerComponent<D, T, P> extends NbBasePicker<D, T, P> implem
     positionBuilder: NbPositionBuilderService,
     triggerStrategyBuilder: NbTriggerStrategyBuilderService,
     overlay: NbOverlayService,
-    cfr: ComponentFactoryResolver,
     dateService: NbDateService<D>,
     @Optional() @Inject(NB_DATE_SERVICE_OPTIONS) dateServiceOptions,
   ) {
-    super(overlay, positionBuilder, triggerStrategyBuilder, cfr, dateService, dateServiceOptions);
+    super(overlay, positionBuilder, triggerStrategyBuilder, dateService, dateServiceOptions);
   }
 
   ngOnInit() {
@@ -489,8 +498,14 @@ export class NbBasePickerComponent<D, T, P> extends NbBasePicker<D, T, P> implem
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes.format && !changes.format.isFirstChange()) {
+    if (changes.format) {
+      if (!changes.format.isFirstChange()) {
       this.checkFormat();
+    }
+      this.formatChanged$.next();
+    }
+    if (this.picker) {
+      this.patchWithInputs();
     }
   }
 
@@ -530,6 +545,7 @@ export class NbBasePickerComponent<D, T, P> extends NbBasePicker<D, T, P> implem
 @Component({
   selector: 'nb-datepicker',
   template: '',
+    standalone: false
 })
 export class NbDatepickerComponent<D> extends NbBasePickerComponent<D, D, NbCalendarComponent<D>> {
   protected pickerClass: Type<NbCalendarComponent<D>> = NbCalendarComponent;
@@ -585,6 +601,7 @@ export class NbDatepickerComponent<D> extends NbBasePickerComponent<D, D, NbCale
 @Component({
   selector: 'nb-rangepicker',
   template: '',
+    standalone: false
 })
 export class NbRangepickerComponent<D> extends NbBasePickerComponent<
   D,

@@ -12,6 +12,7 @@ import { trees } from './trees-list';
 @Component({
   templateUrl: './tag-input.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class TagInputComponent {
   trees: Set<string> = new Set([trees[3]]);

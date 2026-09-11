@@ -13,6 +13,7 @@ import { PopoverListComponent, PopoverTabsComponent } from './components/dynamic
   selector: 'nb-popover-dynamic',
   templateUrl: './popover-dynamic.component.html',
   styleUrls: ['./popover-dynamic.scss'],
+    standalone: false
 })
 export class PopoverDynamicComponent implements OnDestroy, AfterViewInit {
   @ViewChild(NbPopoverDirective) popover: NbPopoverDirective;

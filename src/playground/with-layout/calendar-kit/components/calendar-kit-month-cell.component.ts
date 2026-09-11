@@ -20,8 +20,8 @@ import { NbCalendarCell, NbCalendarDayPickerComponent, NbCalendarMonthModelServi
         flex: 1 0 auto;
         padding: 1rem;
       }
-    `,
-  ],
+  `],
+    standalone: false
 })
 export class CalendarKitMonthCellComponent
   extends NbCalendarDayPickerComponent<Date, Date>

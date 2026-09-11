@@ -9,5 +9,6 @@ import { NbLoginComponent } from '@beast/auth';
 @Component({
   selector: 'ngx-login',
   templateUrl: './login.component.html',
+    standalone: false
 })
 export class LoginComponent extends NbLoginComponent {}

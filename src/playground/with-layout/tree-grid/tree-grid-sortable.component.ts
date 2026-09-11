@@ -47,6 +47,7 @@ interface FSEntry {
     </nb-card>
   `,
   styleUrls: ['./tree-grid-shared.scss'],
+    standalone: false
 })
 export class TreeGridSortableComponent {
   customColumn = 'name';

@@ -9,6 +9,7 @@ import { ScrollDialogComponent } from './components/scroll-dialog.component';
     <button nbButton (click)="openWithoutScroll()">Without scroll</button>
   `,
   styleUrls: ['./dialog-common.scss'],
+    standalone: false
 })
 export class DialogScrollComponent {
   constructor(private dialogService: NbDialogService) {}

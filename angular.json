@@ -20,12 +20,13 @@
       "prefix": "npg",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/playground",
+            "outputPath": {
+              "base": "dist/playground"
+            },
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": ["src/polyfills.ts"],
             "tsConfig": "src/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -33,7 +34,8 @@
               "src/assets"
             ],
             "styles": [],
-            "scripts": []
+            "scripts": [],
+            "browser": "src/main.ts"
           },
           "configurations": {
             "production": {
@@ -76,9 +78,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -90,13 +90,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "playground:build:production"
+              "buildTarget": "playground:build:production"
             },
             "production-wp": {
-              "browserTarget": "playground:build:production-wp"
+              "buildTarget": "playground:build:production-wp"
             },
             "development": {
-              "browserTarget": "playground:build:development"
+              "buildTarget": "playground:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,7 +104,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "playground:build"
+            "buildTarget": "playground:build"
           }
         },
         "test": {
@@ -120,21 +120,18 @@
               "src/assets"
             ],
             "styles": [],
-            "scripts": []
+            "scripts": [],
+            "include": [
+              "src/**/*.spec.ts"
+            ],
+            "exclude": [
+              "src/framework/theme/schematics/**/*.spec.ts"
+            ]
           },
           "configurations": {
             "production-wp": {
               "tsConfig": "src/tsconfig.spec-wp.json"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
           }
         }
       }
@@ -184,12 +181,13 @@
       "prefix": "ngd",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/docs",
+            "outputPath": {
+              "base": "dist/docs"
+            },
             "index": "docs/index.html",
-            "main": "docs/main.ts",
-            "polyfills": "docs/polyfills.ts",
+            "polyfills": ["docs/polyfills.ts"],
             "tsConfig": "docs/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -208,7 +206,6 @@
             ],
             "styles": [
               "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css",
               {
                 "inject": true,
                 "bundleName": "algolia",
@@ -221,7 +218,10 @@
               "node_modules/pace-js/pace.min.js",
               "node_modules/docsearch.js/dist/cdn/docsearch.min.js"
             ],
-            "allowedCommonJsDependencies": ["highlight.js"]
+            "allowedCommonJsDependencies": [
+              "highlight.js"
+            ],
+            "browser": "docs/main.ts"
           },
           "configurations": {
             "production": {
@@ -244,9 +244,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -278,10 +276,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "docs:build:production"
+              "buildTarget": "docs:build:production"
             },
             "development": {
-              "browserTarget": "docs:build:development"
+              "buildTarget": "docs:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -289,7 +287,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "docs:build"
+            "buildTarget": "docs:build"
           }
         },
         "test": {
@@ -350,7 +348,13 @@
           "options": {
             "main": "src/framework/theme/test.ts",
             "tsConfig": "src/framework/theme/tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js"
+            "karmaConfig": "karma.conf.js",
+            "include": [
+              "src/framework/theme/**/*.spec.ts"
+            ],
+            "exclude": [
+              "src/framework/theme/schematics/**/*.spec.ts"
+            ]
           }
         },
         "lint": {
@@ -605,18 +609,47 @@
       }
     }
   },
-  "defaultProject": "playground",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss",
-      "changeDetection": "OnPush"
+      "changeDetection": "OnPush",
+      "type": "component"
     },
     "@schematics/angular:application": {
       "strict": true
+    },
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
+    },
+    "@schematics/angular:directive": {
+      "type": "directive"
+    },
+    "@schematics/angular:service": {
+      "type": "service"
+    },
+    "@schematics/angular:guard": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:interceptor": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:module": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:pipe": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:resolver": {
+      "typeSeparator": "."
     }
   },
   "cli": {
     "analytics": false,
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

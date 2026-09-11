@@ -4,6 +4,7 @@ import { NbButtonAppearance, NbComponentStatus, NbComponentShape, NbComponentSiz
 @Component({
   templateUrl: 'button-interactive.component.html',
   styleUrls: ['./button-interactive.component.scss'],
+    standalone: false
 })
 export class ButtonInteractiveComponent {
   appearances: NbButtonAppearance[] = ['filled', 'outline', 'ghost', 'hero'];
