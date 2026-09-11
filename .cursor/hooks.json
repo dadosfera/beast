@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "_comment": "Cursor agent hooks — ADAPTERS only (docs-fera standards/hooks/agent_hooks_standard.md). Logic lives in scripts/hooks/*.sh (quality cores) and ~/.local/bin/heavy_compute_guard.sh (safety guard). Installed by scripts-fera install_agent_hooks.sh; never hand-edit.",
+  "hooks": {
+    "beforeShellExecution": [
+      { "command": "bash .cursor/hooks/before_shell_execution.sh" }
+    ],
+    "afterFileEdit": [
+      { "command": "bash .cursor/hooks/after_file_edit.sh" }
+    ]
+  }
+}
