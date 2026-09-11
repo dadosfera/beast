@@ -1,3 +1,29 @@
+# Branch policy — read this first
+
+**`master` is production.** This is not a pre-alpha branch.
+
+- Every push to `master` **auto-deploys the public docs site** (`.github/workflows/deploy-docs.yml`, trigger `push: master`).
+- `master` is the source of `npm run release`, which publishes every `@beast/*` package to npm via `tools/publish.sh`. **Client applications consume those packages in production.**
+- There is no `release/{stage}` promotion lane. A merge into `master` *is* the release.
+
+Because of that, `dadosfera/beast` is registered as **HIGH CRITICAL** in docs-fera and is
+**out of scope for the branch-protection bypass command (`/gbyp_git_protection_bypass`)** in both
+of its scenarios. The only way into `master` is:
+
+1. a pull request,
+2. with **observed-green CI** — `build-packages` at minimum,
+3. **reviewed and merged by a human**. No admin bypass, no `--admin` merge, no direct push.
+
+Large or risky work lands on an **integration branch first** (currently `integration/luis-martins`)
+and reaches `master` as a single reviewed PR. Framework upgrades, upstream syncs and design-system
+drops all follow that path.
+
+Canonical references (docs-fera): `references/dadosfera_apps_index/fera_repos_index.md`
+(register of record), `standards/lifecycle/lifecycle_standard.md` §Delivery lanes,
+`decisions/2026-09-04_main_merge_gate_is_ci_not_review_bypass.md` §Known exceptions.
+
+---
+
 # Contributing to Nebular
 
 We would love for you to contribute to Nebular and help make it ever better together! :rocket:
