@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "_comment": "Committed .claude/settings.json (project scope, every clone). Team delta over the user file: test runners, git write path guarded by hooks, destructive denies so every clone has them, and the agent-hook ADAPTERS (hooks). No ask list: an ask rule prompts in every mode for every contributor, so it would override a contributor's autonomous profile; commands that must be approved are simply left unallowed (they prompt in Manual mode). Do NOT put model/theme here (personal) or MCP servers here (they go in .mcp.json). See docs-fera standards/tools/claude_code_permissions_standard.md and standards/hooks/agent_hooks_standard.md",
+  "_source": "docs-fera/claude/settings.template.json",
+  "_version": "3.0.0",
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest:*)",
+      "Bash(python3 -m pytest:*)",
+      "Bash(.venv/bin/python -m pytest:*)",
+      "Bash(pytest:*)",
+      "Bash(ruff check:*)",
+      "Bash(ruff format:*)",
+      "Bash(pre-commit run:*)",
+      "Bash(bash -n:*)",
+      "Bash(python3 -c:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m:*)",
+      "Bash(git commit --amend --no-edit)",
+      "Bash(git checkout -b:*)",
+      "Bash(git switch:*)",
+      "Bash(git merge --ff-only:*)",
+      "Bash(git merge --no-ff:*)",
+      "Bash(git merge origin/main:*)",
+      "Bash(git pull --ff-only:*)",
+      "Bash(git push -u origin:*)",
+      "Bash(git push origin HEAD:*)",
+      "Bash(git worktree add:*)",
+      "Bash(git worktree prune)",
+      "Bash(git stash push:*)",
+      "Bash(git stash apply:*)",
+      "Bash(git rm:*)",
+      "Bash(git mv:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr comment:*)",
+      "Bash(gh pr review:*)",
+      "Bash(gh pr edit:*)",
+      "Bash(gh pr ready:*)",
+      "Bash(gtimeout * git *)",
+      "Bash(gtimeout * gh *)",
+      "Bash(gtimeout * bash *)",
+      "Bash(gtimeout * python3 *)",
+      "Bash(timeout * git *)",
+      "Bash(timeout * gh *)",
+      "Bash(timeout * bash *)",
+      "Bash(timeout * python3 *)"
+    ],
+    "ask": [],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git push --force-with-lease:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean -f:*)",
+      "Bash(git checkout .)",
+      "Bash(git restore .)",
+      "Bash(git commit --no-verify:*)",
+      "Bash(git push --no-verify:*)",
+      "Bash(git commit -n :*)",
+      "Bash(rm -rf:*)",
+      "Bash(rm -fr:*)",
+      "Bash(rm -r:*)",
+      "Bash(sudo rm:*)",
+      "Bash(sudo dd:*)",
+      "Bash(dd if=:*)",
+      "Bash(ssh *:production*)",
+      "Bash(ssh *:prod*)",
+      "Bash(curl * | bash)",
+      "Bash(curl * | sh)",
+      "Bash(wget * | sh)",
+      "Bash(wget * | bash)",
+      "Bash(eval:*)",
+      "Bash(chmod 777:*)",
+      "Bash(chmod -R 777:*)"
+    ]
+  },
+  "_hooks_comment": "Agent-hook ADAPTERS only (docs-fera standards/hooks/agent_hooks_standard.md): logic lives in scripts/hooks/ cores and ~/.local/bin/heavy_compute_guard.sh and runs for every actor. Scripts are installed to .claude/hooks/ by scripts-fera install_agent_hooks.sh; the commit gate reports loudly (exit 1, non-blocking) when they are missing, the edit gate stays silent. Keys inside \"hooks\" are event names, so comments must stay outside it.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git push:*)",
+            "command": "if [ -f \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/pre_push_gate.sh ]; then bash \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/pre_push_gate.sh; else echo \"pre_push_gate.sh missing: run scripts-fera install_agent_hooks.sh\" >&2; exit 1; fi",
+            "timeout": 600
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/heavy_compute_guard_shim.sh ]; then bash \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/heavy_compute_guard_shim.sh; fi",
+            "timeout": 15
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git commit:*)",
+            "command": "if [ -f \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/pre_commit_gate.sh ]; then bash \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/pre_commit_gate.sh; else echo \"pre_commit_gate.sh missing: run scripts-fera install_agent_hooks.sh\" >&2; exit 1; fi",
+            "timeout": 120
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/syntax_gate.sh ]; then bash \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/syntax_gate.sh; fi",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  },
+  "_env_example": {
+    "_comment": "Move under a real \"env\" key to enable. Values are literal strings; ${PWD} is not expanded.",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "_hooks_note": "ADAPTERS ONLY (standards/hooks/agent_hooks_standard.md). Logic lives in scripts/hooks/ (quality cores) and ~/.local/bin/heavy_compute_guard.sh (safety guard) and runs for every actor; these entries just give Claude the verdict inside its loop. Installed by scripts-fera install_agent_hooks.sh; never hand-edit .claude/hooks/*."
+}

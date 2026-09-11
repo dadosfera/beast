@@ -2,3 +2,8 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx lint-staged
+
+# Staged quality gate (tool-agnostic core; docs-fera agent_hooks_standard, scripts-fera distribute_agent_hooks_to_repos.sh)
+if [ -f "scripts/hooks/staged_quality_gate.sh" ]; then
+  bash scripts/hooks/staged_quality_gate.sh --in-git-hook || exit 1
+fi
