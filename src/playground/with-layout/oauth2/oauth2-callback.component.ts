@@ -17,6 +17,7 @@ import { Subject } from 'rxjs';
       <nb-layout-column>Authenticating...</nb-layout-column>
     </nb-layout>
   `,
+    standalone: false
 })
 export class OAuth2CallbackComponent implements OnDestroy {
   private destroy$ = new Subject<void>();

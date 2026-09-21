@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Subject } from 'rxjs';
-import { Component, ComponentFactoryResolver, ComponentRef, ElementRef, Injectable, Input, Type } from '@angular/core';
+import { Component, ComponentRef, ElementRef, Injectable, Input, Type } from '@angular/core';
 import { takeUntil } from 'rxjs/operators';
 import {
   NbOverlayConfig,
@@ -19,16 +19,21 @@ import {
   NbLayoutDirectionService,
 } from '@beast/theme';
 
-@Component({ template: '' })
+@Component({
+    template: '',
+    standalone: false
+})
 export class NbDynamicOverlayMockComponent implements NbRenderableContainer {
   @Input() content: any;
   @Input() context: Object;
-  @Input() cfr: ComponentFactoryResolver;
 
   renderContent() {}
 }
 
-@Component({ template: '' })
+@Component({
+    template: '',
+    standalone: false
+})
 export class NbDynamicOverlayMock2Component extends NbDynamicOverlayMockComponent {}
 
 @Injectable()
@@ -144,7 +149,7 @@ export class MockTriggerStrategyBuilder {
   show$ = new Subject<any>();
   hide$ = new Subject<any>();
 
-  private destroyed$ = new Subject();
+  private destroyed$ = new Subject<void>();
 
   trigger(trigger: NbTrigger): this {
     this._trigger = trigger;
@@ -356,11 +361,11 @@ describe('dynamic-overlay-handler', () => {
   });
 
   it('should disconnect from prev trigger', () => {
-    const triggerShow1$ = new Subject<any>();
-    const triggerHide1$ = new Subject<any>();
+    const triggerShow1$ = new Subject<void>();
+    const triggerHide1$ = new Subject<void>();
 
-    const triggerShow2$ = new Subject<any>();
-    const triggerHide2$ = new Subject<any>();
+    const triggerShow2$ = new Subject<void>();
+    const triggerHide2$ = new Subject<void>();
     triggerStrategyBuilder.show$ = triggerShow1$;
     triggerStrategyBuilder.hide$ = triggerHide1$;
 

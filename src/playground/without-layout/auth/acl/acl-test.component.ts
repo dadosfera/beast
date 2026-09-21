@@ -27,6 +27,7 @@ import { NbAccessChecker } from '@beast/security';
       </nb-layout-column>
     </nb-layout>
   `,
+    standalone: false
 })
 export class AclTestComponent {
   constructor(public accessChecker: NbAccessChecker) {}

@@ -53,6 +53,7 @@ interface FSEntry {
     </nb-card>
   `,
   styleUrls: ['./tree-grid-shared.scss', './tree-grid-custom-icons.component.scss'],
+    standalone: false
 })
 export class TreeGridCustomIconsComponent {
   customColumn = 'name';

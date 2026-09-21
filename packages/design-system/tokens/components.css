@@ -1,0 +1,25 @@
+/* Component-level variables lifted from _mapping.scss (Eva mapping) resolved against the Beast default theme */
+:root{
+--card-border-width:.0625rem;--card-border-color:var(--border-basic-color-4);--card-border-radius:var(--border-radius-large);--card-padding:1.25rem 1.5rem;--card-padding-large:2.625rem;--card-shadow:none;--card-margin-bottom:1.875rem;--card-header-basic-background-color:var(--background-basic-color-2);
+--button-rectangle-border-radius:var(--border-radius);--button-semi-round-border-radius:.75rem;--button-round-border-radius:1.5rem;
+--button-tiny-padding:.3125rem .625rem;--button-small-padding:.4375rem .875rem;--button-medium-padding:.6875rem 1.125rem;--button-large-padding:.8125rem 1.125rem;--button-giant-padding:.9375rem 1.375rem;
+--button-tiny-icon-size:.75rem;--button-small-icon-size:1rem;--button-medium-icon-size:1.25rem;--button-large-icon-size:1.5rem;--button-giant-icon-size:1.5rem;--icon-button-medium-padding:.6875rem .5625rem;
+--input-border-width:1px;--input-border-color:var(--border-basic-color-6);--input-focus-border-color:var(--color-primary-default);--input-hover-background-color:var(--background-basic-color-2);--input-medium-padding:.5rem 1rem;--input-medium-max-width:20rem;--input-rectangle-border-radius:var(--border-radius);
+--checkbox-size:1.25rem;--checkbox-border-radius:3px;--checkbox-text-space:.6875rem;--radio-size:1.25rem;
+--toggle-height:1.875rem;--toggle-width:3.125rem;--toggle-switcher-size:1.75rem;--toggle-border-radius:100px;
+--select-min-width:13rem;--select-medium-padding:.5rem 1rem;--option-list-border-color:var(--border-basic-color-4);--option-list-max-height:20rem;
+--tag-border-radius:1.5rem;--tag-medium-padding:.1875rem .9375rem;--tag-border-width:.0625rem;
+--badge-padding:.25rem .4rem;--badge-border-radius:var(--border-radius);--badge-dot-padding:.3rem;
+--alert-padding:1rem 1.125rem;--alert-border-radius:var(--border-radius);--alert-closable-start-padding:3rem;
+--toastr-padding:1rem;--toastr-border-radius:var(--border-radius);--toastr-border-width:1px;
+--tooltip-padding:.5rem 1rem;--tooltip-max-width:16rem;--tooltip-background-color:var(--background-alternative-color-3);--tooltip-primary-background-color:var(--color-primary-900);
+--popover-padding:.75rem 1rem;--popover-arrow-size:.6875rem;--context-menu-min-width:10rem;--context-menu-max-width:15rem;
+--menu-item-padding:.75rem 1rem;--menu-item-icon-width:1.25rem;--menu-item-icon-margin:0 .5rem 0 0;
+--tabset-tab-padding:1rem 2rem;--tabset-tab-underline-width:.25rem;--tabset-tab-text-transform:uppercase;
+--list-item-padding:1rem;--accordion-padding:1.25rem;--stepper-step-index-width:2rem;--stepper-connector-color:var(--color-basic-500);
+--progress-bar-medium-height:1.375rem;--progress-bar-animation-duration:400ms; /* @kind other */
+--user-medium-size:2.5rem;--actions-medium-height:2.25rem;--actions-medium-padding:0 1.25rem;
+--calendar-width:20.625rem;--calendar-day-cell-size:2.75rem;--calendar-navigation-padding:.625rem .25rem;--timepicker-cell-height:2.75rem;--timepicker-container-width:20rem;
+--tree-grid-cell-padding:.875rem 1.25rem;--tree-grid-cell-border-color:var(--border-basic-color-2);--tree-grid-row-min-height:2rem;
+--chat-padding:1rem 1.25rem;--icon-font-size:1.25rem;
+}

@@ -15,6 +15,7 @@ import { NbToastrService, NbIconConfig } from '@beast/theme';
       }
     `,
   ],
+    standalone: false
 })
 export class ToastrIconComponent {
   private index: number = 0;

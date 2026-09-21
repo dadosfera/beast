@@ -23,6 +23,7 @@ import { combineLatest, Subject, Observable } from 'rxjs';
     </ng-container>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class NgdPageTocComponent implements OnDestroy {
   private destroy$ = new Subject<void>();

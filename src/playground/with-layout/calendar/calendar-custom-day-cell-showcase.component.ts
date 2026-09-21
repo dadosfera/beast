@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 import { CalendarCustomDayCellComponent } from './components/calendar-custom-day-cell.component';
 
 @Component({
-  selector: 'nb-calendar-custom-day-cell-showcase',
-  template: `
+    selector: 'nb-calendar-custom-day-cell-showcase',
+    template: `
     <nb-card>
       <nb-card-header>
         <h1 class="h5">Selected date: {{ date | date }}</h1>
@@ -20,7 +20,7 @@ import { CalendarCustomDayCellComponent } from './components/calendar-custom-day
       </nb-card-body>
     </nb-card>
   `,
-  entryComponents: [ CalendarCustomDayCellComponent ],
+    standalone: false
 })
 export class CalendarCustomDayCellShowcaseComponent {
   date = new Date();

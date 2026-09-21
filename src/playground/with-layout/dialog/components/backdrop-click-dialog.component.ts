@@ -17,6 +17,7 @@ import { NbDialogRef } from '@beast/theme';
       </nb-card-footer>
     </nb-card>
   `,
+    standalone: false
 })
 export class BackdropClickDialogComponent {
   @Input() title: string;

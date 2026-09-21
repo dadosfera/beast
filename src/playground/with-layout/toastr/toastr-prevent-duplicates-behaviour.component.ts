@@ -20,6 +20,7 @@ import { NbDuplicateToastBehaviour, NbToastrService } from '@beast/theme';
       }
     `,
   ],
+    standalone: false
 })
 export class ToastrPreventDuplicatesBehaviourComponent {
   @HostBinding('class')

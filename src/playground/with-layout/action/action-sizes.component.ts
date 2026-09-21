@@ -11,6 +11,7 @@ import { NbComponentSize } from '@beast/theme';
   selector: 'nb-action-sizes',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './action-sizes.component.html',
+    standalone: false
 })
 export class ActionSizesComponent {
   sizes: NbComponentSize[] = ['tiny', 'small', 'medium', 'large', 'giant'];

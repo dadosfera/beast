@@ -79,14 +79,15 @@ import { NbAutocompleteComponent } from './autocomplete.component';
  *
  * */
 @Directive({
-  selector: 'input[nbAutocomplete]',
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => NbAutocompleteDirective),
-      multi: true,
-    },
-  ],
+    selector: 'input[nbAutocomplete]',
+    providers: [
+        {
+            provide: NG_VALUE_ACCESSOR,
+            useExisting: forwardRef(() => NbAutocompleteDirective),
+            multi: true,
+        },
+    ],
+    standalone: false
 })
 export class NbAutocompleteDirective<T> implements OnDestroy, AfterViewInit, ControlValueAccessor {
   /**
@@ -428,6 +429,6 @@ export class NbAutocompleteDirective<T> implements OnDestroy, AfterViewInit, Con
   }
 
   protected shouldShow(): boolean {
-    return this.isClosed && this.autocomplete.options.length > 0;
+    return this.isClosed;
   }
 }

@@ -6,7 +6,6 @@
 
 import {
   Component,
-  ComponentFactoryResolver,
   Input,
   TemplateRef,
   Type,
@@ -40,19 +39,19 @@ import {
  * popover-padding:
  * */
 @Component({
-  selector: 'nb-popover',
-  styleUrls: ['./popover.component.scss'],
-  template: `
+    selector: 'nb-popover',
+    styleUrls: ['./popover.component.scss'],
+    template: `
     <span class="arrow"></span>
     <nb-overlay-container></nb-overlay-container>
   `,
+    standalone: false
 })
 export class NbPopoverComponent extends NbPositionedContainerComponent implements NbRenderableContainer {
   @ViewChild(NbOverlayContainerComponent) overlayContainer: NbOverlayContainerComponent;
 
   @Input() content: any;
   @Input() context: Object;
-  @Input() cfr: ComponentFactoryResolver;
 
   renderContent() {
     this.detachContent();
@@ -79,7 +78,7 @@ export class NbPopoverComponent extends NbPositionedContainerComponent implement
   }
 
   protected attachComponent() {
-    const portal = new NbComponentPortal(this.content, null, null, this.cfr);
+    const portal = new NbComponentPortal(this.content, null, null);
     const ref = this.overlayContainer.attachComponentPortal(portal, this.context);
     ref.changeDetectorRef.detectChanges();
   }

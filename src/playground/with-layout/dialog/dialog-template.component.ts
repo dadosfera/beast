@@ -16,6 +16,7 @@ import { NbDialogService } from '@beast/theme';
     <button nbButton (click)="open(dialog)">Open Dialog</button>
   `,
   styleUrls: ['./dialog-common.scss'],
+    standalone: false
 })
 export class DialogTemplateComponent {
   constructor(private dialogService: NbDialogService) {}

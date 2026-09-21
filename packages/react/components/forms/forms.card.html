@@ -1,0 +1,22 @@
+<!-- @dsCard group="Components" viewport="700x620" name="Forms: Input, Select, Checkbox, Radio, Toggle, Pickers" subtitle="Text fields, dropdowns, toggles, calendar, date & time pickers" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>components/forms/forms.card.html</title><link rel="stylesheet" href="../../../design-system/styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/eva-icons@1.1.3/eva.min.js"></script>
+<script src="../../../design-system/assets/icons/custom-icons.js"></script>
+<script src="../../../design-system/_ds_bundle.js"></script>
+<style>body{padding:16px;background:var(--background-basic-color-1)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:12px}.lbl{font-size:11px;font-weight:700;color:var(--text-hint-color);text-transform:uppercase;letter-spacing:.04em;width:100%}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const DS = window.BeastDadosferaDesignSystem_d7d0ae;
+
+const { Input, Select, Autocomplete, Checkbox, Radio, RadioGroup, Toggle, Calendar, Datepicker, TimePicker } = DS;
+function App(){ return <>
+<div className="lbl">Input</div><div className="row"><Input placeholder="Nome do dataset" /><Input placeholder="E-mail" prefixIcon="email-outline" /><Input status="success" defaultValue="Válido" /><Input status="danger" defaultValue="Inválido" suffixIcon="alert-circle-outline" /><Input placeholder="Desabilitado" disabled /><Input size="small" shape="round" placeholder="round small" /></div>
+<div className="lbl">Select · Autocomplete</div><div className="row"><Select options={['Coleta','Processamento','Catálogo','Inteligência']} defaultValue="Catálogo" /><Select placeholder="Multi" multiple options={[{group:'Fontes',options:['S3','Postgres','MySQL']},{group:'Destinos',options:['Snowflake','BigQuery']}]} defaultValue={['S3']} /><Select appearance="filled" status="primary" options={['Diário','Semanal']} defaultValue="Diário" /><Autocomplete options={['Snowflake','BigQuery','Redshift','Databricks']} /></div>
+<div className="lbl">Checkbox · Radio · Toggle</div><div className="row"><Checkbox label="Padrão" /><Checkbox label="Marcado" defaultChecked /><Checkbox label="Indeterminado" indeterminate /><Checkbox label="Sucesso" status="success" defaultChecked /><Checkbox label="Desabilitado" disabled defaultChecked /></div>
+<div className="row"><RadioGroup direction="row" options={['Diário','Semanal','Mensal']} defaultValue="Diário" /><Toggle label="Ativo" defaultChecked /><Toggle label="Inativo" /><Toggle status="success" label="Sucesso" defaultChecked /><Toggle label="Desabilitado" disabled /></div>
+<div className="lbl">Datepicker · Timepicker · Calendar</div><div className="row" style={{alignItems:'flex-start'}}><div style={{display:'flex',flexDirection:'column',gap:12}}><Datepicker /><Datepicker range /><TimePicker step={15} /></div><Calendar defaultDate={new Date()} /></div>
+</>; }
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script></body></html>

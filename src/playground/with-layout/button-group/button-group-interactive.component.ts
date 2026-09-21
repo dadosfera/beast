@@ -11,6 +11,7 @@ import { NbButtonToggleAppearance, NbComponentShape, NbComponentSize, NbComponen
   templateUrl: './button-group-interactive.component.html',
   styleUrls: ['./button-group-interactive.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ButtonGroupInteractiveComponent {
   appearances: NbButtonToggleAppearance[] = ['filled', 'outline', 'ghost'];

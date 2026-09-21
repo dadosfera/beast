@@ -16,8 +16,8 @@ import { NbIconConfig } from '@beast/theme';
       :host nb-tab {
         padding: 1.25rem;
       }
-    `,
-  ],
+  `],
+    standalone: false
 })
 export class TabsetIconComponent {
   bellIconConfig: NbIconConfig = { icon: 'bell-outline', pack: 'eva' };

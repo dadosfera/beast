@@ -78,6 +78,7 @@ function setup() {
       }
     `,
   ],
+    standalone: false
 })
 class ScrollTestComponent {
   listenWindowScroll = false;
@@ -92,12 +93,7 @@ class ScrollTestComponent {
 describe('Directive: NbScrollDirective', () => {
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      imports: [
-        RouterModule.forRoot([], { relativeLinkResolution: 'legacy' }),
-        NbThemeModule.forRoot(),
-        NbLayoutModule,
-        NbListModule,
-      ],
+      imports: [RouterModule.forRoot([]), NbThemeModule.forRoot(), NbLayoutModule, NbListModule],
       providers: [NbLayoutScrollService, { provide: APP_BASE_HREF, useValue: '/' }],
       declarations: [ScrollTestComponent],
     }).createComponent(ScrollTestComponent);

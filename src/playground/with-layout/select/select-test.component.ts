@@ -11,8 +11,8 @@ import { NbComponentSize } from '@beast/theme';
       nb-select {
         display: block;
       }
-    `,
-  ],
+  `],
+    standalone: false
 })
 export class SelectTestComponent {
   sizes: NbComponentSize[] = ['tiny', 'small', 'medium', 'large', 'giant'];

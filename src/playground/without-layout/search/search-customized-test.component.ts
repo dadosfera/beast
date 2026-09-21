@@ -70,6 +70,7 @@ import { NbSearchService } from '@beast/theme';
       </nb-layout-column>
     </nb-layout>
   `,
+    standalone: false
 })
 export class SearchCustomizedTestComponent implements OnInit {
   constructor(private searchService: NbSearchService) {}

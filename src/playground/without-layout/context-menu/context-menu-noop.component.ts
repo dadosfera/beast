@@ -22,8 +22,8 @@ import { NbContextMenuDirective } from '@beast/theme';
         margin-right: 1rem;
         margin-top: 1rem;
       }
-    `,
-  ],
+  `],
+    standalone: false
 })
 export class ContextMenuNoopComponent {
   @ViewChild(NbContextMenuDirective) contextMenu: NbContextMenuDirective;

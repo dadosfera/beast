@@ -4,6 +4,7 @@ import { NbSearchService } from '@beast/theme';
 @Component({
   selector: 'nb-search-event',
   templateUrl: './search-event.component.html',
+    standalone: false
 })
 export class SearchEventComponent {
   value = '';

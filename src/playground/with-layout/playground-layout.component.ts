@@ -17,6 +17,7 @@ import { NbThemeService } from '@beast/theme';
   `,
   styleUrls: ['../styles/styles.scss'],
   encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class PlaygroundLayoutComponent implements OnInit {
   constructor(private themeService: NbThemeService) {}

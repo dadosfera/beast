@@ -9,6 +9,7 @@ import { HasBackdropDialogComponent } from './components/has-backdrop-dialog.com
     <button nbButton (click)="openWithoutBackdrop()">Without backdrop</button>
   `,
   styleUrls: ['./dialog-common.scss'],
+    standalone: false
 })
 export class DialogHasBackdropComponent {
   constructor(private dialogService: NbDialogService) {}

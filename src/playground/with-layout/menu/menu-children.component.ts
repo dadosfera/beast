@@ -11,6 +11,7 @@ import { NbMenuItem } from '@beast/theme';
   selector: 'nb-menu-children',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './menu-children.component.html',
+    standalone: false
 })
 export class MenuChildrenComponent {
   items: NbMenuItem[] = [

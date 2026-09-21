@@ -20,6 +20,7 @@ import { getDeepFromObject } from '../../../framework/auth/helpers';
   selector: 'nb-playground-auth',
   templateUrl: './oauth2-password-login.component.html',
   styleUrls: ['./oauth2-password-login.component.scss'],
+    standalone: false
 })
 export class OAuth2PasswordLoginComponent {
   token: NbAuthOAuth2Token;

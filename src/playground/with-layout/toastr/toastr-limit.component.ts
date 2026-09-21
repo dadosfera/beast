@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
       }
     `,
   ],
+    standalone: false
 })
 export class ToastrLimitComponent {
   constructor(private toastrService: NbToastrService) {}

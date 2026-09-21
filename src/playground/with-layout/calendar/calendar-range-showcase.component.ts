@@ -20,6 +20,7 @@ import { NbCalendarRange, NbDateService } from '@beast/theme';
       </nb-card-body>
     </nb-card>
   `,
+    standalone: false
 })
 export class CalendarRangeShowcaseComponent {
   range: NbCalendarRange<Date>;

@@ -9,7 +9,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { NbDateService } from '@beast/theme';
 import { NbMomentDateService } from '@beast/moment';
-import * as moment from 'moment';
+import moment from 'moment';
 
 type Moment = moment.Moment;
 

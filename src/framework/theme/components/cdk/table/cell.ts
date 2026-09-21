@@ -21,33 +21,33 @@ import { coerceBooleanProperty } from '@angular/cdk/coercion';
  * Captures the template of a column's data row cell as well as cell-specific properties.
  */
 @Directive({
-  selector: '[nbCellDef]',
-  providers: [{ provide: CdkCellDef, useExisting: NbCellDefDirective }],
+    selector: '[nbCellDef]',
+    providers: [{ provide: CdkCellDef, useExisting: NbCellDefDirective }],
+    standalone: false
 })
-export class NbCellDefDirective extends CdkCellDef {
-}
+export class NbCellDefDirective extends CdkCellDef {}
 
 /**
  * Header cell definition for the nb-table.
  * Captures the template of a column's header cell and as well as cell-specific properties.
  */
 @Directive({
-  selector: '[nbHeaderCellDef]',
-  providers: [{ provide: CdkHeaderCellDef, useExisting: NbHeaderCellDefDirective }],
+    selector: '[nbHeaderCellDef]',
+    providers: [{ provide: CdkHeaderCellDef, useExisting: NbHeaderCellDefDirective }],
+    standalone: false
 })
-export class NbHeaderCellDefDirective extends CdkHeaderCellDef {
-}
+export class NbHeaderCellDefDirective extends CdkHeaderCellDef {}
 
 /**
  * Footer cell definition for the nb-table.
  * Captures the template of a column's footer cell and as well as cell-specific properties.
  */
 @Directive({
-  selector: '[nbFooterCellDef]',
-  providers: [{ provide: CdkFooterCellDef, useExisting: NbFooterCellDefDirective }],
+    selector: '[nbFooterCellDef]',
+    providers: [{ provide: CdkFooterCellDef, useExisting: NbFooterCellDefDirective }],
+    standalone: false
 })
-export class NbFooterCellDefDirective extends CdkFooterCellDef {
-}
+export class NbFooterCellDefDirective extends CdkFooterCellDef {}
 
 export const NB_SORT_HEADER_COLUMN_DEF = new InjectionToken('NB_SORT_HEADER_COLUMN_DEF');
 
@@ -56,13 +56,16 @@ export const NB_SORT_HEADER_COLUMN_DEF = new InjectionToken('NB_SORT_HEADER_COLU
  * Defines a set of cells available for a table column.
  */
 @Directive({
-  selector: '[nbColumnDef]',
-  providers: [
-    { provide: CdkColumnDef, useExisting: NbColumnDefDirective },
-    { provide: NB_SORT_HEADER_COLUMN_DEF, useExisting: NbColumnDefDirective },
-  ],
+    selector: '[nbColumnDef]',
+    providers: [
+        { provide: CdkColumnDef, useExisting: NbColumnDefDirective },
+        { provide: NB_SORT_HEADER_COLUMN_DEF, useExisting: NbColumnDefDirective },
+    ],
+    standalone: false
 })
 export class NbColumnDefDirective extends CdkColumnDef {
+  private _hasStickyCellChanged = false;
+
   /** Unique name for this column. */
   @Input('nbColumnDef')
   get name(): string {
@@ -73,7 +76,17 @@ export class NbColumnDefDirective extends CdkColumnDef {
   }
 
   /** Whether this column should be sticky positioned at the start of the row */
-  @Input() sticky: boolean;
+  @Input()
+  get sticky(): boolean {
+    return this._stickyCell;
+  }
+  set sticky(value: boolean) {
+    if (value !== this._stickyCell) {
+      this._stickyCell = value;
+      this._hasStickyCellChanged = true;
+    }
+  }
+  private _stickyCell = false;
 
   /** Whether this column should be sticky positioned on the end of the row */
   @Input()
@@ -83,21 +96,33 @@ export class NbColumnDefDirective extends CdkColumnDef {
   set stickyEnd(value: boolean) {
     const prevValue = this._stickyEnd;
     this._stickyEnd = coerceBooleanProperty(value);
-    this._hasStickyChanged = prevValue !== this._stickyEnd;
+    this._hasStickyCellChanged = prevValue !== this._stickyEnd;
+  }
+
+  /** Whether the sticky state has changed. */
+  hasStickyChanged(): boolean {
+    const hasStickyChanged = this._hasStickyCellChanged;
+    this.resetStickyChanged();
+    return hasStickyChanged;
+  }
+
+  /** Resets the sticky changed state. */
+  resetStickyChanged(): void {
+    this._hasStickyCellChanged = false;
   }
 }
 
 /** Header cell template container that adds the right classes and role. */
 @Directive({
-  selector: 'nb-header-cell, th[nbHeaderCell]',
-  host: {
-    'class': 'nb-header-cell',
-    'role': 'columnheader',
-  },
+    selector: 'nb-header-cell, th[nbHeaderCell]',
+    host: {
+        class: 'nb-header-cell',
+        role: 'columnheader',
+    },
+    standalone: false
 })
 export class NbHeaderCellDirective extends CdkHeaderCell {
-  constructor(columnDef: NbColumnDefDirective,
-              elementRef: ElementRef<HTMLElement>) {
+  constructor(columnDef: NbColumnDefDirective, elementRef: ElementRef<HTMLElement>) {
     super(columnDef, elementRef);
     elementRef.nativeElement.classList.add(`nb-column-${columnDef.cssClassFriendlyName}`);
   }
@@ -105,15 +130,15 @@ export class NbHeaderCellDirective extends CdkHeaderCell {
 
 /** Footer cell template container that adds the right classes and role. */
 @Directive({
-  selector: 'nb-footer-cell, td[nbFooterCell]',
-  host: {
-    'class': 'nb-footer-cell',
-    'role': 'gridcell',
-  },
+    selector: 'nb-footer-cell, td[nbFooterCell]',
+    host: {
+        class: 'nb-footer-cell',
+        role: 'gridcell',
+    },
+    standalone: false
 })
 export class NbFooterCellDirective extends CdkFooterCell {
-  constructor(columnDef: NbColumnDefDirective,
-              elementRef: ElementRef) {
+  constructor(columnDef: NbColumnDefDirective, elementRef: ElementRef) {
     super(columnDef, elementRef);
     elementRef.nativeElement.classList.add(`nb-column-${columnDef.cssClassFriendlyName}`);
   }
@@ -121,15 +146,15 @@ export class NbFooterCellDirective extends CdkFooterCell {
 
 /** Cell template container that adds the right classes and role. */
 @Directive({
-  selector: 'nb-cell, td[nbCell]',
-  host: {
-    'class': 'nb-cell',
-    'role': 'gridcell',
-  },
+    selector: 'nb-cell, td[nbCell]',
+    host: {
+        class: 'nb-cell',
+        role: 'gridcell',
+    },
+    standalone: false
 })
 export class NbCellDirective extends CdkCell {
-  constructor(columnDef: NbColumnDefDirective,
-              elementRef: ElementRef<HTMLElement>) {
+  constructor(columnDef: NbColumnDefDirective, elementRef: ElementRef<HTMLElement>) {
     super(columnDef, elementRef);
     elementRef.nativeElement.classList.add(`nb-column-${columnDef.cssClassFriendlyName}`);
   }

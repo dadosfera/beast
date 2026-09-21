@@ -118,6 +118,10 @@ export class NbMenuItem {
   data?: any;
   fragment?: string;
   preserveFragment?: boolean;
+  /** The name of a role in the ARIA specification
+   * @type {string}
+   */
+  ariaRole?: string;
 
   /**
    * @returns item parents in top-down order

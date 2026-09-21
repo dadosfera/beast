@@ -14,8 +14,8 @@ import { Component } from '@angular/core';
         width: 500px;
         margin: 0.5rem 0 2rem 2rem;
       }
-    `,
-  ],
+  `],
+    standalone: false
 })
 export class ChatColorsComponent {
   chats: any[] = [
