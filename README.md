@@ -1,5 +1,8 @@
 # Beast [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />](https://eva.design?utm_campaign=eva_design%20-%20home%20-%20nebular%20github%20readme&utm_source=nebular&utm_medium=referral&utm_content=github_readme_hero_pic) [![npm](https://img.shields.io/npm/l/@nebular/theme.svg)]() [![npm](https://img.shields.io/npm/dt/@nebular/theme.svg)](https://www.npmjs.com/package/@nebular/theme) [![Codecov](https://img.shields.io/codecov/c/github/akveo/nebular/master.svg?style=flat-square)](https://codecov.io/gh/akveo/nebular/branch/master)
 
+> **`master` is production.** Pushes deploy the public docs site and are the source of the npm release of `@beast/*`, consumed by client apps in PRD. Reviewed PR + green CI + human merge only; the branch-protection bypass command is out of scope here. See [CONTRIBUTING → Branch policy](CONTRIBUTING.md).
+
+
 [Documentation](https://akveo.github.io/nebular/docs/getting-started/what-is-nebular?utm_campaign=nebular%20-%20home%20-%20nebular%20github%20readme&utm_source=nebular&utm_medium=referral&utm_content=documentation) | [Stackblitz Template](https://stackblitz.com/github/akveo/nebular-seed)
 
 Beast is Dadosfera's design system. It is based on the Eva Design System specifications using Nebular.
