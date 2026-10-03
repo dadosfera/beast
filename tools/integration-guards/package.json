@@ -1,0 +1,11 @@
+{
+  "name": "beast-integration-guards",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test contracts.test.cjs && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
