@@ -1,6 +1,6 @@
 # Beast [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />](https://eva.design?utm_campaign=eva_design%20-%20home%20-%20nebular%20github%20readme&utm_source=nebular&utm_medium=referral&utm_content=github_readme_hero_pic) [![npm](https://img.shields.io/npm/l/@nebular/theme.svg)]() [![npm](https://img.shields.io/npm/dt/@nebular/theme.svg)](https://www.npmjs.com/package/@nebular/theme) [![Codecov](https://img.shields.io/codecov/c/github/akveo/nebular/master.svg?style=flat-square)](https://codecov.io/gh/akveo/nebular/branch/master)
 
-> **`master` is production.** Pushes deploy the public docs site and are the source of the npm release of `@beast/*`, consumed by client apps in PRD. Reviewed PR + green CI + human merge only; the branch-protection bypass command is out of scope here. See [CONTRIBUTING → Branch policy](CONTRIBUTING.md).
+> **Work targets `integration/luis-martins`; `master` is production.** Open feature and documentation PRs against integration. Promotion to `master` requires reviewed changes, observed-green CI and a human merge by Allan Sene (CTO). A push to `master` deploys the public docs; package publication is a separate release command. See [CONTRIBUTING → Branch policy](CONTRIBUTING.md#branch-policy--read-this-first).
 
 
 [Documentation](https://akveo.github.io/nebular/docs/getting-started/what-is-nebular?utm_campaign=nebular%20-%20home%20-%20nebular%20github%20readme&utm_source=nebular&utm_medium=referral&utm_content=documentation) | [Stackblitz Template](https://stackblitz.com/github/akveo/nebular-seed)
@@ -18,11 +18,17 @@ Beast is Dadosfera's design system. It is based on the Eva Design System specifi
 - **Powerful theming engine** with custom CSS properties mode
 - **SVG Eva Icons support** - 480+ general purpose icons
 
-## Repository state and engagement with the community
+## Brand sources and evolution
 
-Repository is currently in a state of minimal maintenance. Our primary focus is on ensuring that the Angular version used in this project is kept up to date. Our capacity to engage in other aspects of repository management is currently limited.
+The [brand governance guide](docs/articles/design-system/brand-governance.md) connects
+the existing Dadosfera manual, the implemented design system and consumer updates.
+The [resource index](docs/articles/design-system/resources.md) links the manual,
+logos, fonts, templates and historical resources in Google Drive. Access follows
+the permissions of each source.
 
-We are not actively reviewing or merging pull requests, responding to or resolving issues at this time. We appreciate the effort and contributions from the community and we understand that issues are crucial for the community. But now our current focus is solely on maintaining Angular.
+Typography, illustration and other visual changes must identify their source,
+decision and validation in the PR. A change in Beast does not automatically update
+applications that pin an older package or maintain a local copy of the tokens.
 
 ## Quick Start
 
