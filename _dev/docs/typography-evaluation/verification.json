@@ -1,0 +1,114 @@
+{
+  "capturedAt": "2026-10-03T17:42:01.964Z",
+  "browser": "133.0.6943.0",
+  "baseSha": "7dd81a1fb0b0fd716c2e3a6c335ec61127b96c43",
+  "actualFonts": {
+    "baseline": [
+      {
+        "familyName": "Quicksand Light (Fontations)",
+        "isCustomFont": true,
+        "glyphCount": 142
+      }
+    ],
+    "candidate": [
+      {
+        "familyName": "Menco Light (Fontations)",
+        "isCustomFont": true,
+        "glyphCount": 142
+      }
+    ]
+  },
+  "captionSizes": [
+    "12px",
+    "12px"
+  ],
+  "observations": [
+    {
+      "name": "desktop",
+      "spacingOverride": false,
+      "scale200Percent": false,
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "pageOverflow": false,
+      "articles": [
+        {
+          "id": "baseline",
+          "overflow": false,
+          "paragraphHeight": 48
+        },
+        {
+          "id": "candidate",
+          "overflow": false,
+          "paragraphHeight": 48
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "spacingOverride": false,
+      "scale200Percent": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pageOverflow": false,
+      "articles": [
+        {
+          "id": "baseline",
+          "overflow": false,
+          "paragraphHeight": 96
+        },
+        {
+          "id": "candidate",
+          "overflow": false,
+          "paragraphHeight": 96
+        }
+      ]
+    },
+    {
+      "name": "mobile-spacing-200",
+      "spacingOverride": true,
+      "scale200Percent": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pageOverflow": false,
+      "articles": [
+        {
+          "id": "baseline",
+          "overflow": false,
+          "paragraphHeight": 576
+        },
+        {
+          "id": "candidate",
+          "overflow": false,
+          "paragraphHeight": 480
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "invalidFileRejected": true,
+    "partialWeightsNotReady": true,
+    "fullWeightsLoaded": true,
+    "exportParsed": true,
+    "controlsKeyboardOrder": true,
+    "blockedFontsReported": true,
+    "noJavaScriptErrors": true,
+    "noUploadRequests": true
+  },
+  "limitations": [
+    "Synthetic specimen, not a product screen or user study.",
+    "200% uses the page CSS zoom helper, not native browser zoom.",
+    "No cross-browser, assistive-technology or full WCAG conformance claim.",
+    "Font binaries are not included; licensed source remains in Drive."
+  ],
+  "testEnvironment": {
+    "engine": "Chromium 133 headless via Playwright",
+    "httpsCertificateErrorsIgnored": true,
+    "reason": "Test environment certificate chain; not a TLS/security validation"
+  }
+}

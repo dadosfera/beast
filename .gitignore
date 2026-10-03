@@ -53,3 +53,11 @@ debug.log
 local.log
 
 /tools/dev-schematics/dist
+
+# Agent worktree lifecycle is local state.
+.dadosfera-worktree.json
+
+# Isolated integration regression suite outputs.
+/tools/integration-guards/node_modules/
+/tools/integration-guards/playwright-report/
+/tools/integration-guards/test-results/

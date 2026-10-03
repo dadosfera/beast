@@ -1,0 +1,59 @@
+{
+  "verified_at": "2026-10-03T18:07:26.359890+00:00",
+  "baseline_commit": "5c7d22264e5092ffa987c0b245b2bd62a55eb503",
+  "local_browser": "Chromium 133.0.6943.0",
+  "playwright": "1.63.0",
+  "baseline": {
+    "node_contract_tests": 3,
+    "browser_tests": 11,
+    "passed": 14
+  },
+  "mutation_checks": [
+    {
+      "mutation": "global-font",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "unscoped-profile",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "caption-specificity",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "partial-font-accepted",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "duplicate-font-face",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "long-word-overflow",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "subtitle-weight-inheritance",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "wrong-heading-weight",
+      "detected": true,
+      "failed_tests": 1
+    }
+  ],
+  "restoration": "Each injected change was restored in finally; baseline suite is rerun before publishing.",
+  "limits": [
+    "Functional CI uses blocked external fonts and an original geometric fixture.",
+    "This is not a real-font visual approval or complete WCAG audit.",
+    "The required check must still be configured by a GitHub repository administrator."
+  ]
+}

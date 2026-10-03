@@ -1,0 +1,27 @@
+/* Evaluation profile. Load after styles.css and opt in on a document or container.
+ * Font delivery belongs to the consuming app; this file makes no network request.
+ * See docs/articles/design-system/typography.md before adopting in production. */
+[data-beast-typography="menco"] {
+  --font-family-primary: "Menco", "Quicksand", "Open Sans", sans-serif;
+  --font-family-secondary: "Menco", "Quicksand", "Open Sans", sans-serif;
+  --text-heading-1-font-weight: 900;
+  --text-heading-2-font-weight: 900;
+  --text-heading-3-font-weight: 700;
+  --text-heading-4-font-weight: 700;
+  --text-heading-5-font-weight: 700;
+  --text-heading-6-font-weight: 700;
+  --text-subtitle-font-weight: 500;
+  --text-subtitle-2-font-weight: 500;
+  --text-paragraph-font-weight: 300;
+  --text-paragraph-2-font-weight: 300;
+  --text-caption-font-weight: 300;
+  --text-caption-2-font-weight: 500;
+  font-family: var(--font-family-primary);
+  font-weight: var(--text-paragraph-font-weight);
+  font-synthesis: none;
+}
+
+/* Opt in only where comparing numeric values matters. Not for IDs or prose. */
+.beast-tabular-nums {
+  font-variant-numeric: lining-nums tabular-nums;
+}
