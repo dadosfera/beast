@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beast — avaliação tipográfica</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../typography-menco.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { padding: 2rem; background: #f3f2fa; color: #0d003b; }
+    main { max-width: 90rem; margin: auto; }
+    h1 { font-size: 2rem; line-height: 1.25; margin-bottom: .75rem; }
+    p { margin: .5rem 0 1rem; }
+    .intro { max-width: 68rem; }
+    .controls { display: flex; flex-wrap: wrap; gap: 1rem; padding: 1rem 0; }
+    .controls label { display: flex; flex-direction: column; gap: .4rem; font-size: .875rem; }
+    input, button { max-width: 100%; font: inherit; }
+    button { cursor: pointer; padding: .65rem 1rem; }
+    .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+    article { min-width: 0; padding: 1.5rem; border: 1px solid #d1ccec; border-radius: .5rem; background: white; }
+    .profile-label { font: 700 .75rem/1.5 system-ui, sans-serif; color: #1700a2; margin: 0 0 .35rem; }
+    .font-status { font: .8125rem/1.5 system-ui, sans-serif; min-height: 3em; }
+    .font-status[data-ready="false"] { color: #8d2430; }
+    .specimen { margin-top: 1rem; }
+    .specimen h2, .specimen p, .specimen label, .actions button { overflow-wrap: anywhere; }
+    .specimen h2 { font-family: var(--font-family-secondary); font-size: var(--text-heading-3-font-size); font-weight: var(--text-heading-3-font-weight); line-height: var(--text-heading-3-line-height); margin: 0 0 1rem; }
+    .specimen p { font-family: var(--font-family-primary); font-size: var(--text-paragraph-font-size); font-weight: var(--text-paragraph-font-weight); line-height: var(--text-paragraph-line-height); }
+    .specimen label { display: block; font-family: var(--font-family-primary); font-size: var(--text-label-font-size); font-weight: var(--text-label-font-weight); line-height: var(--text-label-line-height); margin-bottom: .5rem; }
+    .specimen input { width: 100%; border: 1px solid var(--input-border-color); border-radius: var(--border-radius); padding: var(--input-medium-padding); font-family: var(--font-family-primary); font-size: var(--text-subtitle-font-size); font-weight: var(--text-subtitle-font-weight); line-height: var(--text-subtitle-line-height); background: white; color: var(--text-basic-color); }
+    .actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+    .actions button { background: var(--color-primary-default); color: white; border: 0; border-radius: var(--border-radius); font-family: var(--font-family-primary); font-size: var(--text-button-medium-font-size); font-weight: var(--text-button-font-weight); line-height: var(--text-button-medium-line-height); min-height: 2.75rem; }
+    .table-scroll { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-family: var(--font-family-primary); font-size: var(--text-paragraph-2-font-size); font-weight: var(--text-paragraph-2-font-weight); line-height: var(--text-paragraph-2-line-height); }
+    th, td { padding: .6rem; text-align: left; border-bottom: 1px solid #eeeeee; }
+    th { font-weight: 700; }
+    td.number { text-align: right; white-space: nowrap; }
+    .glyphs { overflow-wrap: anywhere; font-family: var(--font-family-primary); }
+    code { font-family: var(--font-family-mono); overflow-wrap: anywhere; }
+    .small, .specimen .small { font-family: var(--font-family-primary); font-size: .75rem; line-height: 1.5; }
+    :focus-visible { outline: 3px solid #1700a2; outline-offset: 3px; }
+    body.spacing-test .specimen * { line-height: 1.5 !important; letter-spacing: .12em !important; word-spacing: .16em !important; }
+    body.spacing-test .specimen p { margin-bottom: 2em !important; }
+    body.scale-test .specimen { zoom: 2; }
+    @media (max-width: 65rem) { .comparison { grid-template-columns: 1fr; } }
+    @media (max-width: 40rem) { body { padding: 1rem; } article { padding: 1rem; } }
+    @media print { .controls { display: none; } body { padding: 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Avaliação tipográfica do Beast</h1>
+  <p class="intro">Mesmo conteúdo e mesma escala, com duas famílias. Quicksand é a referência atual do produto; Menco vem do manual de marca. Este ensaio ajuda a decidir a aplicação em interfaces. Não representa aprovação ou medição de preferência de usuários.</p>
+  <div class="controls">
+    <label>Carregar Menco do arquivo da marca (WOFF2)
+      <input id="font-files" type="file" accept=".woff2,.woff,.otf" multiple>
+    </label>
+    <label><span>Espaçamento ampliado</span><input id="spacing" type="checkbox"></label>
+    <label><span>Escala de texto 200%</span><input id="scale" type="checkbox"></label>
+    <button id="download" type="button">Exportar observações técnicas</button>
+  </div>
+  <p class="small">Selecione os arquivos normais dos pesos 300, 500, 700 e 900. Eles são usados apenas nesta página, na memória do navegador. O ensaio não envia fontes a um servidor. Verifique o status de carregamento antes de comparar. A escala de 200% é um auxílio; valide também o zoom nativo do navegador.</p>
+  <p id="loader-status" role="status" aria-live="polite"></p>
+  <div class="comparison">
+    <article id="baseline">
+      <div class="profile-label">Referência atual · Quicksand</div>
+      <div class="font-status" id="quicksand-status" data-ready="false" role="status">Verificando carregamento…</div>
+      <div class="specimen"></div>
+    </article>
+    <article id="candidate" data-beast-typography="menco">
+      <div class="profile-label">Candidata · Menco</div>
+      <div class="font-status" id="menco-status" data-ready="false" role="status">Menco não carregada. A coluna usa fallback e não deve ser avaliada como Menco.</div>
+      <div class="specimen"></div>
+    </article>
+  </div>
+</main>
+<template id="sample">
+  <h2>Qualidade dos dados</h2>
+  <p>Confira as atualizações do catálogo e os responsáveis pela validação. A descrição deve permanecer legível com acentos, números e nomes extensos.</p>
+  <label>Nome do conjunto de dados</label>
+  <input value="Operações — São Paulo / 2026" aria-label="Nome do conjunto de dados">
+  <div class="actions"><button type="button">Validar atualização</button><button type="button">Ver detalhes</button></div>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Tabela de métricas de exemplo">
+    <table><thead><tr><th>Indicador</th><th>Atual</th><th>Anterior</th></tr></thead><tbody>
+      <tr><td>Registros válidos</td><td class="number beast-tabular-nums">111.111</td><td class="number beast-tabular-nums">888.888</td></tr>
+      <tr><td>Taxa de erro</td><td class="number beast-tabular-nums">0,08%</td><td class="number beast-tabular-nums">1,10%</td></tr>
+      <tr><td>Valor de exemplo</td><td class="number beast-tabular-nums">R$ 1.234,56</td><td class="number beast-tabular-nums">R$ 8.888,88</td></tr>
+    </tbody></table>
+  </div>
+  <p class="glyphs">I l 1 · O 0 · rn m · Á À Â Ã É Ê Í Ó Ô Õ Ú Ç · ação · atualização</p>
+  <p class="small">Legenda a 12 px: última validação em 03/10/2026, às 14h23.</p>
+  <p><code>dataset_id = "br_sp_001"</code></p>
+</template>
+<script>
+  const weights = [300, 500, 700, 900];
+  const loaded = new Map();
+  for (const specimen of document.querySelectorAll('.specimen')) {
+    specimen.append(document.querySelector('#sample').content.cloneNode(true));
+    const inputId = `${specimen.parentElement.id}-dataset-name`;
+    specimen.querySelector('input').id = inputId;
+    specimen.querySelector('label').htmlFor = inputId;
+  }
+  document.querySelector('#spacing').addEventListener('change', (event) => {
+    document.body.classList.toggle('spacing-test', event.target.checked);
+  });
+  document.querySelector('#scale').addEventListener('change', (event) => {
+    document.body.classList.toggle('scale-test', event.target.checked);
+  });
+  async function checkQuicksand() {
+    const status = document.querySelector('#quicksand-status');
+    try {
+      const variants = await Promise.all([400, 500, 600, 700].map((weight) => document.fonts.load(`${weight} 16px Quicksand`)));
+      const ready = variants.every((faces) => faces.some((face) => face.status === 'loaded'));
+      status.dataset.ready = String(ready);
+      status.textContent = ready ? 'Quicksand carregada.' : 'Quicksand indisponível. A coluna usa fallback; a comparação não é válida.';
+    } catch {
+      status.dataset.ready = 'false';
+      status.textContent = 'Quicksand indisponível. A coluna usa fallback; a comparação não é válida.';
+    }
+  }
+  checkQuicksand();
+  document.querySelector('#font-files').addEventListener('change', async (event) => {
+    const messages = [];
+    for (const file of event.target.files) {
+      const match = /^menco_(100|300|500|700|900)_normal\.(woff2?|otf)$/i.exec(file.name);
+      if (!match || !weights.includes(Number(match[1]))) {
+        messages.push(`${file.name}: ignorado; use os pesos normais 300, 500, 700 e 900.`);
+        continue;
+      }
+      const weight = Number(match[1]);
+      try {
+        const face = new FontFace('Menco', await file.arrayBuffer(), { weight: String(weight), style: 'normal', display: 'swap' });
+        await face.load();
+        if (loaded.has(weight)) document.fonts.delete(loaded.get(weight));
+        document.fonts.add(face);
+        loaded.set(weight, face);
+      } catch {
+        messages.push(`${file.name}: não foi possível carregar a fonte.`);
+      }
+    }
+    const missing = weights.filter((weight) => !loaded.has(weight));
+    const status = document.querySelector('#menco-status');
+    status.dataset.ready = String(missing.length === 0);
+    status.textContent = missing.length ? `Menco incompleta. Faltam os pesos ${missing.join(', ')}; não concluir a comparação.` : 'Menco carregada: 300, 500, 700 e 900. Perfil de avaliação ativo.';
+    document.querySelector('#loader-status').textContent = messages.join(' ');
+  });
+  document.querySelector('#download').addEventListener('click', () => {
+    const observations = {
+      capturedAt: new Date().toISOString(),
+      viewport: { width: innerWidth, height: innerHeight, devicePixelRatio },
+      quicksandLoaded: document.querySelector('#quicksand-status').dataset.ready === 'true',
+      mencoWeightsLoaded: [...loaded.keys()].sort((a, b) => a - b),
+      spacingOverride: document.querySelector('#spacing').checked,
+      scale200Percent: document.querySelector('#scale').checked,
+      specimens: [...document.querySelectorAll('article')].map((article) => ({
+        profile: article.id,
+        computedFamily: getComputedStyle(article.querySelector('p')).fontFamily,
+        paragraphHeight: article.querySelector('p').getBoundingClientRect().height,
+        horizontalOverflow: article.scrollWidth > article.clientWidth,
+      })),
+      interpretation: 'Observações técnicas da página; não são resultados de pesquisa com usuários nem certificação WCAG.',
+    };
+    const url = URL.createObjectURL(new Blob([JSON.stringify(observations, null, 2)], { type: 'application/json' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'beast-typography-observations.json';
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+</script>
+</body>
+</html>

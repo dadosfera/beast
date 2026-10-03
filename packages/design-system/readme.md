@@ -36,7 +36,7 @@ Explore the repo for more detail; this DS is a faithful React recreation of the 
 ## Visual foundations
 
 - **Color:** deep indigo primary `#1700a2` (500) with hover 700 `#14008a`, focus/active 600; cyan secondary `#28a1ce`; three warm auxiliary accents (`#cc6d29`, `#cc3e29`, `#e10b69`); semantic green `#4db04f`, cyan info `#3bbff0`, orange warning `#ff9800`, red danger `#ef4444`. Neutrals are pure grays (`#fff` → `#101426`), text basic `#5c5c5c`. Every semantic color has six alpha tints (8–48%) used for outline/ghost hover & focus states. Docs site uses its own palette: hero `#4d69bd`, headings `#0d1c2e`, muted text `#919fb1`, highlight `#40dc7e`.
-- **Type:** Quicksand for everything (primary = secondary family); headings 700 from 36/48 (h1) to 18/24 (h6); subtitle 15/22 600 is the control text (inputs, card headers, options); paragraph 16/24; labels/captions 12/16; buttons 700 in 10/12/14/16/18. The docs site itself uses the system font stack. Line heights are generous (1.5×).
+- **Type:** shipped UI baseline is Quicksand (primary = secondary family); headings 700 from 36/48 (h1) to 18/24 (h6); subtitle 15/22 600 is the control text (inputs, card headers, options); paragraph 16/24; labels/captions 12/16; buttons 700 in 10/12/14/16/18. The docs site itself uses the system font stack. Line heights are generous (1.5×).
 - **Spacing:** rem based, literal per component (button md `.6875rem 1.125rem`, input `.5rem 1rem`, card `1.25rem 1.5rem`, menu item `.75rem 1rem`, tab `1rem 2rem`, layout `2.25rem 2.25rem .75rem`). Card bottom margin 1.875rem.
 - **Backgrounds:** flat solid surfaces. Layout background `#f2f2f2` (basic-3), cards/header/sidebar white. No gradients in product UI; the docs hero is a solid blue with a subtle line texture (`bg.svg`) and a concave SVG curve into `#f9f9f9`. Code blocks use a dark blue gradient `linear-gradient(225deg,#333c66,#1d2447)`.
 - **Corner radii:** `.25rem` default (buttons, inputs, badges, alerts, popovers), `.5rem` cards, `.75rem` semi-round, `1.5rem` round buttons and tags, `100px` toggle, `3px` checkbox, `50%` radio/stepper index.
@@ -88,4 +88,17 @@ Intentional additions: `LayoutBody` (flex row wrapper for sidebar + column, impl
 
 ## Fonts
 
-Quicksand is loaded from Google Fonts (`tokens/fonts.css`). The repo has no font binaries — the brand fonts are on a Dadosfera Google Drive. If the brand uses a licensed cut, drop the files into `assets/fonts/` and replace the `@import` with `@font-face` rules.
+Quicksand is the current UI baseline, loaded from Google Fonts by `tokens/fonts.css`.
+The brand manual specifies Menco. The [typography decision and evaluation](../../docs/articles/design-system/typography.md)
+records the original 2022 change, its missing rationale in Git, the alternatives and acceptance criteria.
+
+`typography-menco.css` adds an **opt-in evaluation profile** without changing the Angular theme or the
+current token defaults. Load it after `styles.css`, then set `data-beast-typography="menco"` on the
+container being evaluated. Supply the real font through an authorized font delivery mechanism.
+The stylesheet contains no font files and makes no network request of its own. The existing
+`styles.css` still imports the Google Fonts Quicksand baseline.
+
+Open `guidelines/typography-evaluation.html` to compare identical specimens. Its local file picker
+loads the existing Menco webfonts in browser memory and reports missing weights or fallback.
+It does not upload or package the fonts. A successful local comparison is not permission to
+redistribute the files or evidence of approval for production.

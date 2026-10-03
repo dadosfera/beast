@@ -53,3 +53,6 @@ debug.log
 local.log
 
 /tools/dev-schematics/dist
+
+# Agent worktree lifecycle is local state.
+.dadosfera-worktree.json
