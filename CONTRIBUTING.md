@@ -3,8 +3,8 @@
 **`master` is production.** This is not a pre-alpha branch.
 
 - Every push to `master` **auto-deploys the public docs site** (`.github/workflows/deploy-docs.yml`, trigger `push: master`).
-- `master` is the source of `npm run release`, which publishes every `@beast/*` package to npm via `tools/publish.sh`. **Client applications consume those packages in production.**
-- There is no `release/{stage}` promotion lane. A merge into `master` *is* the release.
+- `master` is the production source for package releases. `npm run release` validates and then runs `publish`; `publish` logs into the configured AWS CodeArtifact npm registry and invokes `tools/publish.sh`. **This is a separate command, not an automatic consequence of merging.** Client applications consume released packages in production.
+- There is no `release/{stage}` promotion lane. A merge into `master` changes the production source and triggers the public docs deployment; package publication and consumer dependency updates remain explicit steps.
 
 Because of that, `dadosfera/beast` is registered as **HIGH CRITICAL** in docs-fera and is
 **out of scope for the branch-protection bypass command (`/gbyp_git_protection_bypass`)** in both
@@ -12,11 +12,18 @@ of its scenarios. The only way into `master` is:
 
 1. a pull request,
 2. with **observed-green CI** — `build-packages` at minimum,
-3. **reviewed and merged by a human**. No admin bypass, no `--admin` merge, no direct push.
+3. **reviewed and merged by Allan Sene (CTO)**. Record the review in the promotion PR. No admin bypass, no `--admin` merge, no direct push.
 
-Large or risky work lands on an **integration branch first** (currently `integration/luis-martins`)
-and reaches `master` as a single reviewed PR. Framework upgrades, upstream syncs and design-system
-drops all follow that path.
+Feature, design-system and documentation work targets **`integration/luis-martins` first**.
+Create each topic branch from the fetched, pinned integration commit, and open its PR
+against that integration branch. Framework upgrades and upstream syncs follow the
+same path. Do not rename `master` to `main` or change a PR target to production as a
+shortcut. Promotion is a separate reviewed PR from integration to `master`.
+
+The promotion PR records the integration SHA, included changes, observed checks,
+consumer validation, migration steps and rollback plan. Source approval, package
+publication and application rollout are separate events; record each one when it
+happens. See [brand governance and consumer tracking](docs/articles/design-system/brand-governance.md).
 
 Canonical references (docs-fera): `references/dadosfera_apps_index/fera_repos_index.md`
 (register of record), `standards/lifecycle/lifecycle_standard.md` §Delivery lanes,
@@ -24,9 +31,10 @@ Canonical references (docs-fera): `references/dadosfera_apps_index/fera_repos_in
 
 ---
 
-# Contributing to Nebular
+# Contributing to Beast
 
-We would love for you to contribute to Nebular and help make it ever better together! :rocket:
+Contributions to Beast should preserve the existing brand, component contracts and
+the integration policy above.
 
 - [Code of Conduct](#coc)
 - [Question or Problem?](#question)
@@ -103,11 +111,17 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 
 - Search [GitHub][pulls] for an open or closed PR
   that relates to your submission. You don't want to duplicate effort.
-- Make your changes in a new git branch:
+- Make your changes in an isolated worktree from a freshly fetched integration commit:
 
   ```shell
-  git checkout -b my-fix-branch master
+  git fetch --no-tags origin refs/heads/integration/luis-martins:refs/remotes/origin/integration/luis-martins
+  BEAST_BASE_SHA=$(git rev-parse --verify 'refs/remotes/origin/integration/luis-martins^{commit}')
+  git worktree add --no-track -b fix/my-fix ../beast-wt-live-my-fix "$BEAST_BASE_SHA"
   ```
+
+  Record the pinned base and owner in the local, git-ignored worktree status file,
+  following the [Dadosfera worktree workflow](https://github.com/dadosfera/docs-fera/blob/main/guides/collaboration/multi_agent_worktree_workflow.md).
+  Run subsequent edits and checks in that worktree; do not switch another agent's checkout.
 
 - Create your patch, **including appropriate test cases**.
 - Follow our [Coding Rules](#rules).
@@ -125,10 +139,12 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 - Push your branch to GitHub:
 
   ```shell
-  git push my-fork my-fix-branch
+  git push -u origin fix/my-fix
   ```
 
-- In GitHub, send a pull request to `nebular:master`.
+- In GitHub, send the pull request to **`dadosfera/beast:integration/luis-martins`**.
+  Include the pinned base SHA, submitted SHA and verification results. A promotion
+  PR to `master` follows the human approval rule at the top of this document.
 
 That's it! Thank you for your contribution!
 
@@ -241,11 +257,11 @@ reference GitHub issues that this commit **Closes**.
 The rest of the commit message is then used for this.
 
 [coc]: CODE_OF_CONDUCT.md
-[github]: https://github.com/akveo/nebular
+[github]: https://github.com/dadosfera/beast
 [stackoverflow]: https://stackoverflow.com/questions/tagged/nebular
-[issues]: https://github.com/akveo/nebular/issues
-[new_issue]: https://github.com/akveo/nebular/issues/new
-[pulls]: https://github.com/akveo/nebular/pulls
+[issues]: https://github.com/dadosfera/beast/issues
+[new_issue]: https://github.com/dadosfera/beast/issues/new
+[pulls]: https://github.com/dadosfera/beast/pulls
 ## Design system layers
 
 | Layer | Path | Contains | May depend on |

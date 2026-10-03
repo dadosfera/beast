@@ -66,6 +66,17 @@ export const structure = [
       },
       {
         type: 'page',
+        name: 'Governança da marca',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/brand-governance.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
         name: 'Tema padrão',
         children: [
           {
