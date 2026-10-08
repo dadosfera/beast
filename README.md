@@ -42,3 +42,7 @@ This project is proprietary software owned by Dadosfera.
 - Read us on [Medium](https://medium.com/akveo-engineering)
 - Follow us on [Twitter](https://twitter.com/akveo_inc) :feet:
 - Like our page on [Facebook](https://www.facebook.com/akveo/) :thumbsup:
+
+## React micro-animations
+
+See [Thinking Orbs](packages/react/motion/README.md) for the canonical Beast AI activity adapter and downstream update contract.
