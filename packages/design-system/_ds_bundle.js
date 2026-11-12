@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":4,"namespace":"BeastDadosferaDesignSystem_d7d0ae","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"ButtonGroup","sourcePath":"components/core/ButtonGroup.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"ProgressBar","sourcePath":"components/core/ProgressBar.jsx"},{"name":"Spinner","sourcePath":"components/core/Spinner.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag.jsx"},{"name":"User","sourcePath":"components/core/User.jsx"},{"name":"Chat","sourcePath":"components/extra/Chat.jsx"},{"name":"ChatMessage","sourcePath":"components/extra/Chat.jsx"},{"name":"Pagination","sourcePath":"components/extra/Pagination.jsx"},{"name":"Search","sourcePath":"components/extra/Search.jsx"},{"name":"TreeGrid","sourcePath":"components/extra/TreeGrid.jsx"},{"name":"Autocomplete","sourcePath":"components/forms/Autocomplete.jsx"},{"name":"Calendar","sourcePath":"components/forms/Calendar.jsx"},{"name":"CalendarRange","sourcePath":"components/forms/Calendar.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Datepicker","sourcePath":"components/forms/Datepicker.jsx"},{"name":"Rangepicker","sourcePath":"components/forms/Datepicker.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"RadioGroup","sourcePath":"components/forms/Radio.jsx"},{"name":"OptionList","sourcePath":"components/forms/Select.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"TimePicker","sourcePath":"components/forms/TimePicker.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"Accordion","sourcePath":"components/layout/Accordion.jsx"},{"name":"Actions","sourcePath":"components/layout/Actions.jsx"},{"name":"Card","sourcePath":"components/layout/Card.jsx"},{"name":"CardHeader","sourcePath":"components/layout/Card.jsx"},{"name":"CardBody","sourcePath":"components/layout/Card.jsx"},{"name":"CardFooter","sourcePath":"components/layout/Card.jsx"},{"name":"FlipCard","sourcePath":"components/layout/Card.jsx"},{"name":"RevealCard","sourcePath":"components/layout/Card.jsx"},{"name":"Layout","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutHeader","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutBody","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutColumn","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutFooter","sourcePath":"components/layout/Layout.jsx"},{"name":"List","sourcePath":"components/layout/List.jsx"},{"name":"ListItem","sourcePath":"components/layout/List.jsx"},{"name":"Menu","sourcePath":"components/layout/Menu.jsx"},{"name":"Sidebar","sourcePath":"components/layout/Sidebar.jsx"},{"name":"Stepper","sourcePath":"components/layout/Stepper.jsx"},{"name":"Tabset","sourcePath":"components/layout/Tabset.jsx"},{"name":"RouteTabset","sourcePath":"components/layout/Tabset.jsx"},{"name":"Alert","sourcePath":"components/overlays/Alert.jsx"},{"name":"ContextMenu","sourcePath":"components/overlays/ContextMenu.jsx"},{"name":"Dialog","sourcePath":"components/overlays/Dialog.jsx"},{"name":"Popover","sourcePath":"components/overlays/Popover.jsx"},{"name":"Toast","sourcePath":"components/overlays/Toast.jsx"},{"name":"ToastContainer","sourcePath":"components/overlays/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/overlays/Tooltip.jsx"},{"name":"Window","sourcePath":"components/overlays/Window.jsx"}],"sourceHashes":{"assets/icons/custom-icons.js":"1bcb45c5d148","components/core/Badge.jsx":"aee73d644a5f","components/core/Button.jsx":"601c2c7fe999","components/core/ButtonGroup.jsx":"f18cd90dff19","components/core/Icon.jsx":"ed0e3503c9eb","components/core/ProgressBar.jsx":"c840c47cea6b","components/core/Spinner.jsx":"20c11d2c2c26","components/core/Tag.jsx":"d2b1f2098107","components/core/User.jsx":"2050468ba433","components/extra/Chat.jsx":"a9043ee81281","components/extra/Pagination.jsx":"1c06ba93b73e","components/extra/Search.jsx":"f176847c890c","components/extra/TreeGrid.jsx":"ebc5b5142090","components/forms/Autocomplete.jsx":"124acc91960a","components/forms/Calendar.jsx":"7414a4973334","components/forms/Checkbox.jsx":"4fef8b6a97b8","components/forms/Datepicker.jsx":"1bb158980db0","components/forms/Input.jsx":"0215878fa4c0","components/forms/Radio.jsx":"71b6b5373b47","components/forms/Select.jsx":"ef8b92be7f6e","components/forms/TimePicker.jsx":"23ac23f2611a","components/forms/Toggle.jsx":"19a6675786b2","components/layout/Accordion.jsx":"5c855cd93287","components/layout/Actions.jsx":"b4efd19fc714","components/layout/Card.jsx":"b97f2c11485d","components/layout/Layout.jsx":"61eadc7d5573","components/layout/List.jsx":"a6cf594844f0","components/layout/Menu.jsx":"e68c28cad564","components/layout/Sidebar.jsx":"bab5089f2162","components/layout/Stepper.jsx":"f4ddb8524a26","components/layout/Tabset.jsx":"303570ff1528","components/overlays/Alert.jsx":"e018f0fc32df","components/overlays/ContextMenu.jsx":"9c516ad64f25","components/overlays/Dialog.jsx":"13b0a3671bf7","components/overlays/Popover.jsx":"f176bb9e1e6d","components/overlays/Toast.jsx":"69045f564112","components/overlays/Tooltip.jsx":"8c487efbefc4","components/overlays/Window.jsx":"8491dbec2595","ui_kits/beast-docs/DocsPage.jsx":"0c5f4af0462a","ui_kits/beast-docs/Home.jsx":"b7860798bdf8","ui_kits/beast-docs/Shared.jsx":"b782cccaee0b","ui_kits/platform-shell/Shell.jsx":"214bdb31968a"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":4,"namespace":"BeastDadosferaDesignSystem_d7d0ae","components":[{"name":"Badge","sourcePath":"components/core/Badge.jsx"},{"name":"Button","sourcePath":"components/core/Button.jsx"},{"name":"ButtonGroup","sourcePath":"components/core/ButtonGroup.jsx"},{"name":"Icon","sourcePath":"components/core/Icon.jsx"},{"name":"ProgressBar","sourcePath":"components/core/ProgressBar.jsx"},{"name":"Spinner","sourcePath":"components/core/Spinner.jsx"},{"name":"Tag","sourcePath":"components/core/Tag.jsx"},{"name":"TagList","sourcePath":"components/core/Tag.jsx"},{"name":"User","sourcePath":"components/core/User.jsx"},{"name":"Chat","sourcePath":"components/extra/Chat.jsx"},{"name":"ChatMessage","sourcePath":"components/extra/Chat.jsx"},{"name":"Pagination","sourcePath":"components/extra/Pagination.jsx"},{"name":"Search","sourcePath":"components/extra/Search.jsx"},{"name":"TreeGrid","sourcePath":"components/extra/TreeGrid.jsx"},{"name":"Autocomplete","sourcePath":"components/forms/Autocomplete.jsx"},{"name":"Calendar","sourcePath":"components/forms/Calendar.jsx"},{"name":"CalendarRange","sourcePath":"components/forms/Calendar.jsx"},{"name":"Checkbox","sourcePath":"components/forms/Checkbox.jsx"},{"name":"Datepicker","sourcePath":"components/forms/Datepicker.jsx"},{"name":"Rangepicker","sourcePath":"components/forms/Datepicker.jsx"},{"name":"Input","sourcePath":"components/forms/Input.jsx"},{"name":"Radio","sourcePath":"components/forms/Radio.jsx"},{"name":"RadioGroup","sourcePath":"components/forms/Radio.jsx"},{"name":"OptionList","sourcePath":"components/forms/Select.jsx"},{"name":"Select","sourcePath":"components/forms/Select.jsx"},{"name":"TimePicker","sourcePath":"components/forms/TimePicker.jsx"},{"name":"Toggle","sourcePath":"components/forms/Toggle.jsx"},{"name":"Accordion","sourcePath":"components/layout/Accordion.jsx"},{"name":"Actions","sourcePath":"components/layout/Actions.jsx"},{"name":"Card","sourcePath":"components/layout/Card.jsx"},{"name":"CardHeader","sourcePath":"components/layout/Card.jsx"},{"name":"CardBody","sourcePath":"components/layout/Card.jsx"},{"name":"CardFooter","sourcePath":"components/layout/Card.jsx"},{"name":"FlipCard","sourcePath":"components/layout/Card.jsx"},{"name":"RevealCard","sourcePath":"components/layout/Card.jsx"},{"name":"Layout","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutHeader","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutBody","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutColumn","sourcePath":"components/layout/Layout.jsx"},{"name":"LayoutFooter","sourcePath":"components/layout/Layout.jsx"},{"name":"List","sourcePath":"components/layout/List.jsx"},{"name":"ListItem","sourcePath":"components/layout/List.jsx"},{"name":"Menu","sourcePath":"components/layout/Menu.jsx"},{"name":"Sidebar","sourcePath":"components/layout/Sidebar.jsx"},{"name":"Stepper","sourcePath":"components/layout/Stepper.jsx"},{"name":"Tabset","sourcePath":"components/layout/Tabset.jsx"},{"name":"RouteTabset","sourcePath":"components/layout/Tabset.jsx"},{"name":"Deck","sourcePath":"components/motion/Deck.jsx"},{"name":"Slide","sourcePath":"components/motion/Deck.jsx"},{"name":"DeckNav","sourcePath":"components/motion/Deck.jsx"},{"name":"Reveal","sourcePath":"components/motion/Motion.jsx"},{"name":"Stagger","sourcePath":"components/motion/Motion.jsx"},{"name":"MotionStage","sourcePath":"components/motion/MotionStage.jsx"},{"name":"Scene","sourcePath":"components/motion/MotionStage.jsx"},{"name":"Alert","sourcePath":"components/overlays/Alert.jsx"},{"name":"ContextMenu","sourcePath":"components/overlays/ContextMenu.jsx"},{"name":"Dialog","sourcePath":"components/overlays/Dialog.jsx"},{"name":"Popover","sourcePath":"components/overlays/Popover.jsx"},{"name":"Toast","sourcePath":"components/overlays/Toast.jsx"},{"name":"ToastContainer","sourcePath":"components/overlays/Toast.jsx"},{"name":"Tooltip","sourcePath":"components/overlays/Tooltip.jsx"},{"name":"Window","sourcePath":"components/overlays/Window.jsx"}],"sourceHashes":{"assets/icons/custom-icons.js":"1bcb45c5d148","components/core/Badge.jsx":"aee73d644a5f","components/core/Button.jsx":"601c2c7fe999","components/core/ButtonGroup.jsx":"f18cd90dff19","components/core/Icon.jsx":"ed0e3503c9eb","components/core/ProgressBar.jsx":"c840c47cea6b","components/core/Spinner.jsx":"20c11d2c2c26","components/core/Tag.jsx":"d2b1f2098107","components/core/User.jsx":"2050468ba433","components/extra/Chat.jsx":"a9043ee81281","components/extra/Pagination.jsx":"1c06ba93b73e","components/extra/Search.jsx":"f176847c890c","components/extra/TreeGrid.jsx":"ebc5b5142090","components/forms/Autocomplete.jsx":"124acc91960a","components/forms/Calendar.jsx":"7414a4973334","components/forms/Checkbox.jsx":"4fef8b6a97b8","components/forms/Datepicker.jsx":"1bb158980db0","components/forms/Input.jsx":"0215878fa4c0","components/forms/Radio.jsx":"71b6b5373b47","components/forms/Select.jsx":"ef8b92be7f6e","components/forms/TimePicker.jsx":"23ac23f2611a","components/forms/Toggle.jsx":"19a6675786b2","components/layout/Accordion.jsx":"5c855cd93287","components/layout/Actions.jsx":"b4efd19fc714","components/layout/Card.jsx":"b97f2c11485d","components/layout/Layout.jsx":"61eadc7d5573","components/layout/List.jsx":"a6cf594844f0","components/layout/Menu.jsx":"e68c28cad564","components/layout/Sidebar.jsx":"bab5089f2162","components/layout/Stepper.jsx":"f4ddb8524a26","components/layout/Tabset.jsx":"303570ff1528","components/motion/Deck.jsx":"86be38105a0c","components/motion/Motion.jsx":"516d486b387b","components/motion/MotionStage.jsx":"c3e06d43fe35","components/overlays/Alert.jsx":"e018f0fc32df","components/overlays/ContextMenu.jsx":"9c516ad64f25","components/overlays/Dialog.jsx":"13b0a3671bf7","components/overlays/Popover.jsx":"f176bb9e1e6d","components/overlays/Toast.jsx":"69045f564112","components/overlays/Tooltip.jsx":"8c487efbefc4","components/overlays/Window.jsx":"8491dbec2595","ui_kits/beast-docs/DocsPage.jsx":"0c5f4af0462a","ui_kits/beast-docs/Home.jsx":"b7860798bdf8","ui_kits/beast-docs/Shared.jsx":"b782cccaee0b","ui_kits/platform-shell/Shell.jsx":"214bdb31968a"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -3841,6 +3841,540 @@ function RouteTabset(props) {
 Object.assign(__ds_scope, { Tabset, RouteTabset });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/layout/Tabset.jsx", error: String((e && e.message) || e) }); }
 
+// components/motion/Motion.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+// Motion primitives over tokens/motion.css. Reveal puts an entrance, an ambient loop or hover feedback on any element;
+// Stagger gives consecutive children their place in the stagger without wrapping them (flex and grid stay intact).
+const COMBINED = {
+  float: 'pop-float',
+  pulse: 'pop-pulse',
+  'pulse-primary': 'pop-pulse-primary'
+};
+const names = (...parts) => parts.filter(Boolean).join(' ');
+function Reveal({
+  as: Tag = 'div',
+  variant = 'rise',
+  order = 0,
+  scene,
+  loop,
+  hover,
+  className,
+  style,
+  children,
+  ...rest
+}) {
+  const entrance = Boolean(variant) && variant !== 'none';
+  // An entrance and a loop both own `animation`; only pop has combined classes. Any other pair keeps the entrance.
+  const entranceName = entrance && variant === 'pop' && COMBINED[loop] ? COMBINED[loop] : variant;
+  return /*#__PURE__*/React.createElement(Tag, _extends({
+    className: names(entrance && 'motion', entrance && `motion-${entranceName}`, !entrance && loop && `motion-loop-${loop}`, scene && `motion-scene-${scene}`, hover && `motion-hover-${hover}`, className),
+    style: entrance && order ? {
+      '--motion-order': order,
+      ...style
+    } : style
+  }, rest), children);
+}
+function Stagger({
+  children,
+  variant = 'rise',
+  from = 0,
+  step = 1,
+  scene
+}) {
+  let position = 0;
+  return React.Children.map(children, child => {
+    if (!React.isValidElement(child)) return child;
+    const order = from + step * position;
+    position += 1;
+    return React.cloneElement(child, {
+      className: names('motion', `motion-${variant}`, scene && `motion-scene-${scene}`, child.props.className),
+      style: order ? {
+        '--motion-order': order,
+        ...child.props.style
+      } : child.props.style
+    });
+  });
+}
+Object.assign(__ds_scope, { Reveal, Stagger });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/motion/Motion.jsx", error: String((e && e.message) || e) }); }
+
+// components/motion/MotionStage.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState,
+  useRef,
+  useEffect,
+  useImperativeHandle
+} = React; // MotionStage owns the choreography of everything inside it (tokens/motion.css).
+// mode "all": every scene plays on entry, scene N starting N × --motion-scene-gap later.
+// mode "scenes": the stage enters with scene 1 and reveals one more scene per next(). Hidden scenes are
+// visibility: hidden, so they leave the accessibility tree and the tab order until they are revealed.
+const TYPING = 'input,textarea,select,[contenteditable="true"]';
+const CONTROL = 'a[href],button,summary';
+const names = (...parts) => parts.filter(Boolean).join(' ');
+function MotionStage({
+  as: Tag = 'div',
+  mode = 'all',
+  scenes = 0,
+  scene,
+  defaultScene,
+  onSceneChange,
+  held = false,
+  keyboard = true,
+  controls,
+  className,
+  style,
+  children,
+  onKeyDown,
+  tabIndex,
+  ...rest
+}) {
+  const stepped = mode === 'scenes' && scenes > 0;
+  const first = Math.min(1, scenes);
+  const clamp = value => Math.max(first, Math.min(value, scenes));
+  const [inner, setInner] = useState(defaultScene === undefined ? first : defaultScene);
+  const [replaying, setReplaying] = useState(false);
+  const frame = useRef(0);
+  const current = stepped ? clamp(scene === undefined ? inner : scene) : scenes;
+  useEffect(() => {
+    if (stepped) setInner(defaultScene === undefined ? first : defaultScene);
+  }, [stepped]);
+  useEffect(() => () => cancelAnimationFrame(frame.current), []);
+  const goTo = value => {
+    const target = clamp(value);
+    if (!stepped || target === current) return false;
+    setInner(target);
+    if (onSceneChange) onSceneChange(target);
+    return true;
+  };
+  const next = () => goTo(current + 1);
+  const previous = () => goTo(current - 1);
+  // Entrances restart when .is-held leaves after a painted frame; no timer, so no duration to keep in sync.
+  const replay = () => {
+    setReplaying(true);
+    cancelAnimationFrame(frame.current);
+    frame.current = requestAnimationFrame(() => {
+      frame.current = requestAnimationFrame(() => setReplaying(false));
+    });
+  };
+  const api = {
+    scene: current,
+    scenes,
+    mode: stepped ? 'scenes' : 'all',
+    next,
+    previous,
+    replay,
+    goTo,
+    atStart: !stepped || current <= first,
+    atEnd: !stepped || current >= scenes
+  };
+  useImperativeHandle(controls, () => api);
+  const handleKeyDown = event => {
+    if (onKeyDown) onKeyDown(event);
+    if (!keyboard || !stepped || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+    const target = event.target;
+    if (target.closest && target.closest(TYPING)) return;
+    const onControl = target !== event.currentTarget && target.closest && target.closest(CONTROL);
+    let handled = false;
+    if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ' && !onControl) handled = next();else if (event.key === 'ArrowLeft' || event.key === 'PageUp') handled = previous();else if (event.key === 'Home') handled = goTo(first);else if (event.key === 'End') handled = goTo(scenes);
+    if (handled) event.preventDefault();
+  };
+  const revealed = [];
+  for (let index = 1; index <= current; index += 1) revealed.push(`at-${index}`);
+  return /*#__PURE__*/React.createElement(Tag, _extends({
+    className: names('motion-stage', stepped && 'is-stepped', (held || replaying) && 'is-held', ...revealed, className),
+    style: style,
+    tabIndex: tabIndex === undefined && keyboard && stepped ? 0 : tabIndex,
+    onKeyDown: handleKeyDown
+  }, rest), typeof children === 'function' ? children(api) : children);
+}
+function Scene({
+  index,
+  as: Tag = 'div',
+  className,
+  children,
+  ...rest
+}) {
+  return /*#__PURE__*/React.createElement(Tag, _extends({
+    className: names(`motion-scene-${index}`, className)
+  }, rest), children);
+}
+Object.assign(__ds_scope, { MotionStage, Scene });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/motion/MotionStage.jsx", error: String((e && e.message) || e) }); }
+
+// components/motion/Deck.jsx
+try { (() => {
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+const {
+  useState,
+  useRef,
+  createContext,
+  useContext
+} = React;
+// Deck: a presentation player over MotionStage. One slide is mounted at a time, so its entrances replay on entry.
+// next() reveals the slide's next sub-scene and only then moves on; previous() steps a scene back and only then
+// returns to the previous slide, landing on its last scene. Slide declares how many sub-scenes it has (`scenes`).
+const DeckContext = createContext(null);
+const LABELS = {
+  deck: 'Apresentação',
+  previousSlide: 'Slide anterior',
+  nextSlide: 'Próximo slide',
+  previousScene: 'Cena anterior',
+  nextScene: 'Próxima cena',
+  replay: 'Repetir animações',
+  byScenes: 'Revelar por cenas',
+  slide: 'Slide',
+  scene: 'cena',
+  of: 'de'
+};
+const GUTTER = 'calc(var(--space-8) * 2)';
+const SR_ONLY = {
+  position: 'absolute',
+  width: 1,
+  height: 1,
+  margin: -1,
+  padding: 0,
+  border: 0,
+  overflow: 'hidden',
+  clip: 'rect(0 0 0 0)',
+  whiteSpace: 'nowrap'
+};
+const TYPING = 'input,textarea,select,[contenteditable="true"]';
+const CONTROL = 'a[href],button,summary';
+const pick = (value, fallback) => value === undefined ? fallback : value;
+const pad = value => String(value).padStart(2, '0');
+function Deck({
+  children,
+  index,
+  defaultIndex = 0,
+  onIndexChange,
+  mode,
+  defaultMode = 'all',
+  onModeChange,
+  keyboard = true,
+  labels,
+  style,
+  onKeyDown,
+  ...rest
+}) {
+  const slides = React.Children.toArray(children).filter(React.isValidElement);
+  const count = slides.length;
+  const text = {
+    ...LABELS,
+    ...labels
+  };
+  const [innerIndex, setInnerIndex] = useState(defaultIndex);
+  const [innerMode, setInnerMode] = useState(defaultMode);
+  // Which scenes of which slide are revealed. A value kept for another slide counts as "first".
+  const [reveal, setReveal] = useState({
+    slide: defaultIndex,
+    at: 'first'
+  });
+  const stage = useRef(null);
+  const current = Math.max(0, Math.min(pick(index, innerIndex), count - 1));
+  const activeMode = pick(mode, innerMode);
+  const slide = slides[current];
+  const scenes = slide ? Number(slide.props.scenes) || 0 : 0;
+  const stepped = activeMode === 'scenes' && scenes > 0;
+  const first = Math.min(1, scenes);
+  const at = reveal.slide === current ? reveal.at : 'first';
+  const scene = !stepped || at === 'last' ? scenes : at === 'first' ? first : Math.max(first, Math.min(at, scenes));
+  const goToSlide = (target, land = 'first') => {
+    if (target < 0 || target >= count || target === current) return false;
+    setInnerIndex(target);
+    setReveal({
+      slide: target,
+      at: land
+    });
+    if (onIndexChange) onIndexChange(target);
+    return true;
+  };
+  const revealScene = value => {
+    setReveal({
+      slide: current,
+      at: value
+    });
+    return true;
+  };
+  const next = () => stepped && scene < scenes ? revealScene(scene + 1) : goToSlide(current + 1, 'first');
+  const previous = () => stepped && scene > first ? revealScene(scene - 1) : goToSlide(current - 1, 'last');
+  const setMode = value => {
+    setInnerMode(value);
+    setReveal({
+      slide: current,
+      at: 'first'
+    });
+    if (onModeChange) onModeChange(value);
+  };
+  const replay = () => {
+    if (stage.current) stage.current.replay();
+  };
+  const api = {
+    index: current,
+    count,
+    scene,
+    scenes,
+    mode: activeMode,
+    stepped,
+    text,
+    next,
+    previous,
+    replay,
+    setMode,
+    goToSlide,
+    atStart: current === 0 && (!stepped || scene <= first),
+    atEnd: current >= count - 1 && (!stepped || scene >= scenes)
+  };
+  const handleKeyDown = event => {
+    if (onKeyDown) onKeyDown(event);
+    if (!keyboard || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+    const target = event.target;
+    if (target.closest && target.closest(TYPING)) return;
+    const onControl = target !== event.currentTarget && target.closest && target.closest(CONTROL);
+    let handled = false;
+    if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ' && !onControl) handled = next();else if (event.key === 'ArrowLeft' || event.key === 'PageUp') handled = previous();else if (event.key === 'Home') handled = goToSlide(0);else if (event.key === 'End') handled = goToSlide(count - 1);
+    if (handled) event.preventDefault();
+  };
+  return /*#__PURE__*/React.createElement(DeckContext.Provider, {
+    value: api
+  }, /*#__PURE__*/React.createElement("div", _extends({
+    role: "region",
+    "aria-roledescription": "apresenta\xE7\xE3o",
+    "aria-label": text.deck,
+    tabIndex: keyboard ? 0 : undefined,
+    onKeyDown: handleKeyDown
+  }, rest, {
+    style: {
+      position: 'relative',
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden',
+      fontFamily: 'var(--font-family-primary)',
+      color: 'var(--text-basic-color)',
+      ...style
+    }
+  }), /*#__PURE__*/React.createElement(__ds_scope.MotionStage, {
+    key: current,
+    controls: stage,
+    mode: stepped ? 'scenes' : 'all',
+    scenes: scenes,
+    scene: scene,
+    keyboard: false,
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, slide), /*#__PURE__*/React.createElement("span", {
+    "aria-live": "polite",
+    style: SR_ONLY
+  }, `${text.slide} ${current + 1} ${text.of} ${count}${stepped ? `, ${text.scene} ${scene} ${text.of} ${scenes}` : ''}`)));
+}
+function Slide({
+  breadcrumb,
+  title,
+  chip,
+  tone = 'light',
+  footer,
+  nav = true,
+  scenes,
+  children,
+  style,
+  ...rest
+}) {
+  const deck = useContext(DeckContext);
+  const dark = tone === 'primary';
+  const soft = dark ? 'var(--color-primary-100)' : 'var(--text-hint-color)';
+  return /*#__PURE__*/React.createElement("section", _extends({}, rest, {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      boxSizing: 'border-box',
+      background: dark ? 'var(--color-primary-500)' : 'var(--background-basic-color-1)',
+      color: dark ? 'var(--text-control-color)' : 'var(--text-basic-color)',
+      ...style
+    }
+  }), (breadcrumb || chip || title) && /*#__PURE__*/React.createElement("header", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 'var(--space-1)',
+      padding: `var(--space-6) ${GUTTER} 0`
+    }
+  }, (breadcrumb || chip) && /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: 'var(--space-4)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "motion motion-fade caption",
+    style: {
+      color: soft
+    }
+  }, breadcrumb), chip && /*#__PURE__*/React.createElement("span", {
+    className: "motion motion-fade label",
+    style: {
+      padding: 'var(--space-1) var(--space-3)',
+      borderRadius: 'var(--border-radius-round)',
+      background: dark ? 'var(--color-basic-100)' : 'var(--color-primary-500)',
+      color: dark ? 'var(--color-primary-500)' : 'var(--text-control-color)'
+    }
+  }, chip)), title && /*#__PURE__*/React.createElement("h1", {
+    className: "motion motion-rise motion-delay-1",
+    style: {
+      color: dark ? 'var(--text-control-color)' : 'var(--text-primary-color)'
+    }
+  }, title)), /*#__PURE__*/React.createElement("div", {
+    style: {
+      flex: 1,
+      minHeight: 0,
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 'var(--space-4)',
+      padding: `var(--space-4) ${GUTTER} 0`
+    }
+  }, children), (footer || nav && deck) && /*#__PURE__*/React.createElement("footer", {
+    style: {
+      minHeight: 'var(--footer-height)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: 'var(--space-4)',
+      padding: `0 ${GUTTER}`
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "caption",
+    style: {
+      color: soft
+    }
+  }, footer), nav && deck && /*#__PURE__*/React.createElement(DeckNav, {
+    tone: tone
+  })));
+}
+function DeckNav({
+  tone = 'light',
+  index,
+  count,
+  scene,
+  scenes,
+  mode,
+  onPrevious,
+  onNext,
+  onReplay,
+  onModeChange,
+  labels,
+  style
+}) {
+  const deck = useContext(DeckContext) || {};
+  const text = {
+    ...LABELS,
+    ...deck.text,
+    ...labels
+  };
+  const slideIndex = pick(index, deck.index || 0);
+  const slideCount = pick(count, deck.count || 0);
+  const sceneCount = pick(scenes, deck.scenes || 0);
+  const activeMode = pick(mode, deck.mode || 'all');
+  const stepped = activeMode === 'scenes' && sceneCount > 0;
+  const first = Math.min(1, sceneCount);
+  const shown = stepped ? pick(scene, pick(deck.scene, first)) : sceneCount;
+  const goPrevious = onPrevious || deck.previous;
+  const goNext = onNext || deck.next;
+  const doReplay = onReplay || deck.replay;
+  const changeMode = onModeChange || deck.setMode;
+  const sceneBack = stepped && shown > first;
+  const sceneForward = stepped && shown < sceneCount;
+  const dark = tone === 'primary';
+  const status = dark ? 'control' : 'primary';
+  const pressed = {
+    background: dark ? 'var(--color-basic-control-transparent-300)' : 'var(--color-primary-transparent-200)'
+  };
+  const dots = [];
+  for (let position = 1; position <= sceneCount; position += 1) {
+    const on = position <= shown;
+    dots.push(/*#__PURE__*/React.createElement("span", {
+      key: position,
+      style: {
+        width: 'var(--space-2)',
+        height: 'var(--space-1)',
+        borderRadius: 'var(--border-radius)',
+        background: on ? dark ? 'var(--color-basic-100)' : 'var(--color-primary-500)' : dark ? 'var(--color-basic-control-transparent-400)' : 'var(--color-basic-500)',
+        transition: 'background-color var(--motion-duration-instant) var(--motion-ease-state)'
+      }
+    }));
+  }
+  return /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 'var(--space-1)',
+      ...style
+    }
+  }, /*#__PURE__*/React.createElement(__ds_scope.Button, {
+    appearance: "ghost",
+    status: status,
+    shape: "round",
+    icon: "layers-outline",
+    "aria-label": text.byScenes,
+    title: text.byScenes,
+    "aria-pressed": activeMode === 'scenes',
+    onClick: () => changeMode && changeMode(activeMode === 'scenes' ? 'all' : 'scenes'),
+    style: activeMode === 'scenes' ? pressed : undefined
+  }), /*#__PURE__*/React.createElement(__ds_scope.Button, {
+    appearance: "ghost",
+    status: status,
+    shape: "round",
+    icon: "arrow-ios-back-outline",
+    "aria-label": sceneBack ? text.previousScene : text.previousSlide,
+    disabled: slideIndex <= 0 && !sceneBack,
+    onClick: () => goPrevious && goPrevious()
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: 'var(--space-1)',
+      minWidth: 'var(--space-10)'
+    }
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "label",
+    style: {
+      color: dark ? 'var(--color-primary-100)' : 'var(--text-hint-color)'
+    }
+  }, pad(slideIndex + 1), " / ", pad(slideCount)), stepped && sceneCount > 1 && /*#__PURE__*/React.createElement("span", {
+    "aria-hidden": "true",
+    style: {
+      display: 'flex',
+      gap: 'calc(var(--space-1) / 2)'
+    }
+  }, dots)), /*#__PURE__*/React.createElement(__ds_scope.Button, {
+    appearance: "ghost",
+    status: status,
+    shape: "round",
+    icon: "arrow-ios-forward-outline",
+    "aria-label": sceneForward ? text.nextScene : text.nextSlide,
+    disabled: slideIndex >= slideCount - 1 && !sceneForward,
+    onClick: () => goNext && goNext()
+  }), /*#__PURE__*/React.createElement(__ds_scope.Button, {
+    appearance: "ghost",
+    status: status,
+    shape: "round",
+    icon: "refresh-outline",
+    "aria-label": text.replay,
+    title: text.replay,
+    onClick: () => doReplay && doReplay()
+  }));
+}
+Object.assign(__ds_scope, { Deck, Slide, DeckNav });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/motion/Deck.jsx", error: String((e && e.message) || e) }); }
+
 // components/overlays/Alert.jsx
 try { (() => {
 // NbAlert: filled status block, padding 1rem 1.125rem, subtitle text. accent adds a top bar; outline adds a 1px status border on a basic bg.
@@ -6039,6 +6573,20 @@ __ds_ns.Stepper = __ds_scope.Stepper;
 __ds_ns.Tabset = __ds_scope.Tabset;
 
 __ds_ns.RouteTabset = __ds_scope.RouteTabset;
+
+__ds_ns.Deck = __ds_scope.Deck;
+
+__ds_ns.Slide = __ds_scope.Slide;
+
+__ds_ns.DeckNav = __ds_scope.DeckNav;
+
+__ds_ns.Reveal = __ds_scope.Reveal;
+
+__ds_ns.Stagger = __ds_scope.Stagger;
+
+__ds_ns.MotionStage = __ds_scope.MotionStage;
+
+__ds_ns.Scene = __ds_scope.Scene;
 
 __ds_ns.Alert = __ds_scope.Alert;
 
