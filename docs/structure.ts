@@ -55,6 +55,17 @@ export const structure = [
       },
       {
         type: 'page',
+        name: 'Movimento',
+        children: [
+          {
+            type: 'block',
+            block: 'markdown',
+            source: 'design-system/motion.md',
+          },
+        ],
+      },
+      {
+        type: 'page',
         name: 'Recursos',
         children: [
           {

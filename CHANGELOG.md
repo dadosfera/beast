@@ -1,4 +1,9 @@
 ## Unreleased
+
+- **motion:** add motion tokens, utility classes and sub-scene mechanics (`packages/design-system/tokens/motion.css`)
+- **motion:** add React motion family: `Reveal`, `Stagger`, `MotionStage`, `Scene`, `Deck`, `Slide`, `DeckNav`
+- **design-system:** add `tools/design-system-bundle` to regenerate and check `_ds_bundle.js` and `_ds_manifest.json`
+
 <a name="17.0.0"></a>
 
 # [17.0.0](https://github.com/akveo/nebular/compare/v16.0.0...v17.0.0) (2026-01-14)
