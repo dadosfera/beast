@@ -2,7 +2,7 @@ const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: '.',
-  testMatch: 'typography.spec.cjs',
+  testMatch: ['typography.spec.cjs', 'motion.spec.cjs'],
   forbidOnly: true,
   retries: 0,
   workers: 1,
