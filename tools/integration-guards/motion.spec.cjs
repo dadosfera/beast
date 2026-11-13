@@ -220,6 +220,18 @@ test('keys act only while focus is inside the deck and a focused button keeps it
   await expect(page.getByRole('button', { name: 'Próximo slide' })).toBeDisabled();
 });
 
+test('keys keep working after a nav button changed the slide and was unmounted with it', async ({ page }) => {
+  await page.goto(deck);
+  const live = page.locator('[aria-live="polite"]');
+  await expect(live).toHaveText('Slide 1 de 3, cena 1 de 2');
+  await page.getByRole('button', { name: 'Próxima cena' }).click();
+  await page.getByRole('button', { name: 'Próximo slide' }).click();
+  await expect(live).toHaveText('Slide 2 de 3, cena 1 de 2');
+  await expect(page.getByRole('region', { name: 'Apresentação' })).toBeFocused();
+  await page.keyboard.press('ArrowRight');
+  await expect(live).toHaveText('Slide 2 de 3, cena 2 de 2');
+});
+
 test('replay restarts the entrances of the current slide', async ({ page }) => {
   await page.goto(deck);
   await page.evaluate(() => Promise.all(document.getAnimations().map(animation => animation.finished)));

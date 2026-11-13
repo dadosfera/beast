@@ -1,4 +1,4 @@
-import React, { useState, useRef, createContext, useContext } from 'react';
+import React, { useState, useRef, useEffect, createContext, useContext } from 'react';
 import { Button } from '../core/Button.jsx';
 import { MotionStage } from './MotionStage.jsx';
 
@@ -26,6 +26,8 @@ export function Deck({ children, index, defaultIndex = 0, onIndexChange, mode, d
   // Which scenes of which slide are revealed. A value kept for another slide counts as "first".
   const [reveal, setReveal] = useState({ slide: defaultIndex, at: 'first' });
   const stage = useRef(null);
+  const root = useRef(null);
+  const hadFocus = useRef(false);
 
   const current = Math.max(0, Math.min(pick(index, innerIndex), count - 1));
   const activeMode = pick(mode, innerMode);
@@ -38,6 +40,7 @@ export function Deck({ children, index, defaultIndex = 0, onIndexChange, mode, d
 
   const goToSlide = (target, land = 'first') => {
     if (target < 0 || target >= count || target === current) return false;
+    hadFocus.current = Boolean(root.current && root.current.contains(document.activeElement));
     setInnerIndex(target);
     setReveal({ slide: target, at: land });
     if (onIndexChange) onIndexChange(target);
@@ -52,6 +55,12 @@ export function Deck({ children, index, defaultIndex = 0, onIndexChange, mode, d
     if (onModeChange) onModeChange(value);
   };
   const replay = () => { if (stage.current) stage.current.replay(); };
+  // A slide change unmounts the slide, and with it a focused control (DeckNav sits in the Slide footer).
+  // If focus was inside the deck and went away with it, the deck itself takes it, so the keys keep working.
+  useEffect(() => {
+    if (hadFocus.current && root.current && !root.current.contains(document.activeElement)) root.current.focus();
+    hadFocus.current = false;
+  }, [current]);
   const api = {
     index: current, count, scene, scenes, mode: activeMode, stepped, text, next, previous, replay, setMode, goToSlide,
     atStart: current === 0 && (!stepped || scene <= first), atEnd: current >= count - 1 && (!stepped || scene >= scenes),
@@ -73,7 +82,7 @@ export function Deck({ children, index, defaultIndex = 0, onIndexChange, mode, d
 
   return (
     <DeckContext.Provider value={api}>
-      <div role="region" aria-roledescription="apresentação" aria-label={text.deck} tabIndex={keyboard ? 0 : undefined} onKeyDown={handleKeyDown} {...rest}
+      <div ref={root} role="region" aria-roledescription="apresentação" aria-label={text.deck} tabIndex={keyboard ? 0 : undefined} onKeyDown={handleKeyDown} {...rest}
         style={{ position: 'relative', display: 'flex', flexDirection: 'column', overflow: 'hidden', fontFamily: 'var(--font-family-primary)', color: 'var(--text-basic-color)', ...style }}>
         <MotionStage key={current} controls={stage} mode={stepped ? 'scenes' : 'all'} scenes={scenes} scene={scene} keyboard={false}
           style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' }}>
