@@ -1,0 +1,110 @@
+<!-- @dsCard group="Motion" viewport="700x500" name="Motion: entrances, loops and sub-scenes" subtitle="Durations .15s–.7s, eases without bounce, 90ms stagger; a stage plays everything on entry or one sub-scene per step" -->
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><title>guidelines/motion.html</title><link rel="stylesheet" href="../styles.css">
+<style>
+body{padding:16px;background:var(--background-basic-color-1)}
+.k{font-size:11px;font-weight:700;color:var(--text-hint-color);text-transform:uppercase;letter-spacing:.04em;margin:0 0 6px}
+.row{display:flex;gap:var(--space-2);align-items:center;margin-bottom:var(--space-4)}
+.tile{flex:1;height:52px;display:flex;align-items:center;justify-content:center;border-radius:var(--border-radius);background:var(--color-primary-50);border:1px solid var(--color-primary-100);color:var(--color-primary-800);font-size:var(--text-caption-2-font-size);font-weight:var(--text-caption-2-font-weight)}
+.bar{flex:1;height:8px;align-self:center;border-radius:var(--border-radius);background:var(--color-primary-500)}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--color-info-500);flex:none}
+.dot.primary{background:var(--color-primary-500)}
+.chip{padding:var(--space-1) var(--space-3);border-radius:var(--border-radius-round);border:1px solid var(--border-basic-color-6);background:var(--background-basic-color-1);font-size:var(--text-caption-2-font-size);font-weight:var(--text-caption-2-font-weight);color:var(--color-basic-1100)}
+.card{flex:1;padding:var(--space-3) var(--space-4);border:1px solid var(--border-basic-color-4);border-radius:var(--border-radius-large);background:var(--background-basic-color-1);font-size:var(--text-subtitle-2-font-size);font-weight:var(--text-subtitle-2-font-weight);color:var(--color-basic-1100)}
+.stage{display:flex;gap:var(--space-2);padding:var(--space-3);border:1px solid var(--border-basic-color-4);border-radius:var(--border-radius-large);margin-bottom:var(--space-2)}
+.stage .card span{display:block;font-size:var(--text-caption-font-size);font-weight:var(--text-caption-font-weight);color:var(--text-hint-color)}
+.ctl{appearance:none;padding:var(--button-tiny-padding);border:1px solid var(--color-primary-500);border-radius:var(--button-rectangle-border-radius);background:var(--color-basic-100);color:var(--color-primary-default);font-family:var(--font-family-primary);font-weight:var(--text-button-font-weight);font-size:var(--text-button-small-font-size);line-height:var(--text-button-small-line-height);cursor:pointer}
+.ctl:hover{background:var(--color-primary-transparent-hover)}
+.ctl[aria-pressed="true"]{background:var(--color-primary-default);color:var(--text-control-color)}
+.ctl:disabled{border-color:var(--color-basic-transparent-300);background:var(--color-basic-transparent-200);color:var(--text-disabled-color);cursor:not-allowed}
+.tok{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-1) var(--space-4);font-size:var(--text-caption-font-size);line-height:var(--text-caption-line-height);color:var(--text-basic-color)}
+.tok b{color:var(--color-basic-1100)}
+</style></head><body>
+<div id="demo" class="motion-stage">
+<p class="k">Entradas · .motion .motion-&lt;variante&gt; .motion-delay-N</p>
+<div class="row">
+<div class="tile motion motion-rise">rise</div>
+<div class="tile motion motion-fade motion-delay-1">fade</div>
+<div class="tile motion motion-left motion-delay-2">left</div>
+<div class="tile motion motion-right motion-delay-3">right</div>
+<div class="tile motion motion-pop motion-delay-4">pop</div>
+<div class="bar motion motion-grow-x motion-delay-5" title="grow-x"></div>
+</div>
+<p class="k">Laços e hover · .motion-loop-* .motion-hover-*</p>
+<div class="row">
+<span class="dot motion-loop-pulse" title="pulse"></span><span class="caption">pulse</span>
+<span class="dot primary motion-loop-pulse-primary" title="pulse-primary"></span><span class="caption">pulse-primary</span>
+<span class="chip motion-loop-float">float</span>
+<span class="chip motion-loop-blink">blink</span>
+<div class="card motion-hover-lift">hover-lift</div>
+<div class="card motion-hover-tint">hover-tint</div>
+</div>
+</div>
+<p class="k">Sub-cenas · .motion-stage.is-stepped .at-N · .motion-scene-N</p>
+<div id="stage" class="stage motion-stage is-stepped at-1">
+<div class="card motion-scene-1"><b class="motion motion-rise">Cena 1</b><span class="motion motion-fade motion-delay-1">entra com o estágio</span></div>
+<div class="card motion-scene-2"><b class="motion motion-rise">Cena 2</b><span class="motion motion-fade motion-delay-1">aparece no próximo passo</span></div>
+<div class="card motion-scene-3"><b class="motion motion-rise">Cena 3</b><span class="motion motion-fade motion-delay-1">fecha a sequência</span></div>
+</div>
+<div class="row">
+<button type="button" class="ctl" id="mode" aria-pressed="true">Revelar por cenas</button>
+<button type="button" class="ctl" id="back">Cena anterior</button>
+<button type="button" class="ctl" id="next">Próxima cena</button>
+<button type="button" class="ctl" id="replay">Repetir animações</button>
+<span class="caption" id="status" aria-live="polite">Cena 1 de 3</span>
+</div>
+<p class="k">Tokens</p>
+<div class="tok">
+<span><b>instant</b> .15s · estados</span><span><b>fast</b> .3s · cena estática</span><span><b>pop</b> .45s</span><span><b>enter</b> .55s</span>
+<span><b>grow</b> .7s</span><span><b>draw</b> 1.1s</span><span><b>stagger</b> 90ms</span><span><b>scene-gap</b> 540ms</span>
+<span><b>ease-enter</b> (.2,.7,.2,1)</span><span><b>ease-standard</b> (.4,0,.2,1)</span><span><b>distance</b> 14px / 18px</span><span><b>scale-from</b> .92</span>
+</div>
+<script>
+(function () {
+  var stage = document.getElementById('stage');
+  var demo = document.getElementById('demo');
+  var status = document.getElementById('status');
+  var mode = document.getElementById('mode');
+  var back = document.getElementById('back');
+  var next = document.getElementById('next');
+  var total = 3;
+  var scene = 1;
+  var stepped = true;
+  function render() {
+    var shown = stepped ? scene : total;
+    var cls = 'stage motion-stage' + (stepped ? ' is-stepped' : '');
+    for (var i = 1; i <= shown; i += 1) cls += ' at-' + i;
+    stage.className = cls;
+    mode.setAttribute('aria-pressed', String(stepped));
+    back.disabled = !stepped || scene <= 1;
+    next.disabled = !stepped || scene >= total;
+    status.textContent = stepped ? 'Cena ' + scene + ' de ' + total : 'Tudo de uma vez';
+  }
+  function replay(el) {
+    el.classList.add('is-held');
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        el.classList.remove('is-held');
+      });
+    });
+  }
+  mode.addEventListener('click', function () {
+    stepped = !stepped;
+    scene = 1;
+    render();
+  });
+  back.addEventListener('click', function () {
+    scene -= 1;
+    render();
+  });
+  next.addEventListener('click', function () {
+    scene += 1;
+    render();
+  });
+  document.getElementById('replay').addEventListener('click', function () {
+    replay(demo);
+    replay(stage);
+  });
+  render();
+})();
+</script>
+</body></html>

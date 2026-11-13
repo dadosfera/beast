@@ -1,0 +1,118 @@
+/* Motion: durations, easings, choreography and the utility classes built on them.
+   Sources: Beast "short eases (.15s) on colors", Nebular transitions (.3s / .5s, ease-out),
+   React FlipCard / RevealCard (.5–.6s cubic-bezier(.4,0,.2,1)). No bounce, no spin, no parallax.
+
+   Vocabulary
+     .motion .motion-<variant> [.motion-delay-N]   entrance (N × --motion-stagger); variants: rise fade
+                                                    left right pop grow-x grow-y draw pop-float pop-pulse
+     .motion-loop-<name>                            ambient loop: pulse float march blink
+     .motion-hover-lift / .motion-hover-tint        hover feedback
+     .motion-stage                                  root of a slide / panel that owns the choreography
+       .is-held                                     entrances suspended (remove to replay)
+       .is-stepped + .at-1 … .at-12                 sub-scenes: a scene shows once its .at-N is set
+     .motion-scene-N                                marks an element (or a whole block) as sub-scene N
+   Without .is-stepped every scene plays on entry, scene N starting N × --motion-scene-gap later. */
+:root{
+/* durations */
+--motion-duration-instant:.15s; /* @kind other */
+--motion-duration-fast:.3s; /* @kind other */
+--motion-duration-pop:.45s; /* @kind other */
+--motion-duration-enter:.55s; /* @kind other */
+--motion-duration-grow:.7s; /* @kind other */
+--motion-duration-draw:1.1s; /* @kind other */
+--motion-duration-march:1.6s; /* @kind other */
+--motion-duration-blink:2s; /* @kind other */
+--motion-duration-pulse:2.4s; /* @kind other */
+--motion-duration-float:4.5s; /* @kind other */
+/* easings */
+--motion-ease-enter:cubic-bezier(.2,.7,.2,1); /* @kind other */
+--motion-ease-standard:cubic-bezier(.4,0,.2,1); /* @kind other */
+--motion-ease-state:ease; /* @kind other */
+/* choreography */
+--motion-stagger:90ms; /* @kind other */
+--motion-scene-gap:540ms; /* @kind other */
+/* geometry */
+--motion-distance-y:14px; /* @kind other */
+--motion-distance-x:18px; /* @kind other */
+--motion-scale-from:.92; /* @kind other */
+--motion-float-distance:4px; /* @kind other */
+--motion-lift-distance:3px; /* @kind other */
+--motion-pulse-spread:12px; /* @kind other */
+/* colour and elevation */
+--motion-pulse-color:var(--color-info-transparent-600);
+--motion-pulse-primary-color:var(--color-primary-transparent-500);
+--motion-lift-shadow:0 8px 20px var(--color-primary-transparent-200);
+--motion-tint-color:var(--color-primary-transparent-100);
+}
+
+@keyframes beast-rise{from{opacity:0;transform:translateY(var(--motion-distance-y))}to{opacity:1;transform:none}}
+@keyframes beast-fade{from{opacity:0}to{opacity:1}}
+@keyframes beast-left{from{opacity:0;transform:translateX(calc(var(--motion-distance-x) * -1))}to{opacity:1;transform:none}}
+@keyframes beast-right{from{opacity:0;transform:translateX(var(--motion-distance-x))}to{opacity:1;transform:none}}
+@keyframes beast-pop{from{opacity:0;transform:scale(var(--motion-scale-from))}to{opacity:1;transform:none}}
+@keyframes beast-grow-x{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes beast-grow-y{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes beast-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes beast-pulse{0%{box-shadow:0 0 0 0 var(--motion-pulse-color)}70%,100%{box-shadow:0 0 0 var(--motion-pulse-spread) transparent}}
+@keyframes beast-float{0%,100%{transform:translateY(0)}50%{transform:translateY(calc(var(--motion-float-distance) * -1))}}
+@keyframes beast-march{to{stroke-dashoffset:-24}}
+@keyframes beast-blink{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* Entrances. Fill is "backwards": once finished the element returns to its own styles, so hover still works. */
+.motion-rise{animation:beast-rise var(--motion-duration-enter) var(--motion-ease-enter) backwards}
+.motion-fade{animation:beast-fade var(--motion-duration-enter) ease-out backwards}
+.motion-left{animation:beast-left var(--motion-duration-enter) var(--motion-ease-enter) backwards}
+.motion-right{animation:beast-right var(--motion-duration-enter) var(--motion-ease-enter) backwards}
+.motion-pop{animation:beast-pop var(--motion-duration-pop) var(--motion-ease-enter) backwards}
+.motion-grow-x{transform-origin:left center;animation:beast-grow-x var(--motion-duration-grow) var(--motion-ease-enter) backwards}
+.motion-grow-y{transform-origin:center bottom;animation:beast-grow-y var(--motion-duration-grow) var(--motion-ease-enter) backwards}
+.motion-draw{stroke-dasharray:1;animation:beast-draw var(--motion-duration-draw) var(--motion-ease-standard) backwards} /* needs pathLength="1" on the path */
+.motion-pop-float{animation:beast-pop var(--motion-duration-pop) var(--motion-ease-enter) backwards,beast-float var(--motion-duration-float) ease-in-out infinite}
+.motion-pop-pulse,.motion-pop-pulse-primary{animation:beast-pop var(--motion-duration-pop) var(--motion-ease-enter) backwards,beast-pulse var(--motion-duration-pulse) ease-out infinite}
+.motion-pop-pulse-primary,.motion-loop-pulse-primary{--motion-pulse-color:var(--motion-pulse-primary-color)}
+
+/* Order. Each element waits its scene's turn plus its own place in the stagger. Declared after the
+   variants on purpose: same specificity, so this delay wins over the 0s the animation shorthand resets. */
+.motion{--motion-delay:calc(var(--motion-scene-index,0) * var(--motion-scene-gap) + var(--motion-order,0) * var(--motion-stagger));animation-delay:var(--motion-delay)}
+.motion-pop-float,.motion-pop-pulse,.motion-pop-pulse-primary{animation-delay:var(--motion-delay),calc(var(--motion-delay) + var(--motion-duration-pop))}
+.motion-delay-1{--motion-order:1}.motion-delay-2{--motion-order:2}.motion-delay-3{--motion-order:3}.motion-delay-4{--motion-order:4}.motion-delay-5{--motion-order:5}
+.motion-delay-6{--motion-order:6}.motion-delay-7{--motion-order:7}.motion-delay-8{--motion-order:8}.motion-delay-9{--motion-order:9}.motion-delay-10{--motion-order:10}
+.motion-delay-11{--motion-order:11}.motion-delay-12{--motion-order:12}.motion-delay-13{--motion-order:13}.motion-delay-14{--motion-order:14}.motion-delay-15{--motion-order:15}
+.motion-delay-16{--motion-order:16}.motion-delay-17{--motion-order:17}.motion-delay-18{--motion-order:18}.motion-delay-19{--motion-order:19}.motion-delay-20{--motion-order:20}
+.motion-delay-21{--motion-order:21}.motion-delay-22{--motion-order:22}.motion-delay-23{--motion-order:23}.motion-delay-24{--motion-order:24}.motion-delay-25{--motion-order:25}
+.motion-delay-26{--motion-order:26}.motion-delay-27{--motion-order:27}.motion-delay-28{--motion-order:28}.motion-delay-29{--motion-order:29}.motion-delay-30{--motion-order:30}
+
+/* Ambient loops: at most one or two per view, on the element that carries the message. */
+.motion-loop-pulse,.motion-loop-pulse-primary{animation:beast-pulse var(--motion-duration-pulse) ease-out infinite}
+.motion-loop-float{animation:beast-float var(--motion-duration-float) ease-in-out infinite}
+.motion-loop-march{stroke-dasharray:6 6;animation:beast-march var(--motion-duration-march) linear infinite}
+.motion-loop-blink{animation:beast-blink var(--motion-duration-blink) ease-in-out infinite}
+
+/* Hover feedback. */
+.motion-hover-lift{transition:transform var(--motion-duration-instant) var(--motion-ease-state),box-shadow var(--motion-duration-instant) var(--motion-ease-state),border-color var(--motion-duration-instant) var(--motion-ease-state)}
+.motion-hover-lift:hover{transform:translateY(calc(var(--motion-lift-distance) * -1));box-shadow:var(--motion-lift-shadow)}
+.motion-hover-tint{transition:background-color var(--motion-duration-instant) var(--motion-ease-state),color var(--motion-duration-instant) var(--motion-ease-state)}
+.motion-hover-tint:hover{background-color:var(--motion-tint-color)}
+
+/* Sub-scenes. */
+.motion-scene-1{--motion-scene-index:1}.motion-scene-2{--motion-scene-index:2}.motion-scene-3{--motion-scene-index:3}.motion-scene-4{--motion-scene-index:4}
+.motion-scene-5{--motion-scene-index:5}.motion-scene-6{--motion-scene-index:6}.motion-scene-7{--motion-scene-index:7}.motion-scene-8{--motion-scene-index:8}
+.motion-scene-9{--motion-scene-index:9}.motion-scene-10{--motion-scene-index:10}.motion-scene-11{--motion-scene-index:11}.motion-scene-12{--motion-scene-index:12}
+.motion-stage.is-stepped{--motion-scene-gap:0s}
+.motion-stage.is-stepped [class*="motion-scene-"]:not(.motion){transition:opacity var(--motion-duration-fast) ease-out}
+.motion-stage.is-stepped:not(.at-1) .motion-scene-1,.motion-stage.is-stepped:not(.at-2) .motion-scene-2,.motion-stage.is-stepped:not(.at-3) .motion-scene-3,
+.motion-stage.is-stepped:not(.at-4) .motion-scene-4,.motion-stage.is-stepped:not(.at-5) .motion-scene-5,.motion-stage.is-stepped:not(.at-6) .motion-scene-6,
+.motion-stage.is-stepped:not(.at-7) .motion-scene-7,.motion-stage.is-stepped:not(.at-8) .motion-scene-8,.motion-stage.is-stepped:not(.at-9) .motion-scene-9,
+.motion-stage.is-stepped:not(.at-10) .motion-scene-10,.motion-stage.is-stepped:not(.at-11) .motion-scene-11,.motion-stage.is-stepped:not(.at-12) .motion-scene-12{opacity:0;visibility:hidden;animation:none!important;transition:none}
+.motion-stage.is-stepped:not(.at-1) .motion-scene-1 .motion,.motion-stage.is-stepped:not(.at-2) .motion-scene-2 .motion,.motion-stage.is-stepped:not(.at-3) .motion-scene-3 .motion,
+.motion-stage.is-stepped:not(.at-4) .motion-scene-4 .motion,.motion-stage.is-stepped:not(.at-5) .motion-scene-5 .motion,.motion-stage.is-stepped:not(.at-6) .motion-scene-6 .motion,
+.motion-stage.is-stepped:not(.at-7) .motion-scene-7 .motion,.motion-stage.is-stepped:not(.at-8) .motion-scene-8 .motion,.motion-stage.is-stepped:not(.at-9) .motion-scene-9 .motion,
+.motion-stage.is-stepped:not(.at-10) .motion-scene-10 .motion,.motion-stage.is-stepped:not(.at-11) .motion-scene-11 .motion,.motion-stage.is-stepped:not(.at-12) .motion-scene-12 .motion{animation:none!important}
+
+/* Replay: add .is-held for a frame, then remove it; every entrance starts again. */
+.motion-stage.is-held .motion{animation:none!important;opacity:0}
+
+@media (prefers-reduced-motion: reduce){
+  .motion,.motion-loop-pulse,.motion-loop-pulse-primary,.motion-loop-float,.motion-loop-march,.motion-loop-blink{animation:none!important}
+  .motion-hover-lift,.motion-hover-tint,.motion-stage.is-stepped [class*="motion-scene-"]:not(.motion){transition:none!important}
+}

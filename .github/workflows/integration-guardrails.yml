@@ -34,6 +34,11 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: npx playwright install --with-deps chromium
       - run: npm test
+      - name: Bundle and manifest are what their sources produce
+        working-directory: tools/design-system-bundle
+        run: |
+          npm ci --ignore-scripts
+          npm run check
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         if: failure()
         with:

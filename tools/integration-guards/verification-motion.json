@@ -1,0 +1,96 @@
+{
+  "verified_at": "2026-11-12T16:17:03.662730+00:00",
+  "baseline_commit": "a00d8565e110b0ac38e43d36fb05e4474a43158d",
+  "local_browser": "Chromium (Playwright 1.63.0 build 1243)",
+  "playwright": "1.63.0",
+  "baseline": {
+    "node_contract_tests": 8,
+    "browser_tests": 23,
+    "passed": 31
+  },
+  "scope": "motion tokens, utility classes, React motion family, bundle and manifest freshness",
+  "mutation_checks": [
+    {
+      "mutation": "stale-bundle",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "stylesheet-not-imported",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "undefined-token-reference",
+      "detected": true,
+      "failed_tests": 2
+    },
+    {
+      "mutation": "literal-duration-in-component",
+      "detected": true,
+      "failed_tests": 2
+    },
+    {
+      "mutation": "class-missing-from-css",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "reduced-motion-block-removed",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "bouncing-ease",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "scene-visible-before-its-step",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "entrance-fills-forwards",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "stepped-keeps-scene-gap",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "held-does-not-suspend",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "reduced-motion-keeps-animating",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "previous-lands-on-first-scene",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "next-skips-sub-scenes",
+      "detected": true,
+      "failed_tests": 1
+    },
+    {
+      "mutation": "window-key-listener",
+      "detected": true,
+      "failed_tests": 1
+    }
+  ],
+  "not_verified": [
+    "screen readers",
+    "browsers other than Chromium",
+    "docs site build",
+    "cards with Eva icons loaded from the CDN",
+    "a consuming application"
+  ]
+}

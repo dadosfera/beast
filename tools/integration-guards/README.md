@@ -1,7 +1,8 @@
 # Testes da integração — v1.0
 
-Esta suíte protege contratos do design system e o ensaio tipográfico introduzido
-no PR #13. Ela complementa os testes Angular existentes. Não garante que toda
+Esta suíte protege contratos do design system, o ensaio tipográfico introduzido
+no PR #13 e o sistema de motion (tokens, classes e família React). Ela complementa
+os testes Angular existentes. Não garante que toda
 mudança acidental em qualquer área do Beast seja detectada.
 
 ## Executar
@@ -34,8 +35,18 @@ caminho absoluto. O CI usa o navegador da versão fixada do Playwright.
 | Perder leitura ou interação | Legenda 12 px, rótulos associados, ordem de foco, desktop, celular e espaçamento com escala CSS 200%; tabelas roláveis por teclado. |
 | Catálogo quebrado | Cards existentes, caminhos únicos e metadados iguais aos do manifesto. |
 | Distribuir fontes licenciadas por acidente no perfil | Stylesheet opt-in não contém download nem declaração de binários. |
+| Bundle ou manifesto desatualizados | `sourceHashes` iguais ao SHA-256 das fontes; todo `.jsx` e todo export presentes; componentes iguais no manifesto. |
+| Stylesheet global fora do manifesto | `globalCssPaths` igual aos `@import` de `styles.css`; tokens do manifesto iguais aos declarados. |
+| Token de motion indefinido ou valor repetido em componente | Toda referência `var(--…)` resolve; a família React não contém cor nem duração literal. |
+| Componente emitir classe inexistente | Variantes, laços, hover e cenas dos tipos públicos existem em `tokens/motion.css`. |
+| Movimento ignorar `prefers-reduced-motion` ou ganhar bounce | Bloco de redução cobre `.motion` e todos os laços; nenhuma curva ultrapassa 0–1. |
+| Sub-cena aparecer antes do passo ou atrasar depois dele | Cena oculta até `.at-N`; entrada começa na revelação; sem passos, cada cena começa um `scene-gap` depois. |
+| Entrada bloquear hover, ou `.is-held` não suspender | Estilo próprio restaurado ao fim da entrada; estágio retido zera as entradas e a liberação as reinicia. |
+| Deck pular cenas, voltar para a primeira cena ou ouvir teclas fora do foco | Avança cena a cena e depois slide a slide; voltar cai na última cena; teclas só com foco no deck; Espaço num botão focado aciona só o botão. |
 
-A suíte funciona sem acesso às fontes de terceiros. A fixture geométrica é
+A suíte funciona sem acesso às fontes de terceiros. Os testes do `Deck` carregam
+o bundle versionado com React `18.3.1` servido de `node_modules` (a mesma versão
+que os cards buscam no CDN), sem rede. A fixture geométrica é
 original e serve apenas para validar a API FontFace. A leitura com Menco real,
 zoom nativo, demais navegadores, tecnologias assistivas e telas consumidoras
 continua no [protocolo de avaliação](../../docs/articles/design-system/typography.md).
@@ -48,6 +59,22 @@ Oito regressões temporárias foram detectadas: fonte global, perfil sem escopo,
 legenda sobrescrita, peso ausente aceito, FontFace duplicada, palavra transbordando,
 subtítulo herdando peso 600 e título alterado para peso 100. Os arquivos foram
 restaurados após cada mutação. Os resultados estão em `verification.json`.
+
+## Evidência do motion
+
+Em 12/11/2026, sobre a base `a00d856`, os 8 testes de contrato e os 23 de
+navegador (11 de tipografia, 12 de motion) passaram localmente com Chromium
+do Playwright 1.63.0. Quinze regressões temporárias foram detectadas e os arquivos
+restaurados após cada uma: bundle desatualizado, stylesheet sem import, token
+indefinido, duração literal em componente, classe ausente do CSS, bloco de redução
+removido, curva com bounce, cena visível antes do passo, entrada com `fill` para a
+frente, `scene-gap` mantido no modo por cenas, `.is-held` sem efeito, animações sob
+movimento reduzido, voltar caindo na primeira cena, avançar pulando sub-cenas e
+teclado ouvido em `window`. Os resultados estão em `verification-motion.json`.
+
+Não foram verificados: leitores de tela reais, outros navegadores, o artigo no
+site de documentação, os cards com ícones Eva carregados do CDN e o uso em uma
+aplicação consumidora. Os testes não certificam conformidade WCAG.
 
 ## Execução e bloqueio de merge
 

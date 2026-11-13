@@ -3,4 +3,5 @@
 @import "tokens/typography.css";
 @import "tokens/layout.css";
 @import "tokens/components.css";
+@import "tokens/motion.css";
 @import "tokens/base.css";

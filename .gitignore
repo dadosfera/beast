@@ -61,3 +61,6 @@ local.log
 /tools/integration-guards/node_modules/
 /tools/integration-guards/playwright-report/
 /tools/integration-guards/test-results/
+
+# Design-system bundle generator.
+/tools/design-system-bundle/node_modules/
